@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,13 +7,14 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+import org.openhealthtools.mdht.uml.hl7.datatypes.BL;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
@@ -39,6 +40,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.Patient#getNames <em>Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.Patient#getAdministrativeGenderCode <em>Administrative Gender Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.Patient#getBirthTime <em>Birth Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.Patient#getSDTCDeceasedInd <em>SDTC Deceased Ind</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.Patient#getSDTCDeceasedTime <em>SDTC Deceased Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.Patient#getMaritalStatusCode <em>Marital Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.Patient#getReligiousAffiliationCode <em>Religious Affiliation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.Patient#getRaceCode <em>Race Code</em>}</li>
@@ -58,31 +61,32 @@ import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
  * @generated
  */
 public interface Patient extends Entity {
-	/**
+
+    /**
 	 * Returns the value of the '<em><b>Realm Code</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.CS}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Realm Code</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Realm Code</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Realm Code</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_RealmCode()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="name='realmCode' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	EList<CS> getRealmCodes();
+    EList<CS> getRealmCodes();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Type Id</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Id</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Type Id</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Id</em>' containment reference.
 	 * @see #setTypeId(InfrastructureRootTypeId)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_TypeId()
@@ -90,43 +94,43 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='typeId' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	InfrastructureRootTypeId getTypeId();
+    InfrastructureRootTypeId getTypeId();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getTypeId <em>Type Id</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type Id</em>' containment reference.
 	 * @see #getTypeId()
 	 * @generated
 	 */
-	void setTypeId(InfrastructureRootTypeId value);
+    void setTypeId(InfrastructureRootTypeId value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Template Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.II}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Template Id</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Template Id</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Template Id</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_TemplateId()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="name='templateId' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	EList<II> getTemplateIds();
+    EList<II> getTemplateIds();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Id</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Id</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Id</em>' containment reference isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Id</em>' containment reference.
 	 * @see #setId(II)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_Id()
@@ -134,43 +138,44 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='id' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	II getId();
+    II getId();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getId <em>Id</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Id</em>' containment reference.
 	 * @see #getId()
 	 * @generated
 	 */
-	void setId(II value);
+    void setId(II value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.PN}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Name</em>' containment reference list isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_Name()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="name='name' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	EList<PN> getNames();
+    EList<PN> getNames();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Administrative Gender Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Administrative Gender Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Administrative Gender Code</em>' containment
+     * reference isn't clear, there really should be more of a description
+     * here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Administrative Gender Code</em>' containment reference.
 	 * @see #setAdministrativeGenderCode(CE)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_AdministrativeGenderCode()
@@ -178,26 +183,26 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='administrativeGenderCode' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	CE getAdministrativeGenderCode();
+    CE getAdministrativeGenderCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getAdministrativeGenderCode <em>Administrative Gender Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Administrative Gender Code</em>' containment reference.
 	 * @see #getAdministrativeGenderCode()
 	 * @generated
 	 */
-	void setAdministrativeGenderCode(CE value);
+    void setAdministrativeGenderCode(CE value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Birth Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Birth Time</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Birth Time</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Birth Time</em>' containment reference.
 	 * @see #setBirthTime(TS)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_BirthTime()
@@ -205,26 +210,81 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='birthTime' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	TS getBirthTime();
+    TS getBirthTime();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getBirthTime <em>Birth Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Birth Time</em>' containment reference.
 	 * @see #getBirthTime()
 	 * @generated
 	 */
-	void setBirthTime(TS value);
+    void setBirthTime(TS value);
 
-	/**
+    /**
+	 * Returns the value of the '<em><b>SDTC Deceased Ind</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>SDTC Deceased Ind</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+	 * @return the value of the '<em>SDTC Deceased Ind</em>' containment reference.
+	 * @see #setSDTCDeceasedInd(BL)
+	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_SDTCDeceasedInd()
+	 * @model containment="true" ordered="false"
+	 *        extendedMetaData="name='deceasedInd' namespace='urn:hl7-org:sdtc' kind='element'"
+	 * @generated
+	 */
+    BL getSDTCDeceasedInd();
+
+    /**
+	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getSDTCDeceasedInd <em>SDTC Deceased Ind</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>SDTC Deceased Ind</em>' containment reference.
+	 * @see #getSDTCDeceasedInd()
+	 * @generated
+	 */
+    void setSDTCDeceasedInd(BL value);
+
+    /**
+	 * Returns the value of the '<em><b>SDTC Deceased Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>SDTC Deceased Time</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+	 * @return the value of the '<em>SDTC Deceased Time</em>' containment reference.
+	 * @see #setSDTCDeceasedTime(TS)
+	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_SDTCDeceasedTime()
+	 * @model containment="true" ordered="false"
+	 *        extendedMetaData="name='deceasedTime' namespace='urn:hl7-org:sdtc' kind='element'"
+	 * @generated
+	 */
+    TS getSDTCDeceasedTime();
+
+    /**
+	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getSDTCDeceasedTime <em>SDTC Deceased Time</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>SDTC Deceased Time</em>' containment reference.
+	 * @see #getSDTCDeceasedTime()
+	 * @generated
+	 */
+    void setSDTCDeceasedTime(TS value);
+
+    /**
 	 * Returns the value of the '<em><b>Marital Status Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Marital Status Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Marital Status Code</em>' containment
+     * reference isn't clear, there really should be more of a description
+     * here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Marital Status Code</em>' containment reference.
 	 * @see #setMaritalStatusCode(CE)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_MaritalStatusCode()
@@ -232,26 +292,27 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='maritalStatusCode' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	CE getMaritalStatusCode();
+    CE getMaritalStatusCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getMaritalStatusCode <em>Marital Status Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Marital Status Code</em>' containment reference.
 	 * @see #getMaritalStatusCode()
 	 * @generated
 	 */
-	void setMaritalStatusCode(CE value);
+    void setMaritalStatusCode(CE value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Religious Affiliation Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Religious Affiliation Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Religious Affiliation Code</em>' containment
+     * reference isn't clear, there really should be more of a description
+     * here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Religious Affiliation Code</em>' containment reference.
 	 * @see #setReligiousAffiliationCode(CE)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_ReligiousAffiliationCode()
@@ -259,26 +320,26 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='religiousAffiliationCode' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	CE getReligiousAffiliationCode();
+    CE getReligiousAffiliationCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getReligiousAffiliationCode <em>Religious Affiliation Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Religious Affiliation Code</em>' containment reference.
 	 * @see #getReligiousAffiliationCode()
 	 * @generated
 	 */
-	void setReligiousAffiliationCode(CE value);
+    void setReligiousAffiliationCode(CE value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Race Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Race Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Race Code</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Race Code</em>' containment reference.
 	 * @see #setRaceCode(CE)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_RaceCode()
@@ -286,43 +347,43 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='raceCode' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	CE getRaceCode();
+    CE getRaceCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getRaceCode <em>Race Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Race Code</em>' containment reference.
 	 * @see #getRaceCode()
 	 * @generated
 	 */
-	void setRaceCode(CE value);
+    void setRaceCode(CE value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>SDTC Race Code</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.CE}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>SDTC Race Code</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>SDTC Race Code</em>' containment reference
+     * list isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>SDTC Race Code</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_SDTCRaceCode()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="name='raceCode' namespace='urn:hl7-org:sdtc' kind='element'"
 	 * @generated
 	 */
-	EList<CE> getSDTCRaceCodes();
+    EList<CE> getSDTCRaceCodes();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Ethnic Group Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Ethnic Group Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Ethnic Group Code</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ethnic Group Code</em>' containment reference.
 	 * @see #setEthnicGroupCode(CE)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_EthnicGroupCode()
@@ -330,43 +391,43 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='ethnicGroupCode' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	CE getEthnicGroupCode();
+    CE getEthnicGroupCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getEthnicGroupCode <em>Ethnic Group Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Ethnic Group Code</em>' containment reference.
 	 * @see #getEthnicGroupCode()
 	 * @generated
 	 */
-	void setEthnicGroupCode(CE value);
+    void setEthnicGroupCode(CE value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Guardian</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.cda.Guardian}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Guardian</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Guardian</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Guardian</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_Guardian()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="name='guardian' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	EList<Guardian> getGuardians();
+    EList<Guardian> getGuardians();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Birthplace</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Birthplace</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Birthplace</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Birthplace</em>' containment reference.
 	 * @see #setBirthplace(Birthplace)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_Birthplace()
@@ -374,44 +435,45 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='birthplace' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	Birthplace getBirthplace();
+    Birthplace getBirthplace();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getBirthplace <em>Birthplace</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Birthplace</em>' containment reference.
 	 * @see #getBirthplace()
 	 * @generated
 	 */
-	void setBirthplace(Birthplace value);
+    void setBirthplace(Birthplace value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Language Communication</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.cda.LanguageCommunication}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Language Communication</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Language Communication</em>' containment
+     * reference list isn't clear, there really should be more of a description
+     * here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Language Communication</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getPatient_LanguageCommunication()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="name='languageCommunication' namespace='##targetNamespace' kind='element'"
 	 * @generated
 	 */
-	EList<LanguageCommunication> getLanguageCommunications();
+    EList<LanguageCommunication> getLanguageCommunications();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Null Flavor</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -422,12 +484,12 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='nullFlavor' kind='attribute'"
 	 * @generated
 	 */
-	NullFlavor getNullFlavor();
+    NullFlavor getNullFlavor();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -435,41 +497,41 @@ public interface Patient extends Entity {
 	 * @see #getNullFlavor()
 	 * @generated
 	 */
-	void setNullFlavor(NullFlavor value);
+    void setNullFlavor(NullFlavor value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	void unsetNullFlavor();
+    void unsetNullFlavor();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getNullFlavor <em>Null Flavor</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Null Flavor</em>' attribute is set.
 	 * @see #unsetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	boolean isSetNullFlavor();
+    boolean isSetNullFlavor();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Class Code</b></em>' attribute.
 	 * The default value is <code>"PSN"</code>.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.EntityClass}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Class Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Class Code</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Class Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityClass
 	 * @see #isSetClassCode()
@@ -480,12 +542,12 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='classCode' kind='attribute'"
 	 * @generated
 	 */
-	EntityClass getClassCode();
+    EntityClass getClassCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getClassCode <em>Class Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Class Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityClass
 	 * @see #isSetClassCode()
@@ -493,41 +555,41 @@ public interface Patient extends Entity {
 	 * @see #getClassCode()
 	 * @generated
 	 */
-	void setClassCode(EntityClass value);
+    void setClassCode(EntityClass value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getClassCode <em>Class Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetClassCode()
 	 * @see #getClassCode()
 	 * @see #setClassCode(EntityClass)
 	 * @generated
 	 */
-	void unsetClassCode();
+    void unsetClassCode();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getClassCode <em>Class Code</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Class Code</em>' attribute is set.
 	 * @see #unsetClassCode()
 	 * @see #getClassCode()
 	 * @see #setClassCode(EntityClass)
 	 * @generated
 	 */
-	boolean isSetClassCode();
+    boolean isSetClassCode();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Determiner Code</b></em>' attribute.
 	 * The default value is <code>"INSTANCE"</code>.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.EntityDeterminer}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Determiner Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Determiner Code</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Determiner Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityDeterminer
 	 * @see #isSetDeterminerCode()
@@ -538,12 +600,12 @@ public interface Patient extends Entity {
 	 *        extendedMetaData="name='determinerCode' kind='attribute'"
 	 * @generated
 	 */
-	EntityDeterminer getDeterminerCode();
+    EntityDeterminer getDeterminerCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getDeterminerCode <em>Determiner Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Determiner Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityDeterminer
 	 * @see #isSetDeterminerCode()
@@ -551,34 +613,34 @@ public interface Patient extends Entity {
 	 * @see #getDeterminerCode()
 	 * @generated
 	 */
-	void setDeterminerCode(EntityDeterminer value);
+    void setDeterminerCode(EntityDeterminer value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getDeterminerCode <em>Determiner Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetDeterminerCode()
 	 * @see #getDeterminerCode()
 	 * @see #setDeterminerCode(EntityDeterminer)
 	 * @generated
 	 */
-	void unsetDeterminerCode();
+    void unsetDeterminerCode();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Patient#getDeterminerCode <em>Determiner Code</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Determiner Code</em>' attribute is set.
 	 * @see #unsetDeterminerCode()
 	 * @see #getDeterminerCode()
 	 * @see #setDeterminerCode(EntityDeterminer)
 	 * @generated
 	 */
-	boolean isSetDeterminerCode();
+    boolean isSetDeterminerCode();
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -586,11 +648,11 @@ public interface Patient extends Entity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.isClassCodeDefined() implies self.classCode=vocab::EntityClass::PSN'"
 	 * @generated
 	 */
-	boolean validateClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+    boolean validateClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -598,15 +660,16 @@ public interface Patient extends Entity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.isDeterminerCodeDefined() implies self.determinerCode=vocab::EntityDeterminer::INSTANCE'"
 	 * @generated
 	 */
-	boolean validateDeterminerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+    boolean validateDeterminerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='Bag { self.id }'"
-	 * @generated
-	 */
-	EList<II> getIds();
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @model kind="operation" ordered="false"
+     * annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='Bag {
+     * self.id }'"
+     *
+     * @generated
+     */
+    EList<II> getIds();
 
 } // Patient

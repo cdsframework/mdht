@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda;
 
 import org.eclipse.emf.ecore.EClass;
@@ -24,12 +24,16 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface RegistryDelegate extends EObject {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" ordered="false" templateIdDataType="org.eclipse.uml2.types.String" templateIdRequired="true" templateIdOrdered="false" contextRequired="true" contextOrdered="false"
-	 * @generated
-	 */
-	EClass getEClass(String templateId, Object context);
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @model required="true" ordered="false"
+     * templateIdDataType="org.eclipse.uml2.types.String"
+     * templateIdRequired="true" templateIdOrdered="false"
+     * contextRequired="true" contextOrdered="false"
+     *
+     * @generated
+     */
+    EClass getEClass(String templateId, Object context);
 
 } // RegistryDelegate

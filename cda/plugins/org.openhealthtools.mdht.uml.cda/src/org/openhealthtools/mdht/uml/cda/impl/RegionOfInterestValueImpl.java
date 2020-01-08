@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.impl;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -19,7 +19,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.impl.INTImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Region Of Interest Value</b></em>'.
+ * An implementation of the model object '<em><b>Region Of Interest
+ * Value</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
@@ -31,75 +32,69 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.impl.INTImpl;
  * @generated
  */
 public class RegionOfInterestValueImpl extends INTImpl implements RegionOfInterestValue {
-	/**
+
+    /**
 	 * The default value of the '{@link #isUnsorted() <em>Unsorted</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isUnsorted()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final boolean UNSORTED_EDEFAULT = false;
+    protected static final boolean UNSORTED_EDEFAULT = false;
 
-	/**
+    /**
 	 * The cached value of the '{@link #isUnsorted() <em>Unsorted</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isUnsorted()
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean unsorted = UNSORTED_EDEFAULT;
+    protected boolean unsorted = UNSORTED_EDEFAULT;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected RegionOfInterestValueImpl() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    protected RegionOfInterestValueImpl() {
 		super();
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EClass eStaticClass() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    protected EClass eStaticClass() {
 		return CDAPackage.Literals.REGION_OF_INTEREST_VALUE;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean isUnsorted() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public boolean isUnsorted() {
 		return unsorted;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setUnsorted(boolean newUnsorted) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setUnsorted(boolean newUnsorted) {
 		boolean oldUnsorted = unsorted;
 		unsorted = newUnsorted;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.REGION_OF_INTEREST_VALUE__UNSORTED, oldUnsorted, unsorted));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.REGION_OF_INTEREST_VALUE__UNSORTED, oldUnsorted, unsorted));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case CDAPackage.REGION_OF_INTEREST_VALUE__UNSORTED:
 				return isUnsorted();
@@ -107,28 +102,26 @@ public class RegionOfInterestValueImpl extends INTImpl implements RegionOfIntere
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eSet(int featureID, Object newValue) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CDAPackage.REGION_OF_INTEREST_VALUE__UNSORTED:
-				setUnsorted((Boolean) newValue);
+				setUnsorted((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eUnset(int featureID) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public void eUnset(int featureID) {
 		switch (featureID) {
 			case CDAPackage.REGION_OF_INTEREST_VALUE__UNSORTED:
 				setUnsorted(UNSORTED_EDEFAULT);
@@ -137,13 +130,12 @@ public class RegionOfInterestValueImpl extends INTImpl implements RegionOfIntere
 		super.eUnset(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean eIsSet(int featureID) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CDAPackage.REGION_OF_INTEREST_VALUE__UNSORTED:
 				return unsorted != UNSORTED_EDEFAULT;
@@ -151,16 +143,13 @@ public class RegionOfInterestValueImpl extends INTImpl implements RegionOfIntere
 		return super.eIsSet(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) {
-			return super.toString();
-		}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public String toString() {
+		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (unsorted: ");

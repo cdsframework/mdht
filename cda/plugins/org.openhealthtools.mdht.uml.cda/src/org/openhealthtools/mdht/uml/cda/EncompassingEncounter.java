@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda;
 
 import java.util.Map;
@@ -25,7 +25,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Encompassing Encounter</b></em>'.
+ * A representation of the model object '<em><b>Encompassing
+ * Encounter</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
@@ -52,31 +53,32 @@ import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
  * @generated
  */
 public interface EncompassingEncounter extends Act {
-	/**
+
+    /**
 	 * Returns the value of the '<em><b>Realm Code</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.CS}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Realm Code</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Realm Code</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Realm Code</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getEncompassingEncounter_RealmCode()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<CS> getRealmCodes();
+    EList<CS> getRealmCodes();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Type Id</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Id</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Type Id</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Id</em>' containment reference.
 	 * @see #setTypeId(InfrastructureRootTypeId)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getEncompassingEncounter_TypeId()
@@ -84,60 +86,60 @@ public interface EncompassingEncounter extends Act {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	InfrastructureRootTypeId getTypeId();
+    InfrastructureRootTypeId getTypeId();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getTypeId <em>Type Id</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type Id</em>' containment reference.
 	 * @see #getTypeId()
 	 * @generated
 	 */
-	void setTypeId(InfrastructureRootTypeId value);
+    void setTypeId(InfrastructureRootTypeId value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Template Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.II}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Template Id</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Template Id</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Template Id</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getEncompassingEncounter_TemplateId()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<II> getTemplateIds();
+    EList<II> getTemplateIds();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.II}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Id</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Id</em>' containment reference list isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Id</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getEncompassingEncounter_Id()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<II> getIds();
+    EList<II> getIds();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Code</em>' containment reference isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Code</em>' containment reference.
 	 * @see #setCode(CE)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getEncompassingEncounter_Code()
@@ -145,26 +147,26 @@ public interface EncompassingEncounter extends Act {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	CE getCode();
+    CE getCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getCode <em>Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Code</em>' containment reference.
 	 * @see #getCode()
 	 * @generated
 	 */
-	void setCode(CE value);
+    void setCode(CE value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Effective Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Effective Time</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Effective Time</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Effective Time</em>' containment reference.
 	 * @see #setEffectiveTime(IVL_TS)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getEncompassingEncounter_EffectiveTime()
@@ -172,26 +174,27 @@ public interface EncompassingEncounter extends Act {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	IVL_TS getEffectiveTime();
+    IVL_TS getEffectiveTime();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getEffectiveTime <em>Effective Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Effective Time</em>' containment reference.
 	 * @see #getEffectiveTime()
 	 * @generated
 	 */
-	void setEffectiveTime(IVL_TS value);
+    void setEffectiveTime(IVL_TS value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Discharge Disposition Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Discharge Disposition Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Discharge Disposition Code</em>' containment
+     * reference isn't clear, there really should be more of a description
+     * here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Discharge Disposition Code</em>' containment reference.
 	 * @see #setDischargeDispositionCode(CE)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getEncompassingEncounter_DischargeDispositionCode()
@@ -199,26 +202,26 @@ public interface EncompassingEncounter extends Act {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	CE getDischargeDispositionCode();
+    CE getDischargeDispositionCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getDischargeDispositionCode <em>Discharge Disposition Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Discharge Disposition Code</em>' containment reference.
 	 * @see #getDischargeDispositionCode()
 	 * @generated
 	 */
-	void setDischargeDispositionCode(CE value);
+    void setDischargeDispositionCode(CE value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Responsible Party</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Responsible Party</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Responsible Party</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Responsible Party</em>' containment reference.
 	 * @see #setResponsibleParty(ResponsibleParty)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getEncompassingEncounter_ResponsibleParty()
@@ -226,43 +229,44 @@ public interface EncompassingEncounter extends Act {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ResponsibleParty getResponsibleParty();
+    ResponsibleParty getResponsibleParty();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getResponsibleParty <em>Responsible Party</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Responsible Party</em>' containment reference.
 	 * @see #getResponsibleParty()
 	 * @generated
 	 */
-	void setResponsibleParty(ResponsibleParty value);
+    void setResponsibleParty(ResponsibleParty value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Encounter Participant</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.cda.EncounterParticipant}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Encounter Participant</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Encounter Participant</em>' containment
+     * reference list isn't clear, there really should be more of a description
+     * here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Encounter Participant</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getEncompassingEncounter_EncounterParticipant()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<EncounterParticipant> getEncounterParticipants();
+    EList<EncounterParticipant> getEncounterParticipants();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Location</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Location</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Location</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Location</em>' containment reference.
 	 * @see #setLocation(Location)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getEncompassingEncounter_Location()
@@ -270,27 +274,27 @@ public interface EncompassingEncounter extends Act {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	Location getLocation();
+    Location getLocation();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getLocation <em>Location</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Location</em>' containment reference.
 	 * @see #getLocation()
 	 * @generated
 	 */
-	void setLocation(Location value);
+    void setLocation(Location value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Null Flavor</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -300,12 +304,12 @@ public interface EncompassingEncounter extends Act {
 	 * @model unsettable="true" ordered="false"
 	 * @generated
 	 */
-	NullFlavor getNullFlavor();
+    NullFlavor getNullFlavor();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -313,41 +317,41 @@ public interface EncompassingEncounter extends Act {
 	 * @see #getNullFlavor()
 	 * @generated
 	 */
-	void setNullFlavor(NullFlavor value);
+    void setNullFlavor(NullFlavor value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	void unsetNullFlavor();
+    void unsetNullFlavor();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getNullFlavor <em>Null Flavor</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Null Flavor</em>' attribute is set.
 	 * @see #unsetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	boolean isSetNullFlavor();
+    boolean isSetNullFlavor();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Class Code</b></em>' attribute.
 	 * The default value is <code>"ENC"</code>.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.ActClass}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Class Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Class Code</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Class Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.ActClass
 	 * @see #isSetClassCode()
@@ -357,12 +361,12 @@ public interface EncompassingEncounter extends Act {
 	 * @model default="ENC" unsettable="true" ordered="false"
 	 * @generated
 	 */
-	ActClass getClassCode();
+    ActClass getClassCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getClassCode <em>Class Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Class Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.ActClass
 	 * @see #isSetClassCode()
@@ -370,41 +374,41 @@ public interface EncompassingEncounter extends Act {
 	 * @see #getClassCode()
 	 * @generated
 	 */
-	void setClassCode(ActClass value);
+    void setClassCode(ActClass value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getClassCode <em>Class Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetClassCode()
 	 * @see #getClassCode()
 	 * @see #setClassCode(ActClass)
 	 * @generated
 	 */
-	void unsetClassCode();
+    void unsetClassCode();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getClassCode <em>Class Code</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Class Code</em>' attribute is set.
 	 * @see #unsetClassCode()
 	 * @see #getClassCode()
 	 * @see #setClassCode(ActClass)
 	 * @generated
 	 */
-	boolean isSetClassCode();
+    boolean isSetClassCode();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Mood Code</b></em>' attribute.
 	 * The default value is <code>"EVN"</code>.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.ActMood}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Mood Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Mood Code</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Mood Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.ActMood
 	 * @see #isSetMoodCode()
@@ -414,12 +418,12 @@ public interface EncompassingEncounter extends Act {
 	 * @model default="EVN" unsettable="true" ordered="false"
 	 * @generated
 	 */
-	ActMood getMoodCode();
+    ActMood getMoodCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getMoodCode <em>Mood Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Mood Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.ActMood
 	 * @see #isSetMoodCode()
@@ -427,34 +431,34 @@ public interface EncompassingEncounter extends Act {
 	 * @see #getMoodCode()
 	 * @generated
 	 */
-	void setMoodCode(ActMood value);
+    void setMoodCode(ActMood value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getMoodCode <em>Mood Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetMoodCode()
 	 * @see #getMoodCode()
 	 * @see #setMoodCode(ActMood)
 	 * @generated
 	 */
-	void unsetMoodCode();
+    void unsetMoodCode();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.EncompassingEncounter#getMoodCode <em>Mood Code</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Mood Code</em>' attribute is set.
 	 * @see #unsetMoodCode()
 	 * @see #getMoodCode()
 	 * @see #setMoodCode(ActMood)
 	 * @generated
 	 */
-	boolean isSetMoodCode();
+    boolean isSetMoodCode();
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -462,11 +466,11 @@ public interface EncompassingEncounter extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.isClassCodeDefined() implies self.classCode=vocab::ActClass::ENC'"
 	 * @generated
 	 */
-	boolean validateClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+    boolean validateClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -474,6 +478,6 @@ public interface EncompassingEncounter extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.isMoodCodeDefined() implies self.moodCode=vocab::ActMood::EVN'"
 	 * @generated
 	 */
-	boolean validateMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+    boolean validateMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // EncompassingEncounter

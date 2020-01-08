@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -8,7 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *     David A Carlson (XMLmodeling.com) - getEntryRelationshipTargets
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.operations;
 
 import java.util.Collection;
@@ -48,7 +48,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
 
 /**
  * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>Clinical Statement</b></em>' model objects.
+ * A static utility class that provides operations related to '<em><b>Clinical
+ * Statement</b></em>' model objects.
  * <!-- end-user-doc -->
  *
  * <p>
@@ -95,355 +96,353 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * @generated
  */
 public class ClinicalStatementOperations extends ActOperations {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ClinicalStatementOperations() {
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    protected ClinicalStatementOperations() {
 		super();
 	}
 
-	@SuppressWarnings("unchecked")
-	private static List<EntryRelationship> getEntryRelationships(ClinicalStatement clinicalStatement) {
-		return ((List<EntryRelationship>) clinicalStatement.eGet(clinicalStatement.eClass().getEStructuralFeature(
-			"entryRelationship")));
-	}
+    @SuppressWarnings("unchecked")
+    private static List<EntryRelationship> getEntryRelationships(ClinicalStatement clinicalStatement) {
+        return ((List<EntryRelationship>) clinicalStatement.eGet(clinicalStatement.eClass().getEStructuralFeature(
+                "entryRelationship")));
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static void addAct(ClinicalStatement clinicalStatement, Act act) {
-		EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
-		entryRelationship.setAct(act);
-		getEntryRelationships(clinicalStatement).add(entryRelationship);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static void addAct(ClinicalStatement clinicalStatement, Act act) {
+        EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
+        entryRelationship.setAct(act);
+        getEntryRelationships(clinicalStatement).add(entryRelationship);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static void addEncounter(ClinicalStatement clinicalStatement, Encounter encounter) {
-		EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
-		entryRelationship.setEncounter(encounter);
-		getEntryRelationships(clinicalStatement).add(entryRelationship);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static void addEncounter(ClinicalStatement clinicalStatement, Encounter encounter) {
+        EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
+        entryRelationship.setEncounter(encounter);
+        getEntryRelationships(clinicalStatement).add(entryRelationship);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static void addObservation(ClinicalStatement clinicalStatement, Observation observation) {
-		EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
-		entryRelationship.setObservation(observation);
-		getEntryRelationships(clinicalStatement).add(entryRelationship);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static void addObservation(ClinicalStatement clinicalStatement, Observation observation) {
+        EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
+        entryRelationship.setObservation(observation);
+        getEntryRelationships(clinicalStatement).add(entryRelationship);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static void addObservationMedia(ClinicalStatement clinicalStatement, ObservationMedia observationMedia) {
-		EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
-		entryRelationship.setObservationMedia(observationMedia);
-		getEntryRelationships(clinicalStatement).add(entryRelationship);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static void addObservationMedia(ClinicalStatement clinicalStatement, ObservationMedia observationMedia) {
+        EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
+        entryRelationship.setObservationMedia(observationMedia);
+        getEntryRelationships(clinicalStatement).add(entryRelationship);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static void addOrganizer(ClinicalStatement clinicalStatement, Organizer organizer) {
-		EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
-		entryRelationship.setOrganizer(organizer);
-		getEntryRelationships(clinicalStatement).add(entryRelationship);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static void addOrganizer(ClinicalStatement clinicalStatement, Organizer organizer) {
+        EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
+        entryRelationship.setOrganizer(organizer);
+        getEntryRelationships(clinicalStatement).add(entryRelationship);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static void addProcedure(ClinicalStatement clinicalStatement, Procedure procedure) {
-		EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
-		entryRelationship.setProcedure(procedure);
-		getEntryRelationships(clinicalStatement).add(entryRelationship);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static void addProcedure(ClinicalStatement clinicalStatement, Procedure procedure) {
+        EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
+        entryRelationship.setProcedure(procedure);
+        getEntryRelationships(clinicalStatement).add(entryRelationship);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static void addRegionOfInterest(ClinicalStatement clinicalStatement, RegionOfInterest regionOfInterest) {
-		EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
-		entryRelationship.setRegionOfInterest(regionOfInterest);
-		getEntryRelationships(clinicalStatement).add(entryRelationship);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static void addRegionOfInterest(ClinicalStatement clinicalStatement, RegionOfInterest regionOfInterest) {
+        EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
+        entryRelationship.setRegionOfInterest(regionOfInterest);
+        getEntryRelationships(clinicalStatement).add(entryRelationship);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static void addSubstanceAdministration(ClinicalStatement clinicalStatement,
-			SubstanceAdministration substanceAdministration) {
-		EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
-		entryRelationship.setSubstanceAdministration(substanceAdministration);
-		getEntryRelationships(clinicalStatement).add(entryRelationship);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static void addSubstanceAdministration(ClinicalStatement clinicalStatement,
+            SubstanceAdministration substanceAdministration) {
+        EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
+        entryRelationship.setSubstanceAdministration(substanceAdministration);
+        getEntryRelationships(clinicalStatement).add(entryRelationship);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static void addSupply(ClinicalStatement clinicalStatement, Supply supply) {
-		EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
-		entryRelationship.setSupply(supply);
-		getEntryRelationships(clinicalStatement).add(entryRelationship);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static void addSupply(ClinicalStatement clinicalStatement, Supply supply) {
+        EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
+        entryRelationship.setSupply(supply);
+        getEntryRelationships(clinicalStatement).add(entryRelationship);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static EList<Act> getActs(ClinicalStatement clinicalStatement) {
-		List<Act> acts = new ArrayList<Act>();
-		for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
-			if (entryRelationship.getAct() != null) {
-				acts.add(entryRelationship.getAct());
-			}
-		}
-		return new BasicEList.UnmodifiableEList<Act>(acts.size(), acts.toArray());
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static EList<Act> getActs(ClinicalStatement clinicalStatement) {
+        List<Act> acts = new ArrayList<Act>();
+        for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
+            if (entryRelationship.getAct() != null) {
+                acts.add(entryRelationship.getAct());
+            }
+        }
+        return new BasicEList.UnmodifiableEList<Act>(acts.size(), acts.toArray());
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static ClinicalDocument getClinicalDocument(ClinicalStatement clinicalStatement) {
-		return CDAUtil.getClinicalDocument(clinicalStatement);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static ClinicalDocument getClinicalDocument(ClinicalStatement clinicalStatement) {
+        return CDAUtil.getClinicalDocument(clinicalStatement);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static EList<Encounter> getEncounters(ClinicalStatement clinicalStatement) {
-		List<Encounter> encounters = new ArrayList<Encounter>();
-		for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
-			if (entryRelationship.getEncounter() != null) {
-				encounters.add(entryRelationship.getEncounter());
-			}
-		}
-		return new BasicEList.UnmodifiableEList<Encounter>(encounters.size(), encounters.toArray());
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static EList<Encounter> getEncounters(ClinicalStatement clinicalStatement) {
+        List<Encounter> encounters = new ArrayList<Encounter>();
+        for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
+            if (entryRelationship.getEncounter() != null) {
+                encounters.add(entryRelationship.getEncounter());
+            }
+        }
+        return new BasicEList.UnmodifiableEList<Encounter>(encounters.size(), encounters.toArray());
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static EList<ClinicalStatement> getEntryRelationshipTargets(ClinicalStatement clinicalStatement,
-			x_ActRelationshipEntryRelationship typeCode, Object targetClass) {
-		if (targetClass != null && !(targetClass instanceof EClass)) {
-			throw new IllegalArgumentException("targetClass must be an EClass");
-		}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static EList<ClinicalStatement> getEntryRelationshipTargets(ClinicalStatement clinicalStatement,
+            x_ActRelationshipEntryRelationship typeCode, Object targetClass) {
+        if (targetClass != null && !(targetClass instanceof EClass)) {
+            throw new IllegalArgumentException("targetClass must be an EClass");
+        }
 
-		return CDAUtil.getEntryRelationshipTargets(clinicalStatement, typeCode, (EClass) targetClass);
-	}
+        return CDAUtil.getEntryRelationshipTargets(clinicalStatement, typeCode, (EClass) targetClass);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static EList<ClinicalStatement> getEntryRelationshipTargets(ClinicalStatement clinicalStatement,
-			Object targetClass) {
-		return getEntryRelationshipTargets(clinicalStatement, null, targetClass);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static EList<ClinicalStatement> getEntryRelationshipTargets(ClinicalStatement clinicalStatement,
+            Object targetClass) {
+        return getEntryRelationshipTargets(clinicalStatement, null, targetClass);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static EList<Observation> getObservations(ClinicalStatement clinicalStatement) {
-		List<Observation> observations = new ArrayList<Observation>();
-		for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
-			if (entryRelationship.getObservation() != null) {
-				observations.add(entryRelationship.getObservation());
-			}
-		}
-		return new BasicEList.UnmodifiableEList<Observation>(observations.size(), observations.toArray());
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static EList<Observation> getObservations(ClinicalStatement clinicalStatement) {
+        List<Observation> observations = new ArrayList<Observation>();
+        for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
+            if (entryRelationship.getObservation() != null) {
+                observations.add(entryRelationship.getObservation());
+            }
+        }
+        return new BasicEList.UnmodifiableEList<Observation>(observations.size(), observations.toArray());
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static EList<ObservationMedia> getObservationMedia(ClinicalStatement clinicalStatement) {
-		List<ObservationMedia> observationMedia = new ArrayList<ObservationMedia>();
-		for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
-			if (entryRelationship.getObservationMedia() != null) {
-				observationMedia.add(entryRelationship.getObservationMedia());
-			}
-		}
-		return new BasicEList.UnmodifiableEList<ObservationMedia>(observationMedia.size(), observationMedia.toArray());
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static EList<ObservationMedia> getObservationMedia(ClinicalStatement clinicalStatement) {
+        List<ObservationMedia> observationMedia = new ArrayList<ObservationMedia>();
+        for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
+            if (entryRelationship.getObservationMedia() != null) {
+                observationMedia.add(entryRelationship.getObservationMedia());
+            }
+        }
+        return new BasicEList.UnmodifiableEList<ObservationMedia>(observationMedia.size(), observationMedia.toArray());
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static EList<Organizer> getOrganizers(ClinicalStatement clinicalStatement) {
-		List<Organizer> organizers = new ArrayList<Organizer>();
-		for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
-			if (entryRelationship.getOrganizer() != null) {
-				organizers.add(entryRelationship.getOrganizer());
-			}
-		}
-		return new BasicEList.UnmodifiableEList<Organizer>(organizers.size(), organizers.toArray());
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static EList<Organizer> getOrganizers(ClinicalStatement clinicalStatement) {
+        List<Organizer> organizers = new ArrayList<Organizer>();
+        for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
+            if (entryRelationship.getOrganizer() != null) {
+                organizers.add(entryRelationship.getOrganizer());
+            }
+        }
+        return new BasicEList.UnmodifiableEList<Organizer>(organizers.size(), organizers.toArray());
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static EList<Procedure> getProcedures(ClinicalStatement clinicalStatement) {
-		List<Procedure> procedures = new ArrayList<Procedure>();
-		for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
-			if (entryRelationship.getProcedure() != null) {
-				procedures.add(entryRelationship.getProcedure());
-			}
-		}
-		return new BasicEList.UnmodifiableEList<Procedure>(procedures.size(), procedures.toArray());
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static EList<Procedure> getProcedures(ClinicalStatement clinicalStatement) {
+        List<Procedure> procedures = new ArrayList<Procedure>();
+        for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
+            if (entryRelationship.getProcedure() != null) {
+                procedures.add(entryRelationship.getProcedure());
+            }
+        }
+        return new BasicEList.UnmodifiableEList<Procedure>(procedures.size(), procedures.toArray());
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static EList<RegionOfInterest> getRegionsOfInterest(ClinicalStatement clinicalStatement) {
-		List<RegionOfInterest> regionsOfInterest = new ArrayList<RegionOfInterest>();
-		for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
-			if (entryRelationship.getRegionOfInterest() != null) {
-				regionsOfInterest.add(entryRelationship.getRegionOfInterest());
-			}
-		}
-		return new BasicEList.UnmodifiableEList<RegionOfInterest>(regionsOfInterest.size(), regionsOfInterest.toArray());
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static EList<RegionOfInterest> getRegionsOfInterest(ClinicalStatement clinicalStatement) {
+        List<RegionOfInterest> regionsOfInterest = new ArrayList<RegionOfInterest>();
+        for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
+            if (entryRelationship.getRegionOfInterest() != null) {
+                regionsOfInterest.add(entryRelationship.getRegionOfInterest());
+            }
+        }
+        return new BasicEList.UnmodifiableEList<RegionOfInterest>(regionsOfInterest.size(), regionsOfInterest.toArray());
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static Section getSection(ClinicalStatement clinicalStatement) {
-		return CDAUtil.getSection(clinicalStatement);
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static Section getSection(ClinicalStatement clinicalStatement) {
+        return CDAUtil.getSection(clinicalStatement);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static EList<SubstanceAdministration> getSubstanceAdministrations(ClinicalStatement clinicalStatement) {
-		List<SubstanceAdministration> substanceAdministrations = new ArrayList<SubstanceAdministration>();
-		for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
-			if (entryRelationship.getSubstanceAdministration() != null) {
-				substanceAdministrations.add(entryRelationship.getSubstanceAdministration());
-			}
-		}
-		return new BasicEList.UnmodifiableEList<SubstanceAdministration>(
-			substanceAdministrations.size(), substanceAdministrations.toArray());
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static EList<SubstanceAdministration> getSubstanceAdministrations(ClinicalStatement clinicalStatement) {
+        List<SubstanceAdministration> substanceAdministrations = new ArrayList<SubstanceAdministration>();
+        for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
+            if (entryRelationship.getSubstanceAdministration() != null) {
+                substanceAdministrations.add(entryRelationship.getSubstanceAdministration());
+            }
+        }
+        return new BasicEList.UnmodifiableEList<SubstanceAdministration>(
+                substanceAdministrations.size(), substanceAdministrations.toArray());
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static EList<Supply> getSupplies(ClinicalStatement clinicalStatement) {
-		List<Supply> supplies = new ArrayList<Supply>();
-		for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
-			if (entryRelationship.getSupply() != null) {
-				supplies.add(entryRelationship.getSupply());
-			}
-		}
-		return new BasicEList.UnmodifiableEList<Supply>(supplies.size(), supplies.toArray());
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static EList<Supply> getSupplies(ClinicalStatement clinicalStatement) {
+        List<Supply> supplies = new ArrayList<Supply>();
+        for (EntryRelationship entryRelationship : getEntryRelationships(clinicalStatement)) {
+            if (entryRelationship.getSupply() != null) {
+                supplies.add(entryRelationship.getSupply());
+            }
+        }
+        return new BasicEList.UnmodifiableEList<Supply>(supplies.size(), supplies.toArray());
+    }
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #hasActTemplate(ClinicalStatement, java.lang.String) <em>Has Act Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasActTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HAS_ACT_TEMPLATE__STRING__EOCL_EXP = "self.getActs()->exists(act : cda::Act | act.hasTemplateId(templateId))";
+    protected static final String HAS_ACT_TEMPLATE__STRING__EOCL_EXP = "self.getActs()->exists(act : cda::Act | act.hasTemplateId(templateId))";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #hasActTemplate(ClinicalStatement, java.lang.String) <em>Has Act Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasActTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> HAS_ACT_TEMPLATE__STRING__EOCL_QRY;
+    protected static OCLExpression<EClassifier> HAS_ACT_TEMPLATE__STRING__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static boolean hasActTemplate(ClinicalStatement clinicalStatement, String templateId) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static boolean hasActTemplate(ClinicalStatement clinicalStatement, String templateId) {
 		if (HAS_ACT_TEMPLATE__STRING__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDAPackage.Literals.CLINICAL_STATEMENT,
-				CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(38));
+			helper.setOperationContext(CDAPackage.Literals.CLINICAL_STATEMENT, CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(38));
 			try {
 				HAS_ACT_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_ACT_TEMPLATE__STRING__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -453,56 +452,54 @@ public class ClinicalStatementOperations extends ActOperations {
 		return ((Boolean) query.evaluate(clinicalStatement)).booleanValue();
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	public static boolean hasCode(ClinicalStatement clinicalStatement, String code, String codeSystem,
-			String codeSystemName) {
-		CD cd = (CD) clinicalStatement.eGet(clinicalStatement.eClass().getEStructuralFeature("code"));
-		if (cd == null || code == null || codeSystem == null || codeSystemName == null) {
-			return false;
-		}
-		return code.equals(cd.getCode()) && codeSystem.equals(cd.getCodeSystem()) &&
-				codeSystemName.equals(cd.getCodeSystemName());
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    public static boolean hasCode(ClinicalStatement clinicalStatement, String code, String codeSystem,
+            String codeSystemName) {
+        CD cd = (CD) clinicalStatement.eGet(clinicalStatement.eClass().getEStructuralFeature("code"));
+        if (cd == null || code == null || codeSystem == null || codeSystemName == null) {
+            return false;
+        }
+        return code.equals(cd.getCode()) && codeSystem.equals(cd.getCodeSystem())
+                && codeSystemName.equals(cd.getCodeSystemName());
+    }
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #hasEncounterTemplate(ClinicalStatement, java.lang.String) <em>Has Encounter Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasEncounterTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_EXP = "self.getEncounters()->exists(enc : cda::Encounter | enc.hasTemplateId(templateId))";
+    protected static final String HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_EXP = "self.getEncounters()->exists(enc : cda::Encounter | enc.hasTemplateId(templateId))";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #hasEncounterTemplate(ClinicalStatement, java.lang.String) <em>Has Encounter Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasEncounterTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_QRY;
+    protected static OCLExpression<EClassifier> HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static boolean hasEncounterTemplate(ClinicalStatement clinicalStatement, String templateId) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static boolean hasEncounterTemplate(ClinicalStatement clinicalStatement, String templateId) {
 		if (HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDAPackage.Literals.CLINICAL_STATEMENT,
-				CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(40));
+			helper.setOperationContext(CDAPackage.Literals.CLINICAL_STATEMENT, CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(40));
 			try {
 				HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -512,40 +509,38 @@ public class ClinicalStatementOperations extends ActOperations {
 		return ((Boolean) query.evaluate(clinicalStatement)).booleanValue();
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #hasObservationMediaTemplate(ClinicalStatement, java.lang.String) <em>Has Observation Media Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasObservationMediaTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_EXP = "self.getObservationMedia()->exists(media : cda::ObservationMedia | media.hasTemplateId(templateId))";
+    protected static final String HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_EXP = "self.getObservationMedia()->exists(media : cda::ObservationMedia | media.hasTemplateId(templateId))";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #hasObservationMediaTemplate(ClinicalStatement, java.lang.String) <em>Has Observation Media Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasObservationMediaTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_QRY;
+    protected static OCLExpression<EClassifier> HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static boolean hasObservationMediaTemplate(ClinicalStatement clinicalStatement, String templateId) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static boolean hasObservationMediaTemplate(ClinicalStatement clinicalStatement, String templateId) {
 		if (HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDAPackage.Literals.CLINICAL_STATEMENT,
-				CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(41));
+			helper.setOperationContext(CDAPackage.Literals.CLINICAL_STATEMENT, CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(41));
 			try {
 				HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -555,40 +550,38 @@ public class ClinicalStatementOperations extends ActOperations {
 		return ((Boolean) query.evaluate(clinicalStatement)).booleanValue();
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #hasObservationTemplate(ClinicalStatement, java.lang.String) <em>Has Observation Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasObservationTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HAS_OBSERVATION_TEMPLATE__STRING__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.hasTemplateId(templateId))";
+    protected static final String HAS_OBSERVATION_TEMPLATE__STRING__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.hasTemplateId(templateId))";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #hasObservationTemplate(ClinicalStatement, java.lang.String) <em>Has Observation Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasObservationTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> HAS_OBSERVATION_TEMPLATE__STRING__EOCL_QRY;
+    protected static OCLExpression<EClassifier> HAS_OBSERVATION_TEMPLATE__STRING__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static boolean hasObservationTemplate(ClinicalStatement clinicalStatement, String templateId) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static boolean hasObservationTemplate(ClinicalStatement clinicalStatement, String templateId) {
 		if (HAS_OBSERVATION_TEMPLATE__STRING__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDAPackage.Literals.CLINICAL_STATEMENT,
-				CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(42));
+			helper.setOperationContext(CDAPackage.Literals.CLINICAL_STATEMENT, CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(42));
 			try {
 				HAS_OBSERVATION_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_OBSERVATION_TEMPLATE__STRING__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -598,40 +591,38 @@ public class ClinicalStatementOperations extends ActOperations {
 		return ((Boolean) query.evaluate(clinicalStatement)).booleanValue();
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #hasOrganizerTemplate(ClinicalStatement, java.lang.String) <em>Has Organizer Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasOrganizerTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HAS_ORGANIZER_TEMPLATE__STRING__EOCL_EXP = "self.getOrganizers()->exists(org : cda::Organizer | org.hasTemplateId(templateId))";
+    protected static final String HAS_ORGANIZER_TEMPLATE__STRING__EOCL_EXP = "self.getOrganizers()->exists(org : cda::Organizer | org.hasTemplateId(templateId))";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #hasOrganizerTemplate(ClinicalStatement, java.lang.String) <em>Has Organizer Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasOrganizerTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> HAS_ORGANIZER_TEMPLATE__STRING__EOCL_QRY;
+    protected static OCLExpression<EClassifier> HAS_ORGANIZER_TEMPLATE__STRING__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static boolean hasOrganizerTemplate(ClinicalStatement clinicalStatement, String templateId) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static boolean hasOrganizerTemplate(ClinicalStatement clinicalStatement, String templateId) {
 		if (HAS_ORGANIZER_TEMPLATE__STRING__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDAPackage.Literals.CLINICAL_STATEMENT,
-				CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(43));
+			helper.setOperationContext(CDAPackage.Literals.CLINICAL_STATEMENT, CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(43));
 			try {
 				HAS_ORGANIZER_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_ORGANIZER_TEMPLATE__STRING__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -641,40 +632,38 @@ public class ClinicalStatementOperations extends ActOperations {
 		return ((Boolean) query.evaluate(clinicalStatement)).booleanValue();
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #hasProcedureTemplate(ClinicalStatement, java.lang.String) <em>Has Procedure Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasProcedureTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HAS_PROCEDURE_TEMPLATE__STRING__EOCL_EXP = "self.getProcedures()->exists(proc : cda::Procedure | proc.hasTemplateId(templateId))";
+    protected static final String HAS_PROCEDURE_TEMPLATE__STRING__EOCL_EXP = "self.getProcedures()->exists(proc : cda::Procedure | proc.hasTemplateId(templateId))";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #hasProcedureTemplate(ClinicalStatement, java.lang.String) <em>Has Procedure Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasProcedureTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> HAS_PROCEDURE_TEMPLATE__STRING__EOCL_QRY;
+    protected static OCLExpression<EClassifier> HAS_PROCEDURE_TEMPLATE__STRING__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static boolean hasProcedureTemplate(ClinicalStatement clinicalStatement, String templateId) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static boolean hasProcedureTemplate(ClinicalStatement clinicalStatement, String templateId) {
 		if (HAS_PROCEDURE_TEMPLATE__STRING__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDAPackage.Literals.CLINICAL_STATEMENT,
-				CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(44));
+			helper.setOperationContext(CDAPackage.Literals.CLINICAL_STATEMENT, CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(44));
 			try {
 				HAS_PROCEDURE_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_PROCEDURE_TEMPLATE__STRING__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -684,40 +673,38 @@ public class ClinicalStatementOperations extends ActOperations {
 		return ((Boolean) query.evaluate(clinicalStatement)).booleanValue();
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #hasRegionOfInterestTemplate(ClinicalStatement, java.lang.String) <em>Has Region Of Interest Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasRegionOfInterestTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_EXP = "self.getRegionsOfInterest()->exists(reg : cda::RegionOfInterest | reg.hasTemplateId(templateId))";
+    protected static final String HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_EXP = "self.getRegionsOfInterest()->exists(reg : cda::RegionOfInterest | reg.hasTemplateId(templateId))";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #hasRegionOfInterestTemplate(ClinicalStatement, java.lang.String) <em>Has Region Of Interest Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasRegionOfInterestTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_QRY;
+    protected static OCLExpression<EClassifier> HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static boolean hasRegionOfInterestTemplate(ClinicalStatement clinicalStatement, String templateId) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static boolean hasRegionOfInterestTemplate(ClinicalStatement clinicalStatement, String templateId) {
 		if (HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDAPackage.Literals.CLINICAL_STATEMENT,
-				CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(45));
+			helper.setOperationContext(CDAPackage.Literals.CLINICAL_STATEMENT, CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(45));
 			try {
 				HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -727,40 +714,38 @@ public class ClinicalStatementOperations extends ActOperations {
 		return ((Boolean) query.evaluate(clinicalStatement)).booleanValue();
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #hasSubstanceAdministrationTemplate(ClinicalStatement, java.lang.String) <em>Has Substance Administration Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasSubstanceAdministrationTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_EXP = "self.getSubstanceAdministrations()->exists(sub : cda::SubstanceAdministration | sub.hasTemplateId(templateId))";
+    protected static final String HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_EXP = "self.getSubstanceAdministrations()->exists(sub : cda::SubstanceAdministration | sub.hasTemplateId(templateId))";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #hasSubstanceAdministrationTemplate(ClinicalStatement, java.lang.String) <em>Has Substance Administration Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasSubstanceAdministrationTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_QRY;
+    protected static OCLExpression<EClassifier> HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static boolean hasSubstanceAdministrationTemplate(ClinicalStatement clinicalStatement, String templateId) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static boolean hasSubstanceAdministrationTemplate(ClinicalStatement clinicalStatement, String templateId) {
 		if (HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDAPackage.Literals.CLINICAL_STATEMENT,
-				CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(46));
+			helper.setOperationContext(CDAPackage.Literals.CLINICAL_STATEMENT, CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(46));
 			try {
 				HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -770,40 +755,38 @@ public class ClinicalStatementOperations extends ActOperations {
 		return ((Boolean) query.evaluate(clinicalStatement)).booleanValue();
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #hasSupplyTemplate(ClinicalStatement, java.lang.String) <em>Has Supply Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasSupplyTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HAS_SUPPLY_TEMPLATE__STRING__EOCL_EXP = "self.getSupplies()->exists(sup : cda::Supply | sup.hasTemplateId(templateId))";
+    protected static final String HAS_SUPPLY_TEMPLATE__STRING__EOCL_EXP = "self.getSupplies()->exists(sup : cda::Supply | sup.hasTemplateId(templateId))";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #hasSupplyTemplate(ClinicalStatement, java.lang.String) <em>Has Supply Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #hasSupplyTemplate(ClinicalStatement, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> HAS_SUPPLY_TEMPLATE__STRING__EOCL_QRY;
+    protected static OCLExpression<EClassifier> HAS_SUPPLY_TEMPLATE__STRING__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static boolean hasSupplyTemplate(ClinicalStatement clinicalStatement, String templateId) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static boolean hasSupplyTemplate(ClinicalStatement clinicalStatement, String templateId) {
 		if (HAS_SUPPLY_TEMPLATE__STRING__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDAPackage.Literals.CLINICAL_STATEMENT,
-				CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(47));
+			helper.setOperationContext(CDAPackage.Literals.CLINICAL_STATEMENT, CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(47));
 			try {
 				HAS_SUPPLY_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_SUPPLY_TEMPLATE__STRING__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -813,56 +796,54 @@ public class ClinicalStatementOperations extends ActOperations {
 		return ((Boolean) query.evaluate(clinicalStatement)).booleanValue();
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean hasTemplateId(ClinicalStatement clinicalStatement, String templateId) {
-		for (II ii : (List<II>) clinicalStatement.eGet(clinicalStatement.eClass().getEStructuralFeature("templateId"))) {
-			if (templateId.equals(ii.getRoot())) {
-				return true;
-			}
-		}
-		return false;
-	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     *
+     * @generated NOT
+     */
+    @SuppressWarnings("unchecked")
+    public static boolean hasTemplateId(ClinicalStatement clinicalStatement, String templateId) {
+        for (II ii : (List<II>) clinicalStatement.eGet(clinicalStatement.eClass().getEStructuralFeature("templateId"))) {
+            if (templateId.equals(ii.getRoot())) {
+                return true;
+            }
+        }
+        return false;
+    }
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #getParticipantRoles(ClinicalStatement) <em>Get Participant Roles</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getParticipantRoles(ClinicalStatement)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PARTICIPANT_ROLES__EOCL_EXP = "self.participant.participantRole->excluding(null)";
+    protected static final String GET_PARTICIPANT_ROLES__EOCL_EXP = "self.participant.participantRole->excluding(null)";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #getParticipantRoles(ClinicalStatement) <em>Get Participant Roles</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getParticipantRoles(ClinicalStatement)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PARTICIPANT_ROLES__EOCL_QRY;
+    protected static OCLExpression<EClassifier> GET_PARTICIPANT_ROLES__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static EList<ParticipantRole> getParticipantRoles(ClinicalStatement clinicalStatement) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static EList<ParticipantRole> getParticipantRoles(ClinicalStatement clinicalStatement) {
 		if (GET_PARTICIPANT_ROLES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDAPackage.Literals.CLINICAL_STATEMENT,
-				CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(49));
+			helper.setOperationContext(CDAPackage.Literals.CLINICAL_STATEMENT, CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(49));
 			try {
 				GET_PARTICIPANT_ROLES__EOCL_QRY = helper.createQuery(GET_PARTICIPANT_ROLES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -872,40 +853,38 @@ public class ClinicalStatementOperations extends ActOperations {
 		return new BasicEList.UnmodifiableEList<ParticipantRole>(result.size(), result.toArray());
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #getAssignedEntities(ClinicalStatement) <em>Get Assigned Entities</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getAssignedEntities(ClinicalStatement)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ASSIGNED_ENTITIES__EOCL_EXP = "self.performer.assignedEntity->excluding(null)";
+    protected static final String GET_ASSIGNED_ENTITIES__EOCL_EXP = "self.performer.assignedEntity->excluding(null)";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #getAssignedEntities(ClinicalStatement) <em>Get Assigned Entities</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getAssignedEntities(ClinicalStatement)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ASSIGNED_ENTITIES__EOCL_QRY;
+    protected static OCLExpression<EClassifier> GET_ASSIGNED_ENTITIES__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static EList<AssignedEntity> getAssignedEntities(ClinicalStatement clinicalStatement) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static EList<AssignedEntity> getAssignedEntities(ClinicalStatement clinicalStatement) {
 		if (GET_ASSIGNED_ENTITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				CDAPackage.Literals.CLINICAL_STATEMENT,
-				CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(50));
+			helper.setOperationContext(CDAPackage.Literals.CLINICAL_STATEMENT, CDAPackage.Literals.CLINICAL_STATEMENT.getEAllOperations().get(50));
 			try {
 				GET_ASSIGNED_ENTITIES__EOCL_QRY = helper.createQuery(GET_ASSIGNED_ENTITIES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

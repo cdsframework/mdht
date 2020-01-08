@@ -489,6 +489,24 @@
         <details key="kind" value="element"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sDTCDeceasedInd" ordered="false"
+        eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//BL"
+        containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="deceasedInd"/>
+        <details key="namespace" value="urn:hl7-org:sdtc"/>
+        <details key="kind" value="element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sDTCDeceasedTime" ordered="false"
+        eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//TS"
+        containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="name" value="deceasedTime"/>
+        <details key="namespace" value="urn:hl7-org:sdtc"/>
+        <details key="kind" value="element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="maritalStatusCode" ordered="false"
         eType="ecore:EClass http://www.openhealthtools.org/mdht/uml/hl7/datatypes#//CE"
         containment="true">

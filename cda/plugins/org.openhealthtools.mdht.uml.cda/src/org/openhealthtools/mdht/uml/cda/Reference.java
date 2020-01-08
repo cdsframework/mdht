@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda;
 
 import java.util.Map;
@@ -47,31 +47,32 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference
  * @generated
  */
 public interface Reference extends ActRelationship {
-	/**
+
+    /**
 	 * Returns the value of the '<em><b>Realm Code</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.CS}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Realm Code</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Realm Code</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Realm Code</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getReference_RealmCode()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<CS> getRealmCodes();
+    EList<CS> getRealmCodes();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Type Id</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Id</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Type Id</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Id</em>' containment reference.
 	 * @see #setTypeId(InfrastructureRootTypeId)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getReference_TypeId()
@@ -79,43 +80,43 @@ public interface Reference extends ActRelationship {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	InfrastructureRootTypeId getTypeId();
+    InfrastructureRootTypeId getTypeId();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getTypeId <em>Type Id</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type Id</em>' containment reference.
 	 * @see #getTypeId()
 	 * @generated
 	 */
-	void setTypeId(InfrastructureRootTypeId value);
+    void setTypeId(InfrastructureRootTypeId value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Template Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.II}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Template Id</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Template Id</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Template Id</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getReference_TemplateId()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<II> getTemplateIds();
+    EList<II> getTemplateIds();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Seperatable Ind</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Seperatable Ind</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Seperatable Ind</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Seperatable Ind</em>' containment reference.
 	 * @see #setSeperatableInd(BL)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getReference_SeperatableInd()
@@ -123,26 +124,26 @@ public interface Reference extends ActRelationship {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	BL getSeperatableInd();
+    BL getSeperatableInd();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getSeperatableInd <em>Seperatable Ind</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Seperatable Ind</em>' containment reference.
 	 * @see #getSeperatableInd()
 	 * @generated
 	 */
-	void setSeperatableInd(BL value);
+    void setSeperatableInd(BL value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>External Act</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>External Act</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>External Act</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>External Act</em>' containment reference.
 	 * @see #setExternalAct(ExternalAct)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getReference_ExternalAct()
@@ -150,26 +151,27 @@ public interface Reference extends ActRelationship {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ExternalAct getExternalAct();
+    ExternalAct getExternalAct();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getExternalAct <em>External Act</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>External Act</em>' containment reference.
 	 * @see #getExternalAct()
 	 * @generated
 	 */
-	void setExternalAct(ExternalAct value);
+    void setExternalAct(ExternalAct value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>External Observation</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>External Observation</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>External Observation</em>' containment
+     * reference isn't clear, there really should be more of a description
+     * here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>External Observation</em>' containment reference.
 	 * @see #setExternalObservation(ExternalObservation)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getReference_ExternalObservation()
@@ -177,26 +179,26 @@ public interface Reference extends ActRelationship {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ExternalObservation getExternalObservation();
+    ExternalObservation getExternalObservation();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getExternalObservation <em>External Observation</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>External Observation</em>' containment reference.
 	 * @see #getExternalObservation()
 	 * @generated
 	 */
-	void setExternalObservation(ExternalObservation value);
+    void setExternalObservation(ExternalObservation value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>External Procedure</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>External Procedure</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>External Procedure</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>External Procedure</em>' containment reference.
 	 * @see #setExternalProcedure(ExternalProcedure)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getReference_ExternalProcedure()
@@ -204,26 +206,26 @@ public interface Reference extends ActRelationship {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ExternalProcedure getExternalProcedure();
+    ExternalProcedure getExternalProcedure();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getExternalProcedure <em>External Procedure</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>External Procedure</em>' containment reference.
 	 * @see #getExternalProcedure()
 	 * @generated
 	 */
-	void setExternalProcedure(ExternalProcedure value);
+    void setExternalProcedure(ExternalProcedure value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>External Document</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>External Document</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>External Document</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>External Document</em>' containment reference.
 	 * @see #setExternalDocument(ExternalDocument)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getReference_ExternalDocument()
@@ -231,27 +233,27 @@ public interface Reference extends ActRelationship {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ExternalDocument getExternalDocument();
+    ExternalDocument getExternalDocument();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getExternalDocument <em>External Document</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>External Document</em>' containment reference.
 	 * @see #getExternalDocument()
 	 * @generated
 	 */
-	void setExternalDocument(ExternalDocument value);
+    void setExternalDocument(ExternalDocument value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Null Flavor</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -261,12 +263,12 @@ public interface Reference extends ActRelationship {
 	 * @model unsettable="true" ordered="false"
 	 * @generated
 	 */
-	NullFlavor getNullFlavor();
+    NullFlavor getNullFlavor();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -274,40 +276,40 @@ public interface Reference extends ActRelationship {
 	 * @see #getNullFlavor()
 	 * @generated
 	 */
-	void setNullFlavor(NullFlavor value);
+    void setNullFlavor(NullFlavor value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	void unsetNullFlavor();
+    void unsetNullFlavor();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getNullFlavor <em>Null Flavor</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Null Flavor</em>' attribute is set.
 	 * @see #unsetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	boolean isSetNullFlavor();
+    boolean isSetNullFlavor();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Type Code</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Type Code</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference
 	 * @see #isSetTypeCode()
@@ -317,12 +319,12 @@ public interface Reference extends ActRelationship {
 	 * @model unsettable="true" required="true" ordered="false"
 	 * @generated
 	 */
-	x_ActRelationshipExternalReference getTypeCode();
+    x_ActRelationshipExternalReference getTypeCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getTypeCode <em>Type Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference
 	 * @see #isSetTypeCode()
@@ -330,34 +332,34 @@ public interface Reference extends ActRelationship {
 	 * @see #getTypeCode()
 	 * @generated
 	 */
-	void setTypeCode(x_ActRelationshipExternalReference value);
+    void setTypeCode(x_ActRelationshipExternalReference value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getTypeCode <em>Type Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetTypeCode()
 	 * @see #getTypeCode()
 	 * @see #setTypeCode(x_ActRelationshipExternalReference)
 	 * @generated
 	 */
-	void unsetTypeCode();
+    void unsetTypeCode();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Reference#getTypeCode <em>Type Code</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Type Code</em>' attribute is set.
 	 * @see #unsetTypeCode()
 	 * @see #getTypeCode()
 	 * @see #setTypeCode(x_ActRelationshipExternalReference)
 	 * @generated
 	 */
-	boolean isSetTypeCode();
+    boolean isSetTypeCode();
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -365,6 +367,6 @@ public interface Reference extends ActRelationship {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='Bag{self.externalAct.oclIsUndefined(), self.externalDocument.oclIsUndefined(), self.externalObservation.oclIsUndefined(), self.externalProcedure.oclIsUndefined()}->one(x | x = false)'"
 	 * @generated
 	 */
-	boolean validateExternalActChoice(DiagnosticChain diagnostics, Map<Object, Object> context);
+    boolean validateExternalActChoice(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // Reference

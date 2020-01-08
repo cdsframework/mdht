@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda;
 
 import java.util.Map;
@@ -48,31 +48,32 @@ import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
  * @generated
  */
 public interface Device extends Entity {
-	/**
+
+    /**
 	 * Returns the value of the '<em><b>Realm Code</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.CS}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Realm Code</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Realm Code</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Realm Code</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getDevice_RealmCode()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<CS> getRealmCodes();
+    EList<CS> getRealmCodes();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Type Id</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Id</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Type Id</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Id</em>' containment reference.
 	 * @see #setTypeId(InfrastructureRootTypeId)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getDevice_TypeId()
@@ -80,43 +81,43 @@ public interface Device extends Entity {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	InfrastructureRootTypeId getTypeId();
+    InfrastructureRootTypeId getTypeId();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getTypeId <em>Type Id</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type Id</em>' containment reference.
 	 * @see #getTypeId()
 	 * @generated
 	 */
-	void setTypeId(InfrastructureRootTypeId value);
+    void setTypeId(InfrastructureRootTypeId value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Template Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.II}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Template Id</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Template Id</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Template Id</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getDevice_TemplateId()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<II> getTemplateIds();
+    EList<II> getTemplateIds();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Code</em>' containment reference isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Code</em>' containment reference.
 	 * @see #setCode(CE)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getDevice_Code()
@@ -124,26 +125,27 @@ public interface Device extends Entity {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	CE getCode();
+    CE getCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getCode <em>Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Code</em>' containment reference.
 	 * @see #getCode()
 	 * @generated
 	 */
-	void setCode(CE value);
+    void setCode(CE value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Manufacturer Model Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Manufacturer Model Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Manufacturer Model Name</em>' containment
+     * reference isn't clear, there really should be more of a description
+     * here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Manufacturer Model Name</em>' containment reference.
 	 * @see #setManufacturerModelName(SC)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getDevice_ManufacturerModelName()
@@ -151,26 +153,26 @@ public interface Device extends Entity {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	SC getManufacturerModelName();
+    SC getManufacturerModelName();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getManufacturerModelName <em>Manufacturer Model Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Manufacturer Model Name</em>' containment reference.
 	 * @see #getManufacturerModelName()
 	 * @generated
 	 */
-	void setManufacturerModelName(SC value);
+    void setManufacturerModelName(SC value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Software Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Software Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Software Name</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Software Name</em>' containment reference.
 	 * @see #setSoftwareName(SC)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getDevice_SoftwareName()
@@ -178,27 +180,27 @@ public interface Device extends Entity {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	SC getSoftwareName();
+    SC getSoftwareName();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getSoftwareName <em>Software Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Software Name</em>' containment reference.
 	 * @see #getSoftwareName()
 	 * @generated
 	 */
-	void setSoftwareName(SC value);
+    void setSoftwareName(SC value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Null Flavor</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -208,12 +210,12 @@ public interface Device extends Entity {
 	 * @model unsettable="true" ordered="false"
 	 * @generated
 	 */
-	NullFlavor getNullFlavor();
+    NullFlavor getNullFlavor();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -221,41 +223,41 @@ public interface Device extends Entity {
 	 * @see #getNullFlavor()
 	 * @generated
 	 */
-	void setNullFlavor(NullFlavor value);
+    void setNullFlavor(NullFlavor value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	void unsetNullFlavor();
+    void unsetNullFlavor();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getNullFlavor <em>Null Flavor</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Null Flavor</em>' attribute is set.
 	 * @see #unsetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	boolean isSetNullFlavor();
+    boolean isSetNullFlavor();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Class Code</b></em>' attribute.
 	 * The default value is <code>"DEV"</code>.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.EntityClassDevice}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Class Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Class Code</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Class Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityClassDevice
 	 * @see #isSetClassCode()
@@ -265,12 +267,12 @@ public interface Device extends Entity {
 	 * @model default="DEV" unsettable="true" ordered="false"
 	 * @generated
 	 */
-	EntityClassDevice getClassCode();
+    EntityClassDevice getClassCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getClassCode <em>Class Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Class Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityClassDevice
 	 * @see #isSetClassCode()
@@ -278,41 +280,41 @@ public interface Device extends Entity {
 	 * @see #getClassCode()
 	 * @generated
 	 */
-	void setClassCode(EntityClassDevice value);
+    void setClassCode(EntityClassDevice value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getClassCode <em>Class Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetClassCode()
 	 * @see #getClassCode()
 	 * @see #setClassCode(EntityClassDevice)
 	 * @generated
 	 */
-	void unsetClassCode();
+    void unsetClassCode();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getClassCode <em>Class Code</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Class Code</em>' attribute is set.
 	 * @see #unsetClassCode()
 	 * @see #getClassCode()
 	 * @see #setClassCode(EntityClassDevice)
 	 * @generated
 	 */
-	boolean isSetClassCode();
+    boolean isSetClassCode();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Determiner Code</b></em>' attribute.
 	 * The default value is <code>"INSTANCE"</code>.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.EntityDeterminer}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Determiner Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Determiner Code</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Determiner Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityDeterminer
 	 * @see #isSetDeterminerCode()
@@ -322,12 +324,12 @@ public interface Device extends Entity {
 	 * @model default="INSTANCE" unsettable="true" ordered="false"
 	 * @generated
 	 */
-	EntityDeterminer getDeterminerCode();
+    EntityDeterminer getDeterminerCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getDeterminerCode <em>Determiner Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Determiner Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityDeterminer
 	 * @see #isSetDeterminerCode()
@@ -335,34 +337,34 @@ public interface Device extends Entity {
 	 * @see #getDeterminerCode()
 	 * @generated
 	 */
-	void setDeterminerCode(EntityDeterminer value);
+    void setDeterminerCode(EntityDeterminer value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getDeterminerCode <em>Determiner Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetDeterminerCode()
 	 * @see #getDeterminerCode()
 	 * @see #setDeterminerCode(EntityDeterminer)
 	 * @generated
 	 */
-	void unsetDeterminerCode();
+    void unsetDeterminerCode();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Device#getDeterminerCode <em>Determiner Code</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Determiner Code</em>' attribute is set.
 	 * @see #unsetDeterminerCode()
 	 * @see #getDeterminerCode()
 	 * @see #setDeterminerCode(EntityDeterminer)
 	 * @generated
 	 */
-	boolean isSetDeterminerCode();
+    boolean isSetDeterminerCode();
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -370,6 +372,6 @@ public interface Device extends Entity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.isDeterminerCodeDefined() implies self.determinerCode=vocab::EntityDeterminer::INSTANCE'"
 	 * @generated
 	 */
-	boolean validateDeterminerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+    boolean validateDeterminerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // Device

@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.internal.resource;
 
 import org.eclipse.emf.ecore.EClass;
@@ -19,22 +19,23 @@ import org.openhealthtools.mdht.emf.runtime.resource.impl.FleXMLSaveImpl;
 import org.w3c.dom.Element;
 
 public class CDASaveImpl extends FleXMLSaveImpl {
-	public CDASaveImpl(XMLHelper helper) {
-		super(helper);
-	}
 
-	@Override
-	protected boolean shouldSaveFeature(EObject o, EStructuralFeature f) {
-		return o.eIsSet(f) || (keepDefaults && f.getDefaultValueLiteral() != null && f.getLowerBound() > 0);
-	}
+    public CDASaveImpl(XMLHelper helper) {
+        super(helper);
+    }
 
-	@Override
-	protected void saveTypeAttribute(EClass eClass) {
-		declareXSI = true;
-		if (!toDOM) {
-			doc.addAttribute("xsi:type", eClass.getName());
-		} else {
-			((Element) currentNode).setAttributeNS(XMLResource.XSI_URI, "xsi:type", eClass.getName());
-		}
-	}
+    @Override
+    protected boolean shouldSaveFeature(EObject o, EStructuralFeature f) {
+        return o.eIsSet(f) || (keepDefaults && f.getDefaultValueLiteral() != null && f.getLowerBound() > 0);
+    }
+
+    @Override
+    protected void saveTypeAttribute(EClass eClass) {
+        declareXSI = true;
+        if (!toDOM) {
+            doc.addAttribute("xsi:type", eClass.getName());
+        } else {
+            ((Element) currentNode).setAttributeNS(XMLResource.XSI_URI, "xsi:type", eClass.getName());
+        }
+    }
 }

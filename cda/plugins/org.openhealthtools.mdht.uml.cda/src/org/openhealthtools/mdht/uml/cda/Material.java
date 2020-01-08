@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda;
 
 import java.util.Map;
@@ -49,31 +49,32 @@ import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
  * @generated
  */
 public interface Material extends Entity {
-	/**
+
+    /**
 	 * Returns the value of the '<em><b>Realm Code</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.CS}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Realm Code</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Realm Code</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Realm Code</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getMaterial_RealmCode()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<CS> getRealmCodes();
+    EList<CS> getRealmCodes();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Type Id</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Id</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Type Id</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Id</em>' containment reference.
 	 * @see #setTypeId(InfrastructureRootTypeId)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getMaterial_TypeId()
@@ -81,43 +82,43 @@ public interface Material extends Entity {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	InfrastructureRootTypeId getTypeId();
+    InfrastructureRootTypeId getTypeId();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getTypeId <em>Type Id</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type Id</em>' containment reference.
 	 * @see #getTypeId()
 	 * @generated
 	 */
-	void setTypeId(InfrastructureRootTypeId value);
+    void setTypeId(InfrastructureRootTypeId value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Template Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.II}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Template Id</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Template Id</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Template Id</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getMaterial_TemplateId()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<II> getTemplateIds();
+    EList<II> getTemplateIds();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Code</em>' containment reference isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Code</em>' containment reference.
 	 * @see #setCode(CE)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getMaterial_Code()
@@ -125,26 +126,26 @@ public interface Material extends Entity {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	CE getCode();
+    CE getCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getCode <em>Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Code</em>' containment reference.
 	 * @see #getCode()
 	 * @generated
 	 */
-	void setCode(CE value);
+    void setCode(CE value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Name</em>' containment reference isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(EN)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getMaterial_Name()
@@ -152,26 +153,26 @@ public interface Material extends Entity {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EN getName();
+    EN getName();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getName <em>Name</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' containment reference.
 	 * @see #getName()
 	 * @generated
 	 */
-	void setName(EN value);
+    void setName(EN value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Lot Number Text</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Lot Number Text</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Lot Number Text</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Lot Number Text</em>' containment reference.
 	 * @see #setLotNumberText(ST)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getMaterial_LotNumberText()
@@ -179,27 +180,27 @@ public interface Material extends Entity {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ST getLotNumberText();
+    ST getLotNumberText();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getLotNumberText <em>Lot Number Text</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Lot Number Text</em>' containment reference.
 	 * @see #getLotNumberText()
 	 * @generated
 	 */
-	void setLotNumberText(ST value);
+    void setLotNumberText(ST value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Null Flavor</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -209,12 +210,12 @@ public interface Material extends Entity {
 	 * @model unsettable="true" ordered="false"
 	 * @generated
 	 */
-	NullFlavor getNullFlavor();
+    NullFlavor getNullFlavor();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -222,41 +223,41 @@ public interface Material extends Entity {
 	 * @see #getNullFlavor()
 	 * @generated
 	 */
-	void setNullFlavor(NullFlavor value);
+    void setNullFlavor(NullFlavor value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	void unsetNullFlavor();
+    void unsetNullFlavor();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getNullFlavor <em>Null Flavor</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Null Flavor</em>' attribute is set.
 	 * @see #unsetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	boolean isSetNullFlavor();
+    boolean isSetNullFlavor();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Class Code</b></em>' attribute.
 	 * The default value is <code>"MMAT"</code>.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.EntityClassManufacturedMaterial}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Class Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Class Code</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Class Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityClassManufacturedMaterial
 	 * @see #isSetClassCode()
@@ -266,12 +267,12 @@ public interface Material extends Entity {
 	 * @model default="MMAT" unsettable="true" ordered="false"
 	 * @generated
 	 */
-	EntityClassManufacturedMaterial getClassCode();
+    EntityClassManufacturedMaterial getClassCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getClassCode <em>Class Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Class Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityClassManufacturedMaterial
 	 * @see #isSetClassCode()
@@ -279,41 +280,41 @@ public interface Material extends Entity {
 	 * @see #getClassCode()
 	 * @generated
 	 */
-	void setClassCode(EntityClassManufacturedMaterial value);
+    void setClassCode(EntityClassManufacturedMaterial value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getClassCode <em>Class Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetClassCode()
 	 * @see #getClassCode()
 	 * @see #setClassCode(EntityClassManufacturedMaterial)
 	 * @generated
 	 */
-	void unsetClassCode();
+    void unsetClassCode();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getClassCode <em>Class Code</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Class Code</em>' attribute is set.
 	 * @see #unsetClassCode()
 	 * @see #getClassCode()
 	 * @see #setClassCode(EntityClassManufacturedMaterial)
 	 * @generated
 	 */
-	boolean isSetClassCode();
+    boolean isSetClassCode();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Determiner Code</b></em>' attribute.
 	 * The default value is <code>"KIND"</code>.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.EntityDeterminerDetermined}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Determiner Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Determiner Code</em>' attribute isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Determiner Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityDeterminerDetermined
 	 * @see #isSetDeterminerCode()
@@ -323,12 +324,12 @@ public interface Material extends Entity {
 	 * @model default="KIND" unsettable="true" ordered="false"
 	 * @generated
 	 */
-	EntityDeterminerDetermined getDeterminerCode();
+    EntityDeterminerDetermined getDeterminerCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getDeterminerCode <em>Determiner Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Determiner Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.EntityDeterminerDetermined
 	 * @see #isSetDeterminerCode()
@@ -336,34 +337,34 @@ public interface Material extends Entity {
 	 * @see #getDeterminerCode()
 	 * @generated
 	 */
-	void setDeterminerCode(EntityDeterminerDetermined value);
+    void setDeterminerCode(EntityDeterminerDetermined value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getDeterminerCode <em>Determiner Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetDeterminerCode()
 	 * @see #getDeterminerCode()
 	 * @see #setDeterminerCode(EntityDeterminerDetermined)
 	 * @generated
 	 */
-	void unsetDeterminerCode();
+    void unsetDeterminerCode();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Material#getDeterminerCode <em>Determiner Code</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Determiner Code</em>' attribute is set.
 	 * @see #unsetDeterminerCode()
 	 * @see #getDeterminerCode()
 	 * @see #setDeterminerCode(EntityDeterminerDetermined)
 	 * @generated
 	 */
-	boolean isSetDeterminerCode();
+    boolean isSetDeterminerCode();
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -371,11 +372,11 @@ public interface Material extends Entity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.isClassCodeDefined() implies self.classCode=vocab::EntityClassManufacturedMaterial::MMAT'"
 	 * @generated
 	 */
-	boolean validateClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+    boolean validateClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -383,6 +384,6 @@ public interface Material extends Entity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.isDeterminerCodeDefined() implies self.determinerCode=vocab::EntityDeterminerDetermined::KIND'"
 	 * @generated
 	 */
-	boolean validateDeterminerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+    boolean validateDeterminerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // Material

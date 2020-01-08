@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda;
 
 import org.eclipse.emf.ecore.EObject;
@@ -30,14 +30,15 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.II;
  * @generated
  */
 public interface SDTCPatient extends EObject {
-	/**
+
+    /**
 	 * Returns the value of the '<em><b>Id</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Id</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Id</em>' containment reference isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Id</em>' containment reference.
 	 * @see #setId(II)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getSDTCPatient_Id()
@@ -45,16 +46,16 @@ public interface SDTCPatient extends EObject {
 	 *        extendedMetaData="name='id' namespace='urn:hl7-org:sdtc' kind='element'"
 	 * @generated
 	 */
-	II getId();
+    II getId();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.SDTCPatient#getId <em>Id</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Id</em>' containment reference.
 	 * @see #getId()
 	 * @generated
 	 */
-	void setId(II value);
+    void setId(II value);
 
 } // SDTCPatient

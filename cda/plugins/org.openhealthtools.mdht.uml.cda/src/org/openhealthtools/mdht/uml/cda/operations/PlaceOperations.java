@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.operations;
 
 import java.util.Collection;
@@ -32,7 +32,8 @@ import org.openhealthtools.mdht.uml.hl7.rim.operations.EntityOperations;
 
 /**
  * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>Place</b></em>' model objects.
+ * A static utility class that provides operations related to
+ * '<em><b>Place</b></em>' model objects.
  * <!-- end-user-doc -->
  *
  * <p>
@@ -48,38 +49,38 @@ import org.openhealthtools.mdht.uml.hl7.rim.operations.EntityOperations;
  * @generated
  */
 public class PlaceOperations extends EntityOperations {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected PlaceOperations() {
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    protected PlaceOperations() {
 		super();
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #validateClassCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Class Code</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #validateClassCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isClassCodeDefined() implies self.classCode=vocab::EntityClassPlace::PLC";
+    protected static final String VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isClassCodeDefined() implies self.classCode=vocab::EntityClassPlace::PLC";
 
-	/**
+    /**
 	 * The cached OCL invariant for the '{@link #validateClassCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Class Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #validateClassCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+    protected static Constraint VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param place The receiving '<em><b>Place</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -87,55 +88,55 @@ public class PlaceOperations extends EntityOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateClassCode(Place place, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    public static boolean validateClassCode(Place place, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDAPackage.Literals.PLACE);
 			try {
 				VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(place)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE, CDAValidator.PLACE__CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"validateClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(place, context) }),
-					new Object[] { place }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDAValidator.DIAGNOSTIC_SOURCE,
+						 CDAValidator.PLACE__CLASS_CODE,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(place, context) }),
+						 new Object [] { place }));
 			}
 			return false;
 		}
 		return true;
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #validateDeterminerCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Determiner Code</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #validateDeterminerCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isDeterminerCodeDefined() implies self.determinerCode=vocab::EntityDeterminer::INSTANCE";
+    protected static final String VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isDeterminerCodeDefined() implies self.determinerCode=vocab::EntityDeterminer::INSTANCE";
 
-	/**
+    /**
 	 * The cached OCL invariant for the '{@link #validateDeterminerCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Determiner Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #validateDeterminerCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+    protected static Constraint VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param place The receiving '<em><b>Place</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -143,64 +144,64 @@ public class PlaceOperations extends EntityOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateDeterminerCode(Place place, DiagnosticChain diagnostics, Map<Object, Object> context) {
+    public static boolean validateDeterminerCode(Place place, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDAPackage.Literals.PLACE);
 			try {
 				VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(place)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE, CDAValidator.PLACE__DETERMINER_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"validateDeterminerCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(place, context) }),
-					new Object[] { place }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDAValidator.DIAGNOSTIC_SOURCE,
+						 CDAValidator.PLACE__DETERMINER_CODE,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateDeterminerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(place, context) }),
+						 new Object [] { place }));
 			}
 			return false;
 		}
 		return true;
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #getNames(Place) <em>Get Names</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getNames(Place)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NAMES__EOCL_EXP = "Bag { self.name }";
+    protected static final String GET_NAMES__EOCL_EXP = "Bag { self.name }";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #getNames(Place) <em>Get Names</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getNames(Place)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_NAMES__EOCL_QRY;
+    protected static OCLExpression<EClassifier> GET_NAMES__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static EList<EN> getNames(Place place) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static EList<EN> getNames(Place place) {
 		if (GET_NAMES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(CDAPackage.Literals.PLACE, CDAPackage.Literals.PLACE.getEAllOperations().get(16));
 			try {
 				GET_NAMES__EOCL_QRY = helper.createQuery(GET_NAMES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -210,38 +211,38 @@ public class PlaceOperations extends EntityOperations {
 		return new BasicEList.UnmodifiableEList<EN>(result.size(), result.toArray());
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #getAddrs(Place) <em>Get Addrs</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getAddrs(Place)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ADDRS__EOCL_EXP = "Bag { self.addr }";
+    protected static final String GET_ADDRS__EOCL_EXP = "Bag { self.addr }";
 
-	/**
+    /**
 	 * The cached OCL query for the '{@link #getAddrs(Place) <em>Get Addrs</em>}' query operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getAddrs(Place)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ADDRS__EOCL_QRY;
+    protected static OCLExpression<EClassifier> GET_ADDRS__EOCL_QRY;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static EList<AD> getAddrs(Place place) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public static EList<AD> getAddrs(Place place) {
 		if (GET_ADDRS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(CDAPackage.Literals.PLACE, CDAPackage.Literals.PLACE.getEAllOperations().get(17));
 			try {
 				GET_ADDRS__EOCL_QRY = helper.createQuery(GET_ADDRS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

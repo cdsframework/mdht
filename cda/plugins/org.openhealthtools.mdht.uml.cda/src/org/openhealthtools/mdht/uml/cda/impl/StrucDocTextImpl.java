@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.impl;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -39,191 +39,174 @@ import org.openhealthtools.mdht.uml.cda.operations.StrucDocTextOperations;
  * @generated
  */
 public class StrucDocTextImpl extends EObjectImpl implements StrucDocText {
-	/**
+
+    /**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getMixed()
 	 * @generated
 	 * @ordered
 	 */
-	protected FeatureMap mixed;
+    protected FeatureMap mixed;
 
-	/**
+    /**
 	 * The default value of the '{@link #getID() <em>ID</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getID()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ID_EDEFAULT = null;
+    protected static final String ID_EDEFAULT = null;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getID() <em>ID</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getID()
 	 * @generated
 	 * @ordered
 	 */
-	protected String iD = ID_EDEFAULT;
+    protected String iD = ID_EDEFAULT;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected StrucDocTextImpl() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    protected StrucDocTextImpl() {
 		super();
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EClass eStaticClass() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    protected EClass eStaticClass() {
 		return CDAPackage.Literals.STRUC_DOC_TEXT;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FeatureMap getMixed() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public FeatureMap getMixed() {
 		if (mixed == null) {
 			mixed = new BasicFeatureMap(this, CDAPackage.STRUC_DOC_TEXT__MIXED);
 		}
 		return mixed;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FeatureMap getAny() {
-		return (FeatureMap) getMixed().<FeatureMap.Entry> list(CDAPackage.Literals.STRUC_DOC_TEXT__ANY);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public FeatureMap getAny() {
+		return (FeatureMap)getMixed().<FeatureMap.Entry>list(CDAPackage.Literals.STRUC_DOC_TEXT__ANY);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getID() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public String getID() {
 		return iD;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setID(String newID) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setID(String newID) {
 		String oldID = iD;
 		iD = newID;
-		if (eNotificationRequired()) {
+		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.STRUC_DOC_TEXT__ID, oldID, iD));
-		}
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void addText(String text) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void addText(String text) {
 		StrucDocTextOperations.addText(this, text);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getText() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public String getText() {
 		return StrucDocTextOperations.getText(this);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getText(String id) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public String getText(String id) {
 		return StrucDocTextOperations.getText(this, id);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CDAPackage.STRUC_DOC_TEXT__MIXED:
-				return ((InternalEList<?>) getMixed()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getMixed()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case CDAPackage.STRUC_DOC_TEXT__MIXED:
-				if (coreType) {
-					return getMixed();
-				}
-				return ((FeatureMap.Internal) getMixed()).getWrapper();
+				if (coreType) return getMixed();
+				return ((FeatureMap.Internal)getMixed()).getWrapper();
 			case CDAPackage.STRUC_DOC_TEXT__ANY:
-				if (coreType) {
-					return getAny();
-				}
-				return ((FeatureMap.Internal) getAny()).getWrapper();
+				if (coreType) return getAny();
+				return ((FeatureMap.Internal)getAny()).getWrapper();
 			case CDAPackage.STRUC_DOC_TEXT__ID:
 				return getID();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eSet(int featureID, Object newValue) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CDAPackage.STRUC_DOC_TEXT__MIXED:
-				((FeatureMap.Internal) getMixed()).set(newValue);
+				((FeatureMap.Internal)getMixed()).set(newValue);
 				return;
 			case CDAPackage.STRUC_DOC_TEXT__ANY:
-				((FeatureMap.Internal) getAny()).set(newValue);
+				((FeatureMap.Internal)getAny()).set(newValue);
 				return;
 			case CDAPackage.STRUC_DOC_TEXT__ID:
-				setID((String) newValue);
+				setID((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eUnset(int featureID) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public void eUnset(int featureID) {
 		switch (featureID) {
 			case CDAPackage.STRUC_DOC_TEXT__MIXED:
 				getMixed().clear();
@@ -238,36 +221,30 @@ public class StrucDocTextImpl extends EObjectImpl implements StrucDocText {
 		super.eUnset(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean eIsSet(int featureID) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CDAPackage.STRUC_DOC_TEXT__MIXED:
 				return mixed != null && !mixed.isEmpty();
 			case CDAPackage.STRUC_DOC_TEXT__ANY:
 				return !getAny().isEmpty();
 			case CDAPackage.STRUC_DOC_TEXT__ID:
-				return ID_EDEFAULT == null
-						? iD != null
-						: !ID_EDEFAULT.equals(iD);
+				return ID_EDEFAULT == null ? iD != null : !ID_EDEFAULT.equals(iD);
 		}
 		return super.eIsSet(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) {
-			return super.toString();
-		}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public String toString() {
+		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (mixed: ");

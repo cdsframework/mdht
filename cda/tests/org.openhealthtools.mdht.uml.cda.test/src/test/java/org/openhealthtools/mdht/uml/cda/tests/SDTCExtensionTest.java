@@ -160,6 +160,19 @@ public class SDTCExtensionTest {
 	}
 
 	/**
+	* Helper method: Locates Patient in a deserialized document and captures/returns the data.
+	*/
+	private Patient findPatient(ClinicalDocument doc, String curSDTCname) {
+		Patient patient = null;
+
+		if (patient == null) {
+			fail("Unable to find/capture any non-null data. Ensure " + curSDTCname + " data exists in the document.");
+		}
+
+		return patient;
+	}
+
+	/**
 	* Helper method: Locates SubjectPerson in a deserialized document and captures/returns the data.
 	*/
 	private SubjectPerson findSubjectPerson(ClinicalDocument doc, String curSDTCname) {

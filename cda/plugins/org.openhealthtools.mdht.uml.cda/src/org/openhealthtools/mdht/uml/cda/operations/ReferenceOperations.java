@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.operations;
 
 import java.util.Map;
@@ -25,7 +25,8 @@ import org.openhealthtools.mdht.uml.hl7.rim.operations.ActRelationshipOperations
 
 /**
  * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>Reference</b></em>' model objects.
+ * A static utility class that provides operations related to
+ * '<em><b>Reference</b></em>' model objects.
  * <!-- end-user-doc -->
  *
  * <p>
@@ -38,38 +39,38 @@ import org.openhealthtools.mdht.uml.hl7.rim.operations.ActRelationshipOperations
  * @generated
  */
 public class ReferenceOperations extends ActRelationshipOperations {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ReferenceOperations() {
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    protected ReferenceOperations() {
 		super();
 	}
 
-	/**
+    /**
 	 * The cached OCL expression body for the '{@link #validateExternalActChoice(Reference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Act Choice</em>}' operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #validateExternalActChoice(Reference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTERNAL_ACT_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "Bag{self.externalAct.oclIsUndefined(), self.externalDocument.oclIsUndefined(), self.externalObservation.oclIsUndefined(), self.externalProcedure.oclIsUndefined()}->one(x | x = false)";
+    protected static final String VALIDATE_EXTERNAL_ACT_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "Bag{self.externalAct.oclIsUndefined(), self.externalDocument.oclIsUndefined(), self.externalObservation.oclIsUndefined(), self.externalProcedure.oclIsUndefined()}->one(x | x = false)";
 
-	/**
+    /**
 	 * The cached OCL invariant for the '{@link #validateExternalActChoice(Reference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Act Choice</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #validateExternalActChoice(Reference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_EXTERNAL_ACT_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+    protected static Constraint VALIDATE_EXTERNAL_ACT_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param reference The receiving '<em><b>Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -77,27 +78,27 @@ public class ReferenceOperations extends ActRelationshipOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateExternalActChoice(Reference reference, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+    public static boolean validateExternalActChoice(Reference reference, DiagnosticChain diagnostics,
+            Map<Object, Object> context) {
 		if (VALIDATE_EXTERNAL_ACT_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDAPackage.Literals.REFERENCE);
 			try {
 				VALIDATE_EXTERNAL_ACT_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_ACT_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_ACT_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE, CDAValidator.REFERENCE__EXTERNAL_ACT_CHOICE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"validateExternalActChoice",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(reference, context) }),
-					new Object[] { reference }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 CDAValidator.DIAGNOSTIC_SOURCE,
+						 CDAValidator.REFERENCE__EXTERNAL_ACT_CHOICE,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateExternalActChoice", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(reference, context) }),
+						 new Object [] { reference }));
 			}
 			return false;
 		}

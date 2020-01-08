@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda;
 
 import java.util.Map;
@@ -48,31 +48,32 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  * @generated
  */
 public interface Participant2 extends Participation {
-	/**
+
+    /**
 	 * Returns the value of the '<em><b>Realm Code</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.CS}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Realm Code</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Realm Code</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Realm Code</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getParticipant2_RealmCode()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<CS> getRealmCodes();
+    EList<CS> getRealmCodes();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Type Id</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Id</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Type Id</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Id</em>' containment reference.
 	 * @see #setTypeId(InfrastructureRootTypeId)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getParticipant2_TypeId()
@@ -80,43 +81,43 @@ public interface Participant2 extends Participation {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	InfrastructureRootTypeId getTypeId();
+    InfrastructureRootTypeId getTypeId();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getTypeId <em>Type Id</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type Id</em>' containment reference.
 	 * @see #getTypeId()
 	 * @generated
 	 */
-	void setTypeId(InfrastructureRootTypeId value);
+    void setTypeId(InfrastructureRootTypeId value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Template Id</b></em>' containment reference list.
 	 * The list contents are of type {@link org.openhealthtools.mdht.uml.hl7.datatypes.II}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Template Id</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Template Id</em>' containment reference list
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Template Id</em>' containment reference list.
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getParticipant2_TemplateId()
 	 * @model containment="true" ordered="false"
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<II> getTemplateIds();
+    EList<II> getTemplateIds();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Time</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Time</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Time</em>' containment reference isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Time</em>' containment reference.
 	 * @see #setTime(IVL_TS)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getParticipant2_Time()
@@ -124,26 +125,26 @@ public interface Participant2 extends Participation {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	IVL_TS getTime();
+    IVL_TS getTime();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getTime <em>Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Time</em>' containment reference.
 	 * @see #getTime()
 	 * @generated
 	 */
-	void setTime(IVL_TS value);
+    void setTime(IVL_TS value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Awareness Code</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Awareness Code</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Awareness Code</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Awareness Code</em>' containment reference.
 	 * @see #setAwarenessCode(CE)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getParticipant2_AwarenessCode()
@@ -151,26 +152,26 @@ public interface Participant2 extends Participation {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	CE getAwarenessCode();
+    CE getAwarenessCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getAwarenessCode <em>Awareness Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Awareness Code</em>' containment reference.
 	 * @see #getAwarenessCode()
 	 * @generated
 	 */
-	void setAwarenessCode(CE value);
+    void setAwarenessCode(CE value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Participant Role</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Participant Role</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Participant Role</em>' containment reference
+     * isn't clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Participant Role</em>' containment reference.
 	 * @see #setParticipantRole(ParticipantRole)
 	 * @see org.openhealthtools.mdht.uml.cda.CDAPackage#getParticipant2_ParticipantRole()
@@ -178,27 +179,27 @@ public interface Participant2 extends Participation {
 	 *        extendedMetaData="namespace='##targetNamespace'"
 	 * @generated
 	 */
-	ParticipantRole getParticipantRole();
+    ParticipantRole getParticipantRole();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getParticipantRole <em>Participant Role</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Participant Role</em>' containment reference.
 	 * @see #getParticipantRole()
 	 * @generated
 	 */
-	void setParticipantRole(ParticipantRole value);
+    void setParticipantRole(ParticipantRole value);
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Null Flavor</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Null Flavor</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -208,12 +209,12 @@ public interface Participant2 extends Participation {
 	 * @model unsettable="true" ordered="false"
 	 * @generated
 	 */
-	NullFlavor getNullFlavor();
+    NullFlavor getNullFlavor();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Null Flavor</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor
 	 * @see #isSetNullFlavor()
@@ -221,40 +222,40 @@ public interface Participant2 extends Participation {
 	 * @see #getNullFlavor()
 	 * @generated
 	 */
-	void setNullFlavor(NullFlavor value);
+    void setNullFlavor(NullFlavor value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getNullFlavor <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	void unsetNullFlavor();
+    void unsetNullFlavor();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getNullFlavor <em>Null Flavor</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Null Flavor</em>' attribute is set.
 	 * @see #unsetNullFlavor()
 	 * @see #getNullFlavor()
 	 * @see #setNullFlavor(NullFlavor)
 	 * @generated
 	 */
-	boolean isSetNullFlavor();
+    boolean isSetNullFlavor();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Type Code</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Type Code</em>' attribute isn't clear, there
+     * really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Type Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType
 	 * @see #isSetTypeCode()
@@ -264,12 +265,12 @@ public interface Participant2 extends Participation {
 	 * @model unsettable="true" required="true" ordered="false"
 	 * @generated
 	 */
-	ParticipationType getTypeCode();
+    ParticipationType getTypeCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getTypeCode <em>Type Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Type Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType
 	 * @see #isSetTypeCode()
@@ -277,41 +278,41 @@ public interface Participant2 extends Participation {
 	 * @see #getTypeCode()
 	 * @generated
 	 */
-	void setTypeCode(ParticipationType value);
+    void setTypeCode(ParticipationType value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getTypeCode <em>Type Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetTypeCode()
 	 * @see #getTypeCode()
 	 * @see #setTypeCode(ParticipationType)
 	 * @generated
 	 */
-	void unsetTypeCode();
+    void unsetTypeCode();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getTypeCode <em>Type Code</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Type Code</em>' attribute is set.
 	 * @see #unsetTypeCode()
 	 * @see #getTypeCode()
 	 * @see #setTypeCode(ParticipationType)
 	 * @generated
 	 */
-	boolean isSetTypeCode();
+    boolean isSetTypeCode();
 
-	/**
+    /**
 	 * Returns the value of the '<em><b>Context Control Code</b></em>' attribute.
 	 * The default value is <code>"OP"</code>.
 	 * The literals are from the enumeration {@link org.openhealthtools.mdht.uml.hl7.vocab.ContextControl}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Context Control Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Context Control Code</em>' attribute isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
 	 * @return the value of the '<em>Context Control Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.ContextControl
 	 * @see #isSetContextControlCode()
@@ -321,12 +322,12 @@ public interface Participant2 extends Participation {
 	 * @model default="OP" unsettable="true" ordered="false"
 	 * @generated
 	 */
-	ContextControl getContextControlCode();
+    ContextControl getContextControlCode();
 
-	/**
+    /**
 	 * Sets the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getContextControlCode <em>Context Control Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Context Control Code</em>' attribute.
 	 * @see org.openhealthtools.mdht.uml.hl7.vocab.ContextControl
 	 * @see #isSetContextControlCode()
@@ -334,34 +335,34 @@ public interface Participant2 extends Participation {
 	 * @see #getContextControlCode()
 	 * @generated
 	 */
-	void setContextControlCode(ContextControl value);
+    void setContextControlCode(ContextControl value);
 
-	/**
+    /**
 	 * Unsets the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getContextControlCode <em>Context Control Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #isSetContextControlCode()
 	 * @see #getContextControlCode()
 	 * @see #setContextControlCode(ContextControl)
 	 * @generated
 	 */
-	void unsetContextControlCode();
+    void unsetContextControlCode();
 
-	/**
+    /**
 	 * Returns whether the value of the '{@link org.openhealthtools.mdht.uml.cda.Participant2#getContextControlCode <em>Context Control Code</em>}' attribute is set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @return whether the value of the '<em>Context Control Code</em>' attribute is set.
 	 * @see #unsetContextControlCode()
 	 * @see #getContextControlCode()
 	 * @see #setContextControlCode(ContextControl)
 	 * @generated
 	 */
-	boolean isSetContextControlCode();
+    boolean isSetContextControlCode();
 
-	/**
+    /**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -369,6 +370,6 @@ public interface Participant2 extends Participation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.isContextControlCodeDefined() implies self.contextControlCode=vocab::ContextControl::OP'"
 	 * @generated
 	 */
-	boolean validateContextControlCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+    boolean validateContextControlCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // Participant2

@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.impl;
 
 import java.util.Collection;
@@ -89,1236 +89,1039 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
  * @generated
  */
 public class SupplyImpl extends ClinicalStatementImpl implements Supply {
-	/**
+
+    /**
 	 * The cached value of the '{@link #getRealmCodes() <em>Realm Code</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getRealmCodes()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<CS> realmCodes;
+    protected EList<CS> realmCodes;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getTypeId() <em>Type Id</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getTypeId()
 	 * @generated
 	 * @ordered
 	 */
-	protected InfrastructureRootTypeId typeId;
+    protected InfrastructureRootTypeId typeId;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getTemplateIds() <em>Template Id</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getTemplateIds()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<II> templateIds;
+    protected EList<II> templateIds;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getIds() <em>Id</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getIds()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<II> ids;
+    protected EList<II> ids;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getCode() <em>Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected CD code;
+    protected CD code;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getText() <em>Text</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getText()
 	 * @generated
 	 * @ordered
 	 */
-	protected ED text;
+    protected ED text;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getStatusCode() <em>Status Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getStatusCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected CS statusCode;
+    protected CS statusCode;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getEffectiveTimes() <em>Effective Time</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getEffectiveTimes()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<SXCM_TS> effectiveTimes;
+    protected EList<SXCM_TS> effectiveTimes;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getPriorityCodes() <em>Priority Code</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getPriorityCodes()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<CE> priorityCodes;
+    protected EList<CE> priorityCodes;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getRepeatNumber() <em>Repeat Number</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getRepeatNumber()
 	 * @generated
 	 * @ordered
 	 */
-	protected IVL_INT repeatNumber;
+    protected IVL_INT repeatNumber;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getIndependentInd() <em>Independent Ind</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getIndependentInd()
 	 * @generated
 	 * @ordered
 	 */
-	protected BL independentInd;
+    protected BL independentInd;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getQuantity() <em>Quantity</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getQuantity()
 	 * @generated
 	 * @ordered
 	 */
-	protected PQ quantity;
+    protected PQ quantity;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getExpectedUseTime() <em>Expected Use Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getExpectedUseTime()
 	 * @generated
 	 * @ordered
 	 */
-	protected IVL_TS expectedUseTime;
+    protected IVL_TS expectedUseTime;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getSubject() <em>Subject</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getSubject()
 	 * @generated
 	 * @ordered
 	 */
-	protected Subject subject;
+    protected Subject subject;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getSpecimens() <em>Specimen</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getSpecimens()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Specimen> specimens;
+    protected EList<Specimen> specimens;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getProduct() <em>Product</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getProduct()
 	 * @generated
 	 * @ordered
 	 */
-	protected Product product;
+    protected Product product;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getPerformers() <em>Performer</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getPerformers()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Performer2> performers;
+    protected EList<Performer2> performers;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getAuthors() <em>Author</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getAuthors()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Author> authors;
+    protected EList<Author> authors;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getInformants() <em>Informant</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getInformants()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Informant12> informants;
+    protected EList<Informant12> informants;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getParticipants() <em>Participant</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getParticipants()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Participant2> participants;
+    protected EList<Participant2> participants;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getEntryRelationships() <em>Entry Relationship</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getEntryRelationships()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<EntryRelationship> entryRelationships;
+    protected EList<EntryRelationship> entryRelationships;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getReferences() <em>Reference</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getReferences()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Reference> references;
+    protected EList<Reference> references;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getPreconditions() <em>Precondition</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getPreconditions()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Precondition> preconditions;
+    protected EList<Precondition> preconditions;
 
-	/**
+    /**
 	 * The default value of the '{@link #getNullFlavor() <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getNullFlavor()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final NullFlavor NULL_FLAVOR_EDEFAULT = NullFlavor.ASKU;
+    protected static final NullFlavor NULL_FLAVOR_EDEFAULT = NullFlavor.ASKU;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getNullFlavor() <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getNullFlavor()
 	 * @generated
 	 * @ordered
 	 */
-	protected NullFlavor nullFlavor = NULL_FLAVOR_EDEFAULT;
+    protected NullFlavor nullFlavor = NULL_FLAVOR_EDEFAULT;
 
-	/**
+    /**
 	 * This is true if the Null Flavor attribute has been set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean nullFlavorESet;
+    protected boolean nullFlavorESet;
 
-	/**
+    /**
 	 * The default value of the '{@link #getClassCode() <em>Class Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getClassCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ActClassSupply CLASS_CODE_EDEFAULT = ActClassSupply.SPLY;
+    protected static final ActClassSupply CLASS_CODE_EDEFAULT = ActClassSupply.SPLY;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getClassCode() <em>Class Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getClassCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected ActClassSupply classCode = CLASS_CODE_EDEFAULT;
+    protected ActClassSupply classCode = CLASS_CODE_EDEFAULT;
 
-	/**
+    /**
 	 * This is true if the Class Code attribute has been set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean classCodeESet;
+    protected boolean classCodeESet;
 
-	/**
+    /**
 	 * The default value of the '{@link #getMoodCode() <em>Mood Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getMoodCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final x_DocumentSubstanceMood MOOD_CODE_EDEFAULT = x_DocumentSubstanceMood.EVN;
+    protected static final x_DocumentSubstanceMood MOOD_CODE_EDEFAULT = x_DocumentSubstanceMood.EVN;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getMoodCode() <em>Mood Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getMoodCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected x_DocumentSubstanceMood moodCode = MOOD_CODE_EDEFAULT;
+    protected x_DocumentSubstanceMood moodCode = MOOD_CODE_EDEFAULT;
 
-	/**
+    /**
 	 * This is true if the Mood Code attribute has been set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean moodCodeESet;
+    protected boolean moodCodeESet;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected SupplyImpl() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    protected SupplyImpl() {
 		super();
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EClass eStaticClass() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    protected EClass eStaticClass() {
 		return CDAPackage.Literals.SUPPLY;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<CS> getRealmCodes() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public EList<CS> getRealmCodes() {
 		if (realmCodes == null) {
 			realmCodes = new EObjectContainmentEList<CS>(CS.class, this, CDAPackage.SUPPLY__REALM_CODE);
 		}
 		return realmCodes;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InfrastructureRootTypeId getTypeId() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public InfrastructureRootTypeId getTypeId() {
 		return typeId;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetTypeId(InfrastructureRootTypeId newTypeId, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetTypeId(InfrastructureRootTypeId newTypeId, NotificationChain msgs) {
 		InfrastructureRootTypeId oldTypeId = typeId;
 		typeId = newTypeId;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__TYPE_ID, oldTypeId, newTypeId);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__TYPE_ID, oldTypeId, newTypeId);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setTypeId(InfrastructureRootTypeId newTypeId) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setTypeId(InfrastructureRootTypeId newTypeId) {
 		if (newTypeId != typeId) {
 			NotificationChain msgs = null;
-			if (typeId != null) {
-				msgs = ((InternalEObject) typeId).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__TYPE_ID, null, msgs);
-			}
-			if (newTypeId != null) {
-				msgs = ((InternalEObject) newTypeId).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__TYPE_ID, null, msgs);
-			}
+			if (typeId != null)
+				msgs = ((InternalEObject)typeId).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__TYPE_ID, null, msgs);
+			if (newTypeId != null)
+				msgs = ((InternalEObject)newTypeId).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__TYPE_ID, null, msgs);
 			msgs = basicSetTypeId(newTypeId, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__TYPE_ID, newTypeId, newTypeId));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__TYPE_ID, newTypeId, newTypeId));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<II> getTemplateIds() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public EList<II> getTemplateIds() {
 		if (templateIds == null) {
 			templateIds = new EObjectContainmentEList<II>(II.class, this, CDAPackage.SUPPLY__TEMPLATE_ID);
 		}
 		return templateIds;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<II> getIds() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EList<II> getIds() {
 		if (ids == null) {
 			ids = new EObjectContainmentEList<II>(II.class, this, CDAPackage.SUPPLY__ID);
 		}
 		return ids;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CD getCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public CD getCode() {
 		return code;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetCode(CD newCode, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetCode(CD newCode, NotificationChain msgs) {
 		CD oldCode = code;
 		code = newCode;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__CODE, oldCode, newCode);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__CODE, oldCode, newCode);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setCode(CD newCode) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setCode(CD newCode) {
 		if (newCode != code) {
 			NotificationChain msgs = null;
-			if (code != null) {
-				msgs = ((InternalEObject) code).eInverseRemove(
-					this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__CODE, null, msgs);
-			}
-			if (newCode != null) {
-				msgs = ((InternalEObject) newCode).eInverseAdd(
-					this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__CODE, null, msgs);
-			}
+			if (code != null)
+				msgs = ((InternalEObject)code).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__CODE, null, msgs);
+			if (newCode != null)
+				msgs = ((InternalEObject)newCode).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__CODE, null, msgs);
 			msgs = basicSetCode(newCode, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__CODE, newCode, newCode));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__CODE, newCode, newCode));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ED getText() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public ED getText() {
 		return text;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetText(ED newText, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetText(ED newText, NotificationChain msgs) {
 		ED oldText = text;
 		text = newText;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__TEXT, oldText, newText);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__TEXT, oldText, newText);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setText(ED newText) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setText(ED newText) {
 		if (newText != text) {
 			NotificationChain msgs = null;
-			if (text != null) {
-				msgs = ((InternalEObject) text).eInverseRemove(
-					this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__TEXT, null, msgs);
-			}
-			if (newText != null) {
-				msgs = ((InternalEObject) newText).eInverseAdd(
-					this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__TEXT, null, msgs);
-			}
+			if (text != null)
+				msgs = ((InternalEObject)text).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__TEXT, null, msgs);
+			if (newText != null)
+				msgs = ((InternalEObject)newText).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__TEXT, null, msgs);
 			msgs = basicSetText(newText, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__TEXT, newText, newText));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__TEXT, newText, newText));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CS getStatusCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public CS getStatusCode() {
 		return statusCode;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetStatusCode(CS newStatusCode, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetStatusCode(CS newStatusCode, NotificationChain msgs) {
 		CS oldStatusCode = statusCode;
 		statusCode = newStatusCode;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__STATUS_CODE, oldStatusCode, newStatusCode);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__STATUS_CODE, oldStatusCode, newStatusCode);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setStatusCode(CS newStatusCode) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setStatusCode(CS newStatusCode) {
 		if (newStatusCode != statusCode) {
 			NotificationChain msgs = null;
-			if (statusCode != null) {
-				msgs = ((InternalEObject) statusCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__STATUS_CODE, null, msgs);
-			}
-			if (newStatusCode != null) {
-				msgs = ((InternalEObject) newStatusCode).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__STATUS_CODE, null, msgs);
-			}
+			if (statusCode != null)
+				msgs = ((InternalEObject)statusCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__STATUS_CODE, null, msgs);
+			if (newStatusCode != null)
+				msgs = ((InternalEObject)newStatusCode).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__STATUS_CODE, null, msgs);
 			msgs = basicSetStatusCode(newStatusCode, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__STATUS_CODE, newStatusCode, newStatusCode));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__STATUS_CODE, newStatusCode, newStatusCode));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<SXCM_TS> getEffectiveTimes() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EList<SXCM_TS> getEffectiveTimes() {
 		if (effectiveTimes == null) {
-			effectiveTimes = new EObjectContainmentEList<SXCM_TS>(
-				SXCM_TS.class, this, CDAPackage.SUPPLY__EFFECTIVE_TIME);
+			effectiveTimes = new EObjectContainmentEList<SXCM_TS>(SXCM_TS.class, this, CDAPackage.SUPPLY__EFFECTIVE_TIME);
 		}
 		return effectiveTimes;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<CE> getPriorityCodes() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EList<CE> getPriorityCodes() {
 		if (priorityCodes == null) {
 			priorityCodes = new EObjectContainmentEList<CE>(CE.class, this, CDAPackage.SUPPLY__PRIORITY_CODE);
 		}
 		return priorityCodes;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IVL_INT getRepeatNumber() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public IVL_INT getRepeatNumber() {
 		return repeatNumber;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetRepeatNumber(IVL_INT newRepeatNumber, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetRepeatNumber(IVL_INT newRepeatNumber, NotificationChain msgs) {
 		IVL_INT oldRepeatNumber = repeatNumber;
 		repeatNumber = newRepeatNumber;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__REPEAT_NUMBER, oldRepeatNumber, newRepeatNumber);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__REPEAT_NUMBER, oldRepeatNumber, newRepeatNumber);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setRepeatNumber(IVL_INT newRepeatNumber) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setRepeatNumber(IVL_INT newRepeatNumber) {
 		if (newRepeatNumber != repeatNumber) {
 			NotificationChain msgs = null;
-			if (repeatNumber != null) {
-				msgs = ((InternalEObject) repeatNumber).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__REPEAT_NUMBER, null, msgs);
-			}
-			if (newRepeatNumber != null) {
-				msgs = ((InternalEObject) newRepeatNumber).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__REPEAT_NUMBER, null, msgs);
-			}
+			if (repeatNumber != null)
+				msgs = ((InternalEObject)repeatNumber).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__REPEAT_NUMBER, null, msgs);
+			if (newRepeatNumber != null)
+				msgs = ((InternalEObject)newRepeatNumber).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__REPEAT_NUMBER, null, msgs);
 			msgs = basicSetRepeatNumber(newRepeatNumber, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__REPEAT_NUMBER, newRepeatNumber, newRepeatNumber));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__REPEAT_NUMBER, newRepeatNumber, newRepeatNumber));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public BL getIndependentInd() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public BL getIndependentInd() {
 		return independentInd;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetIndependentInd(BL newIndependentInd, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetIndependentInd(BL newIndependentInd, NotificationChain msgs) {
 		BL oldIndependentInd = independentInd;
 		independentInd = newIndependentInd;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__INDEPENDENT_IND, oldIndependentInd, newIndependentInd);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__INDEPENDENT_IND, oldIndependentInd, newIndependentInd);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setIndependentInd(BL newIndependentInd) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setIndependentInd(BL newIndependentInd) {
 		if (newIndependentInd != independentInd) {
 			NotificationChain msgs = null;
-			if (independentInd != null) {
-				msgs = ((InternalEObject) independentInd).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__INDEPENDENT_IND, null, msgs);
-			}
-			if (newIndependentInd != null) {
-				msgs = ((InternalEObject) newIndependentInd).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__INDEPENDENT_IND, null, msgs);
-			}
+			if (independentInd != null)
+				msgs = ((InternalEObject)independentInd).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__INDEPENDENT_IND, null, msgs);
+			if (newIndependentInd != null)
+				msgs = ((InternalEObject)newIndependentInd).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__INDEPENDENT_IND, null, msgs);
 			msgs = basicSetIndependentInd(newIndependentInd, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__INDEPENDENT_IND, newIndependentInd, newIndependentInd));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__INDEPENDENT_IND, newIndependentInd, newIndependentInd));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PQ getQuantity() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public PQ getQuantity() {
 		return quantity;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetQuantity(PQ newQuantity, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetQuantity(PQ newQuantity, NotificationChain msgs) {
 		PQ oldQuantity = quantity;
 		quantity = newQuantity;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__QUANTITY, oldQuantity, newQuantity);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__QUANTITY, oldQuantity, newQuantity);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setQuantity(PQ newQuantity) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setQuantity(PQ newQuantity) {
 		if (newQuantity != quantity) {
 			NotificationChain msgs = null;
-			if (quantity != null) {
-				msgs = ((InternalEObject) quantity).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__QUANTITY, null, msgs);
-			}
-			if (newQuantity != null) {
-				msgs = ((InternalEObject) newQuantity).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__QUANTITY, null, msgs);
-			}
+			if (quantity != null)
+				msgs = ((InternalEObject)quantity).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__QUANTITY, null, msgs);
+			if (newQuantity != null)
+				msgs = ((InternalEObject)newQuantity).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__QUANTITY, null, msgs);
 			msgs = basicSetQuantity(newQuantity, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__QUANTITY, newQuantity, newQuantity));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__QUANTITY, newQuantity, newQuantity));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IVL_TS getExpectedUseTime() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public IVL_TS getExpectedUseTime() {
 		return expectedUseTime;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetExpectedUseTime(IVL_TS newExpectedUseTime, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetExpectedUseTime(IVL_TS newExpectedUseTime, NotificationChain msgs) {
 		IVL_TS oldExpectedUseTime = expectedUseTime;
 		expectedUseTime = newExpectedUseTime;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__EXPECTED_USE_TIME, oldExpectedUseTime, newExpectedUseTime);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__EXPECTED_USE_TIME, oldExpectedUseTime, newExpectedUseTime);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setExpectedUseTime(IVL_TS newExpectedUseTime) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setExpectedUseTime(IVL_TS newExpectedUseTime) {
 		if (newExpectedUseTime != expectedUseTime) {
 			NotificationChain msgs = null;
-			if (expectedUseTime != null) {
-				msgs = ((InternalEObject) expectedUseTime).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__EXPECTED_USE_TIME, null, msgs);
-			}
-			if (newExpectedUseTime != null) {
-				msgs = ((InternalEObject) newExpectedUseTime).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__EXPECTED_USE_TIME, null, msgs);
-			}
+			if (expectedUseTime != null)
+				msgs = ((InternalEObject)expectedUseTime).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__EXPECTED_USE_TIME, null, msgs);
+			if (newExpectedUseTime != null)
+				msgs = ((InternalEObject)newExpectedUseTime).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__EXPECTED_USE_TIME, null, msgs);
 			msgs = basicSetExpectedUseTime(newExpectedUseTime, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__EXPECTED_USE_TIME, newExpectedUseTime, newExpectedUseTime));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__EXPECTED_USE_TIME, newExpectedUseTime, newExpectedUseTime));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Subject getSubject() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public Subject getSubject() {
 		return subject;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetSubject(Subject newSubject, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetSubject(Subject newSubject, NotificationChain msgs) {
 		Subject oldSubject = subject;
 		subject = newSubject;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__SUBJECT, oldSubject, newSubject);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__SUBJECT, oldSubject, newSubject);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setSubject(Subject newSubject) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setSubject(Subject newSubject) {
 		if (newSubject != subject) {
 			NotificationChain msgs = null;
-			if (subject != null) {
-				msgs = ((InternalEObject) subject).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__SUBJECT, null, msgs);
-			}
-			if (newSubject != null) {
-				msgs = ((InternalEObject) newSubject).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__SUBJECT, null, msgs);
-			}
+			if (subject != null)
+				msgs = ((InternalEObject)subject).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__SUBJECT, null, msgs);
+			if (newSubject != null)
+				msgs = ((InternalEObject)newSubject).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__SUBJECT, null, msgs);
 			msgs = basicSetSubject(newSubject, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__SUBJECT, newSubject, newSubject));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__SUBJECT, newSubject, newSubject));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Specimen> getSpecimens() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EList<Specimen> getSpecimens() {
 		if (specimens == null) {
 			specimens = new EObjectContainmentEList<Specimen>(Specimen.class, this, CDAPackage.SUPPLY__SPECIMEN);
 		}
 		return specimens;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Product getProduct() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public Product getProduct() {
 		return product;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetProduct(Product newProduct, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetProduct(Product newProduct, NotificationChain msgs) {
 		Product oldProduct = product;
 		product = newProduct;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__PRODUCT, oldProduct, newProduct);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__PRODUCT, oldProduct, newProduct);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setProduct(Product newProduct) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setProduct(Product newProduct) {
 		if (newProduct != product) {
 			NotificationChain msgs = null;
-			if (product != null) {
-				msgs = ((InternalEObject) product).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__PRODUCT, null, msgs);
-			}
-			if (newProduct != null) {
-				msgs = ((InternalEObject) newProduct).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.SUPPLY__PRODUCT, null, msgs);
-			}
+			if (product != null)
+				msgs = ((InternalEObject)product).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__PRODUCT, null, msgs);
+			if (newProduct != null)
+				msgs = ((InternalEObject)newProduct).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.SUPPLY__PRODUCT, null, msgs);
 			msgs = basicSetProduct(newProduct, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__PRODUCT, newProduct, newProduct));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__PRODUCT, newProduct, newProduct));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Performer2> getPerformers() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EList<Performer2> getPerformers() {
 		if (performers == null) {
 			performers = new EObjectContainmentEList<Performer2>(Performer2.class, this, CDAPackage.SUPPLY__PERFORMER);
 		}
 		return performers;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Author> getAuthors() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EList<Author> getAuthors() {
 		if (authors == null) {
 			authors = new EObjectContainmentEList<Author>(Author.class, this, CDAPackage.SUPPLY__AUTHOR);
 		}
 		return authors;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Informant12> getInformants() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EList<Informant12> getInformants() {
 		if (informants == null) {
 			informants = new EObjectContainmentEList<Informant12>(Informant12.class, this, CDAPackage.SUPPLY__INFORMANT);
 		}
 		return informants;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Participant2> getParticipants() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EList<Participant2> getParticipants() {
 		if (participants == null) {
-			participants = new EObjectContainmentEList<Participant2>(
-				Participant2.class, this, CDAPackage.SUPPLY__PARTICIPANT);
+			participants = new EObjectContainmentEList<Participant2>(Participant2.class, this, CDAPackage.SUPPLY__PARTICIPANT);
 		}
 		return participants;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<EntryRelationship> getEntryRelationships() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EList<EntryRelationship> getEntryRelationships() {
 		if (entryRelationships == null) {
-			entryRelationships = new EObjectContainmentEList<EntryRelationship>(
-				EntryRelationship.class, this, CDAPackage.SUPPLY__ENTRY_RELATIONSHIP);
+			entryRelationships = new EObjectContainmentEList<EntryRelationship>(EntryRelationship.class, this, CDAPackage.SUPPLY__ENTRY_RELATIONSHIP);
 		}
 		return entryRelationships;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Reference> getReferences() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EList<Reference> getReferences() {
 		if (references == null) {
 			references = new EObjectContainmentEList<Reference>(Reference.class, this, CDAPackage.SUPPLY__REFERENCE);
 		}
 		return references;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Precondition> getPreconditions() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EList<Precondition> getPreconditions() {
 		if (preconditions == null) {
-			preconditions = new EObjectContainmentEList<Precondition>(
-				Precondition.class, this, CDAPackage.SUPPLY__PRECONDITION);
+			preconditions = new EObjectContainmentEList<Precondition>(Precondition.class, this, CDAPackage.SUPPLY__PRECONDITION);
 		}
 		return preconditions;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NullFlavor getNullFlavor() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public NullFlavor getNullFlavor() {
 		return nullFlavor;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setNullFlavor(NullFlavor newNullFlavor) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setNullFlavor(NullFlavor newNullFlavor) {
 		NullFlavor oldNullFlavor = nullFlavor;
-		nullFlavor = newNullFlavor == null
-				? NULL_FLAVOR_EDEFAULT
-				: newNullFlavor;
+		nullFlavor = newNullFlavor == null ? NULL_FLAVOR_EDEFAULT : newNullFlavor;
 		boolean oldNullFlavorESet = nullFlavorESet;
 		nullFlavorESet = true;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__NULL_FLAVOR, oldNullFlavor, nullFlavor, !oldNullFlavorESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__NULL_FLAVOR, oldNullFlavor, nullFlavor, !oldNullFlavorESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void unsetNullFlavor() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void unsetNullFlavor() {
 		NullFlavor oldNullFlavor = nullFlavor;
 		boolean oldNullFlavorESet = nullFlavorESet;
 		nullFlavor = NULL_FLAVOR_EDEFAULT;
 		nullFlavorESet = false;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.UNSET, CDAPackage.SUPPLY__NULL_FLAVOR, oldNullFlavor, NULL_FLAVOR_EDEFAULT,
-				oldNullFlavorESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, CDAPackage.SUPPLY__NULL_FLAVOR, oldNullFlavor, NULL_FLAVOR_EDEFAULT, oldNullFlavorESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean isSetNullFlavor() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public boolean isSetNullFlavor() {
 		return nullFlavorESet;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ActClassSupply getClassCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public ActClassSupply getClassCode() {
 		return classCode;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setClassCode(ActClassSupply newClassCode) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setClassCode(ActClassSupply newClassCode) {
 		ActClassSupply oldClassCode = classCode;
-		classCode = newClassCode == null
-				? CLASS_CODE_EDEFAULT
-				: newClassCode;
+		classCode = newClassCode == null ? CLASS_CODE_EDEFAULT : newClassCode;
 		boolean oldClassCodeESet = classCodeESet;
 		classCodeESet = true;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__CLASS_CODE, oldClassCode, classCode, !oldClassCodeESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__CLASS_CODE, oldClassCode, classCode, !oldClassCodeESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void unsetClassCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void unsetClassCode() {
 		ActClassSupply oldClassCode = classCode;
 		boolean oldClassCodeESet = classCodeESet;
 		classCode = CLASS_CODE_EDEFAULT;
 		classCodeESet = false;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.UNSET, CDAPackage.SUPPLY__CLASS_CODE, oldClassCode, CLASS_CODE_EDEFAULT,
-				oldClassCodeESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, CDAPackage.SUPPLY__CLASS_CODE, oldClassCode, CLASS_CODE_EDEFAULT, oldClassCodeESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean isSetClassCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public boolean isSetClassCode() {
 		return classCodeESet;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public x_DocumentSubstanceMood getMoodCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public x_DocumentSubstanceMood getMoodCode() {
 		return moodCode;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setMoodCode(x_DocumentSubstanceMood newMoodCode) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setMoodCode(x_DocumentSubstanceMood newMoodCode) {
 		x_DocumentSubstanceMood oldMoodCode = moodCode;
-		moodCode = newMoodCode == null
-				? MOOD_CODE_EDEFAULT
-				: newMoodCode;
+		moodCode = newMoodCode == null ? MOOD_CODE_EDEFAULT : newMoodCode;
 		boolean oldMoodCodeESet = moodCodeESet;
 		moodCodeESet = true;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.SUPPLY__MOOD_CODE, oldMoodCode, moodCode, !oldMoodCodeESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.SUPPLY__MOOD_CODE, oldMoodCode, moodCode, !oldMoodCodeESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void unsetMoodCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void unsetMoodCode() {
 		x_DocumentSubstanceMood oldMoodCode = moodCode;
 		boolean oldMoodCodeESet = moodCodeESet;
 		moodCode = MOOD_CODE_EDEFAULT;
 		moodCodeESet = false;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.UNSET, CDAPackage.SUPPLY__MOOD_CODE, oldMoodCode, MOOD_CODE_EDEFAULT,
-				oldMoodCodeESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, CDAPackage.SUPPLY__MOOD_CODE, oldMoodCode, MOOD_CODE_EDEFAULT, oldMoodCodeESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean isSetMoodCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public boolean isSetMoodCode() {
 		return moodCodeESet;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public boolean validateClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyOperations.validateClassCode(this, diagnostics, context);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CDAPackage.SUPPLY__REALM_CODE:
-				return ((InternalEList<?>) getRealmCodes()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getRealmCodes()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__TYPE_ID:
 				return basicSetTypeId(null, msgs);
 			case CDAPackage.SUPPLY__TEMPLATE_ID:
-				return ((InternalEList<?>) getTemplateIds()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getTemplateIds()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__ID:
-				return ((InternalEList<?>) getIds()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getIds()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__CODE:
 				return basicSetCode(null, msgs);
 			case CDAPackage.SUPPLY__TEXT:
@@ -1326,9 +1129,9 @@ public class SupplyImpl extends ClinicalStatementImpl implements Supply {
 			case CDAPackage.SUPPLY__STATUS_CODE:
 				return basicSetStatusCode(null, msgs);
 			case CDAPackage.SUPPLY__EFFECTIVE_TIME:
-				return ((InternalEList<?>) getEffectiveTimes()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getEffectiveTimes()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__PRIORITY_CODE:
-				return ((InternalEList<?>) getPriorityCodes()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getPriorityCodes()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__REPEAT_NUMBER:
 				return basicSetRepeatNumber(null, msgs);
 			case CDAPackage.SUPPLY__INDEPENDENT_IND:
@@ -1340,34 +1143,33 @@ public class SupplyImpl extends ClinicalStatementImpl implements Supply {
 			case CDAPackage.SUPPLY__SUBJECT:
 				return basicSetSubject(null, msgs);
 			case CDAPackage.SUPPLY__SPECIMEN:
-				return ((InternalEList<?>) getSpecimens()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getSpecimens()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__PRODUCT:
 				return basicSetProduct(null, msgs);
 			case CDAPackage.SUPPLY__PERFORMER:
-				return ((InternalEList<?>) getPerformers()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getPerformers()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__AUTHOR:
-				return ((InternalEList<?>) getAuthors()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getAuthors()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__INFORMANT:
-				return ((InternalEList<?>) getInformants()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getInformants()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__PARTICIPANT:
-				return ((InternalEList<?>) getParticipants()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getParticipants()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__ENTRY_RELATIONSHIP:
-				return ((InternalEList<?>) getEntryRelationships()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getEntryRelationships()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__REFERENCE:
-				return ((InternalEList<?>) getReferences()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getReferences()).basicRemove(otherEnd, msgs);
 			case CDAPackage.SUPPLY__PRECONDITION:
-				return ((InternalEList<?>) getPreconditions()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getPreconditions()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case CDAPackage.SUPPLY__REALM_CODE:
 				return getRealmCodes();
@@ -1425,123 +1227,121 @@ public class SupplyImpl extends ClinicalStatementImpl implements Supply {
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public void eSet(int featureID, Object newValue) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @SuppressWarnings("unchecked")
+    @Override
+    public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CDAPackage.SUPPLY__REALM_CODE:
 				getRealmCodes().clear();
-				getRealmCodes().addAll((Collection<? extends CS>) newValue);
+				getRealmCodes().addAll((Collection<? extends CS>)newValue);
 				return;
 			case CDAPackage.SUPPLY__TYPE_ID:
-				setTypeId((InfrastructureRootTypeId) newValue);
+				setTypeId((InfrastructureRootTypeId)newValue);
 				return;
 			case CDAPackage.SUPPLY__TEMPLATE_ID:
 				getTemplateIds().clear();
-				getTemplateIds().addAll((Collection<? extends II>) newValue);
+				getTemplateIds().addAll((Collection<? extends II>)newValue);
 				return;
 			case CDAPackage.SUPPLY__ID:
 				getIds().clear();
-				getIds().addAll((Collection<? extends II>) newValue);
+				getIds().addAll((Collection<? extends II>)newValue);
 				return;
 			case CDAPackage.SUPPLY__CODE:
-				setCode((CD) newValue);
+				setCode((CD)newValue);
 				return;
 			case CDAPackage.SUPPLY__TEXT:
-				setText((ED) newValue);
+				setText((ED)newValue);
 				return;
 			case CDAPackage.SUPPLY__STATUS_CODE:
-				setStatusCode((CS) newValue);
+				setStatusCode((CS)newValue);
 				return;
 			case CDAPackage.SUPPLY__EFFECTIVE_TIME:
 				getEffectiveTimes().clear();
-				getEffectiveTimes().addAll((Collection<? extends SXCM_TS>) newValue);
+				getEffectiveTimes().addAll((Collection<? extends SXCM_TS>)newValue);
 				return;
 			case CDAPackage.SUPPLY__PRIORITY_CODE:
 				getPriorityCodes().clear();
-				getPriorityCodes().addAll((Collection<? extends CE>) newValue);
+				getPriorityCodes().addAll((Collection<? extends CE>)newValue);
 				return;
 			case CDAPackage.SUPPLY__REPEAT_NUMBER:
-				setRepeatNumber((IVL_INT) newValue);
+				setRepeatNumber((IVL_INT)newValue);
 				return;
 			case CDAPackage.SUPPLY__INDEPENDENT_IND:
-				setIndependentInd((BL) newValue);
+				setIndependentInd((BL)newValue);
 				return;
 			case CDAPackage.SUPPLY__QUANTITY:
-				setQuantity((PQ) newValue);
+				setQuantity((PQ)newValue);
 				return;
 			case CDAPackage.SUPPLY__EXPECTED_USE_TIME:
-				setExpectedUseTime((IVL_TS) newValue);
+				setExpectedUseTime((IVL_TS)newValue);
 				return;
 			case CDAPackage.SUPPLY__SUBJECT:
-				setSubject((Subject) newValue);
+				setSubject((Subject)newValue);
 				return;
 			case CDAPackage.SUPPLY__SPECIMEN:
 				getSpecimens().clear();
-				getSpecimens().addAll((Collection<? extends Specimen>) newValue);
+				getSpecimens().addAll((Collection<? extends Specimen>)newValue);
 				return;
 			case CDAPackage.SUPPLY__PRODUCT:
-				setProduct((Product) newValue);
+				setProduct((Product)newValue);
 				return;
 			case CDAPackage.SUPPLY__PERFORMER:
 				getPerformers().clear();
-				getPerformers().addAll((Collection<? extends Performer2>) newValue);
+				getPerformers().addAll((Collection<? extends Performer2>)newValue);
 				return;
 			case CDAPackage.SUPPLY__AUTHOR:
 				getAuthors().clear();
-				getAuthors().addAll((Collection<? extends Author>) newValue);
+				getAuthors().addAll((Collection<? extends Author>)newValue);
 				return;
 			case CDAPackage.SUPPLY__INFORMANT:
 				getInformants().clear();
-				getInformants().addAll((Collection<? extends Informant12>) newValue);
+				getInformants().addAll((Collection<? extends Informant12>)newValue);
 				return;
 			case CDAPackage.SUPPLY__PARTICIPANT:
 				getParticipants().clear();
-				getParticipants().addAll((Collection<? extends Participant2>) newValue);
+				getParticipants().addAll((Collection<? extends Participant2>)newValue);
 				return;
 			case CDAPackage.SUPPLY__ENTRY_RELATIONSHIP:
 				getEntryRelationships().clear();
-				getEntryRelationships().addAll((Collection<? extends EntryRelationship>) newValue);
+				getEntryRelationships().addAll((Collection<? extends EntryRelationship>)newValue);
 				return;
 			case CDAPackage.SUPPLY__REFERENCE:
 				getReferences().clear();
-				getReferences().addAll((Collection<? extends Reference>) newValue);
+				getReferences().addAll((Collection<? extends Reference>)newValue);
 				return;
 			case CDAPackage.SUPPLY__PRECONDITION:
 				getPreconditions().clear();
-				getPreconditions().addAll((Collection<? extends Precondition>) newValue);
+				getPreconditions().addAll((Collection<? extends Precondition>)newValue);
 				return;
 			case CDAPackage.SUPPLY__NULL_FLAVOR:
-				setNullFlavor((NullFlavor) newValue);
+				setNullFlavor((NullFlavor)newValue);
 				return;
 			case CDAPackage.SUPPLY__CLASS_CODE:
-				setClassCode((ActClassSupply) newValue);
+				setClassCode((ActClassSupply)newValue);
 				return;
 			case CDAPackage.SUPPLY__MOOD_CODE:
-				setMoodCode((x_DocumentSubstanceMood) newValue);
+				setMoodCode((x_DocumentSubstanceMood)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eUnset(int featureID) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public void eUnset(int featureID) {
 		switch (featureID) {
 			case CDAPackage.SUPPLY__REALM_CODE:
 				getRealmCodes().clear();
 				return;
 			case CDAPackage.SUPPLY__TYPE_ID:
-				setTypeId((InfrastructureRootTypeId) null);
+				setTypeId((InfrastructureRootTypeId)null);
 				return;
 			case CDAPackage.SUPPLY__TEMPLATE_ID:
 				getTemplateIds().clear();
@@ -1550,13 +1350,13 @@ public class SupplyImpl extends ClinicalStatementImpl implements Supply {
 				getIds().clear();
 				return;
 			case CDAPackage.SUPPLY__CODE:
-				setCode((CD) null);
+				setCode((CD)null);
 				return;
 			case CDAPackage.SUPPLY__TEXT:
-				setText((ED) null);
+				setText((ED)null);
 				return;
 			case CDAPackage.SUPPLY__STATUS_CODE:
-				setStatusCode((CS) null);
+				setStatusCode((CS)null);
 				return;
 			case CDAPackage.SUPPLY__EFFECTIVE_TIME:
 				getEffectiveTimes().clear();
@@ -1565,25 +1365,25 @@ public class SupplyImpl extends ClinicalStatementImpl implements Supply {
 				getPriorityCodes().clear();
 				return;
 			case CDAPackage.SUPPLY__REPEAT_NUMBER:
-				setRepeatNumber((IVL_INT) null);
+				setRepeatNumber((IVL_INT)null);
 				return;
 			case CDAPackage.SUPPLY__INDEPENDENT_IND:
-				setIndependentInd((BL) null);
+				setIndependentInd((BL)null);
 				return;
 			case CDAPackage.SUPPLY__QUANTITY:
-				setQuantity((PQ) null);
+				setQuantity((PQ)null);
 				return;
 			case CDAPackage.SUPPLY__EXPECTED_USE_TIME:
-				setExpectedUseTime((IVL_TS) null);
+				setExpectedUseTime((IVL_TS)null);
 				return;
 			case CDAPackage.SUPPLY__SUBJECT:
-				setSubject((Subject) null);
+				setSubject((Subject)null);
 				return;
 			case CDAPackage.SUPPLY__SPECIMEN:
 				getSpecimens().clear();
 				return;
 			case CDAPackage.SUPPLY__PRODUCT:
-				setProduct((Product) null);
+				setProduct((Product)null);
 				return;
 			case CDAPackage.SUPPLY__PERFORMER:
 				getPerformers().clear();
@@ -1619,13 +1419,12 @@ public class SupplyImpl extends ClinicalStatementImpl implements Supply {
 		super.eUnset(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean eIsSet(int featureID) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CDAPackage.SUPPLY__REALM_CODE:
 				return realmCodes != null && !realmCodes.isEmpty();
@@ -1683,36 +1482,21 @@ public class SupplyImpl extends ClinicalStatementImpl implements Supply {
 		return super.eIsSet(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) {
-			return super.toString();
-		}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public String toString() {
+		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (nullFlavor: ");
-		if (nullFlavorESet) {
-			result.append(nullFlavor);
-		} else {
-			result.append("<unset>");
-		}
+		if (nullFlavorESet) result.append(nullFlavor); else result.append("<unset>");
 		result.append(", classCode: ");
-		if (classCodeESet) {
-			result.append(classCode);
-		} else {
-			result.append("<unset>");
-		}
+		if (classCodeESet) result.append(classCode); else result.append("<unset>");
 		result.append(", moodCode: ");
-		if (moodCodeESet) {
-			result.append(moodCode);
-		} else {
-			result.append("<unset>");
-		}
+		if (moodCodeESet) result.append(moodCode); else result.append("<unset>");
 		result.append(')');
 		return result.toString();
 	}

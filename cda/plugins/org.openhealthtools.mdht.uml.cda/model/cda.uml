@@ -1678,6 +1678,14 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_66VWUEreEd6FXKclYGEDCw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_66VWUUreEd6FXKclYGEDCw" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_rS5VoAPjEeGdM61FsLhcBQ" name="sDTCDeceasedInd" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wgh4IAPjEeGdM61FsLhcmQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LJEdAAPkEeGdM61FsLhcBQ" name="sDTCDeceasedTime" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RjJkgAPkEeGdM61FsLhcmQ"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_9DbJwEreEd6FXKclYGEDCw" name="maritalStatusCode" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-exGYEreEd6FXKclYGEDCw"/>
@@ -9031,6 +9039,8 @@
   <Ecore:EAttribute xmi:id="_eoZMUDwxEd-iov-AnRRcZg" isUnsettable="true" base_Property="_Cq7woEo2Ed6c3qsAxlFHaQ"/>
   <Ecore:EReference xmi:id="_Y4M9YHfcEd-OZ-5CAiSgsw" xmlName="raceCode" xmlNamespace="urn:hl7-org:sdtc" xmlFeatureKind="Element" base_Property="_SebX4HfcEd-OZ-5CAiSgsw"/>
   <Ecore:EReference xmi:id="_P6ipYHfdEd-OZ-5CAiSgsw" xmlName="birthTime" xmlNamespace="urn:hl7-org:sdtc" xmlFeatureKind="Element" base_Property="_9pQDUHfcEd-OZ-5CAiSgsw"/>
+  <Ecore:EReference xmi:id="_yczXkAPjEeGdM61FsLhcBQ" xmlName="deceasedInd" xmlNamespace="urn:hl7-org:sdtc" xmlFeatureKind="Element" base_Property="_rS5VoAPjEeGdM61FsLhcBQ"/>
+  <Ecore:EReference xmi:id="_T7cRkAPkEeGdM61FsLhcBQ" xmlName="deceasedTime" xmlNamespace="urn:hl7-org:sdtc" xmlFeatureKind="Element" base_Property="_LJEdAAPkEeGdM61FsLhcBQ"/>
   <Ecore:EReference xmi:id="_5Mqt0HfdEd-OZ-5CAiSgsw" xmlName="id" xmlNamespace="urn:hl7-org:sdtc" xmlFeatureKind="Element" base_Property="_yJT_0HfdEd-OZ-5CAiSgsw"/>
   <Ecore:EReference xmi:id="_i9ybYHfeEd-OZ-5CAiSgsw" xmlName="patient" xmlNamespace="urn:hl7-org:sdtc" xmlFeatureKind="Element" base_Property="_dXaowHfeEd-OZ-5CAiSgsw"/>
   <Ecore:EReference xmi:id="_kA3zkHffEd-OZ-5CAiSgsw" xmlName="patient" xmlNamespace="urn:hl7-org:sdtc" xmlFeatureKind="Element" base_Property="_dKVZkHffEd-OZ-5CAiSgsw"/>

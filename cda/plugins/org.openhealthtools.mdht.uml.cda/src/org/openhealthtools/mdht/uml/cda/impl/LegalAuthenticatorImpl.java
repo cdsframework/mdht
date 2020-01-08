@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.impl;
 
 import java.util.Collection;
@@ -59,686 +59,563 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  * @generated
  */
 public class LegalAuthenticatorImpl extends ParticipationImpl implements LegalAuthenticator {
-	/**
+
+    /**
 	 * The cached value of the '{@link #getRealmCodes() <em>Realm Code</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getRealmCodes()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<CS> realmCodes;
+    protected EList<CS> realmCodes;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getTypeId() <em>Type Id</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getTypeId()
 	 * @generated
 	 * @ordered
 	 */
-	protected InfrastructureRootTypeId typeId;
+    protected InfrastructureRootTypeId typeId;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getTemplateIds() <em>Template Id</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getTemplateIds()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<II> templateIds;
+    protected EList<II> templateIds;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getTime() <em>Time</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getTime()
 	 * @generated
 	 * @ordered
 	 */
-	protected TS time;
+    protected TS time;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getSignatureCode() <em>Signature Code</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getSignatureCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected CS signatureCode;
+    protected CS signatureCode;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getAssignedEntity() <em>Assigned Entity</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getAssignedEntity()
 	 * @generated
 	 * @ordered
 	 */
-	protected AssignedEntity assignedEntity;
+    protected AssignedEntity assignedEntity;
 
-	/**
+    /**
 	 * The default value of the '{@link #getNullFlavor() <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getNullFlavor()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final NullFlavor NULL_FLAVOR_EDEFAULT = NullFlavor.ASKU;
+    protected static final NullFlavor NULL_FLAVOR_EDEFAULT = NullFlavor.ASKU;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getNullFlavor() <em>Null Flavor</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getNullFlavor()
 	 * @generated
 	 * @ordered
 	 */
-	protected NullFlavor nullFlavor = NULL_FLAVOR_EDEFAULT;
+    protected NullFlavor nullFlavor = NULL_FLAVOR_EDEFAULT;
 
-	/**
+    /**
 	 * This is true if the Null Flavor attribute has been set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean nullFlavorESet;
+    protected boolean nullFlavorESet;
 
-	/**
+    /**
 	 * The default value of the '{@link #getTypeCode() <em>Type Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getTypeCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ParticipationType TYPE_CODE_EDEFAULT = ParticipationType.LA;
+    protected static final ParticipationType TYPE_CODE_EDEFAULT = ParticipationType.LA;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getTypeCode() <em>Type Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getTypeCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected ParticipationType typeCode = TYPE_CODE_EDEFAULT;
+    protected ParticipationType typeCode = TYPE_CODE_EDEFAULT;
 
-	/**
+    /**
 	 * This is true if the Type Code attribute has been set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean typeCodeESet;
+    protected boolean typeCodeESet;
 
-	/**
+    /**
 	 * The default value of the '{@link #getContextControlCode() <em>Context Control Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getContextControlCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ContextControl CONTEXT_CONTROL_CODE_EDEFAULT = ContextControl.OP;
+    protected static final ContextControl CONTEXT_CONTROL_CODE_EDEFAULT = ContextControl.OP;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getContextControlCode() <em>Context Control Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getContextControlCode()
 	 * @generated
 	 * @ordered
 	 */
-	protected ContextControl contextControlCode = CONTEXT_CONTROL_CODE_EDEFAULT;
+    protected ContextControl contextControlCode = CONTEXT_CONTROL_CODE_EDEFAULT;
 
-	/**
+    /**
 	 * This is true if the Context Control Code attribute has been set.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean contextControlCodeESet;
+    protected boolean contextControlCodeESet;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getSDTCSignatureText() <em>SDTC Signature Text</em>}' containment reference.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getSDTCSignatureText()
 	 * @generated
 	 * @ordered
 	 */
-	protected ED sDTCSignatureText;
+    protected ED sDTCSignatureText;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected LegalAuthenticatorImpl() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    protected LegalAuthenticatorImpl() {
 		super();
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EClass eStaticClass() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    protected EClass eStaticClass() {
 		return CDAPackage.Literals.LEGAL_AUTHENTICATOR;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<CS> getRealmCodes() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public EList<CS> getRealmCodes() {
 		if (realmCodes == null) {
 			realmCodes = new EObjectContainmentEList<CS>(CS.class, this, CDAPackage.LEGAL_AUTHENTICATOR__REALM_CODE);
 		}
 		return realmCodes;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InfrastructureRootTypeId getTypeId() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public InfrastructureRootTypeId getTypeId() {
 		return typeId;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetTypeId(InfrastructureRootTypeId newTypeId, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetTypeId(InfrastructureRootTypeId newTypeId, NotificationChain msgs) {
 		InfrastructureRootTypeId oldTypeId = typeId;
 		typeId = newTypeId;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__TYPE_ID, oldTypeId, newTypeId);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__TYPE_ID, oldTypeId, newTypeId);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setTypeId(InfrastructureRootTypeId newTypeId) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setTypeId(InfrastructureRootTypeId newTypeId) {
 		if (newTypeId != typeId) {
 			NotificationChain msgs = null;
-			if (typeId != null) {
-				msgs = ((InternalEObject) typeId).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.LEGAL_AUTHENTICATOR__TYPE_ID, null, msgs);
-			}
-			if (newTypeId != null) {
-				msgs = ((InternalEObject) newTypeId).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.LEGAL_AUTHENTICATOR__TYPE_ID, null, msgs);
-			}
+			if (typeId != null)
+				msgs = ((InternalEObject)typeId).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.LEGAL_AUTHENTICATOR__TYPE_ID, null, msgs);
+			if (newTypeId != null)
+				msgs = ((InternalEObject)newTypeId).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.LEGAL_AUTHENTICATOR__TYPE_ID, null, msgs);
 			msgs = basicSetTypeId(newTypeId, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__TYPE_ID, newTypeId, newTypeId));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__TYPE_ID, newTypeId, newTypeId));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<II> getTemplateIds() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public EList<II> getTemplateIds() {
 		if (templateIds == null) {
 			templateIds = new EObjectContainmentEList<II>(II.class, this, CDAPackage.LEGAL_AUTHENTICATOR__TEMPLATE_ID);
 		}
 		return templateIds;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public TS getTime() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public TS getTime() {
 		return time;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetTime(TS newTime, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetTime(TS newTime, NotificationChain msgs) {
 		TS oldTime = time;
 		time = newTime;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__TIME, oldTime, newTime);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__TIME, oldTime, newTime);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setTime(TS newTime) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setTime(TS newTime) {
 		if (newTime != time) {
 			NotificationChain msgs = null;
-			if (time != null) {
-				msgs = ((InternalEObject) time).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.LEGAL_AUTHENTICATOR__TIME, null, msgs);
-			}
-			if (newTime != null) {
-				msgs = ((InternalEObject) newTime).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.LEGAL_AUTHENTICATOR__TIME, null, msgs);
-			}
+			if (time != null)
+				msgs = ((InternalEObject)time).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.LEGAL_AUTHENTICATOR__TIME, null, msgs);
+			if (newTime != null)
+				msgs = ((InternalEObject)newTime).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.LEGAL_AUTHENTICATOR__TIME, null, msgs);
 			msgs = basicSetTime(newTime, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__TIME, newTime, newTime));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__TIME, newTime, newTime));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CS getSignatureCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public CS getSignatureCode() {
 		return signatureCode;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetSignatureCode(CS newSignatureCode, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetSignatureCode(CS newSignatureCode, NotificationChain msgs) {
 		CS oldSignatureCode = signatureCode;
 		signatureCode = newSignatureCode;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__SIGNATURE_CODE, oldSignatureCode,
-				newSignatureCode);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__SIGNATURE_CODE, oldSignatureCode, newSignatureCode);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setSignatureCode(CS newSignatureCode) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setSignatureCode(CS newSignatureCode) {
 		if (newSignatureCode != signatureCode) {
 			NotificationChain msgs = null;
-			if (signatureCode != null) {
-				msgs = ((InternalEObject) signatureCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.LEGAL_AUTHENTICATOR__SIGNATURE_CODE, null, msgs);
-			}
-			if (newSignatureCode != null) {
-				msgs = ((InternalEObject) newSignatureCode).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.LEGAL_AUTHENTICATOR__SIGNATURE_CODE, null, msgs);
-			}
+			if (signatureCode != null)
+				msgs = ((InternalEObject)signatureCode).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.LEGAL_AUTHENTICATOR__SIGNATURE_CODE, null, msgs);
+			if (newSignatureCode != null)
+				msgs = ((InternalEObject)newSignatureCode).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.LEGAL_AUTHENTICATOR__SIGNATURE_CODE, null, msgs);
 			msgs = basicSetSignatureCode(newSignatureCode, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__SIGNATURE_CODE, newSignatureCode,
-				newSignatureCode));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__SIGNATURE_CODE, newSignatureCode, newSignatureCode));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssignedEntity getAssignedEntity() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public AssignedEntity getAssignedEntity() {
 		return assignedEntity;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetAssignedEntity(AssignedEntity newAssignedEntity, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetAssignedEntity(AssignedEntity newAssignedEntity, NotificationChain msgs) {
 		AssignedEntity oldAssignedEntity = assignedEntity;
 		assignedEntity = newAssignedEntity;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__ASSIGNED_ENTITY, oldAssignedEntity,
-				newAssignedEntity);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__ASSIGNED_ENTITY, oldAssignedEntity, newAssignedEntity);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setAssignedEntity(AssignedEntity newAssignedEntity) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setAssignedEntity(AssignedEntity newAssignedEntity) {
 		if (newAssignedEntity != assignedEntity) {
 			NotificationChain msgs = null;
-			if (assignedEntity != null) {
-				msgs = ((InternalEObject) assignedEntity).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.LEGAL_AUTHENTICATOR__ASSIGNED_ENTITY, null, msgs);
-			}
-			if (newAssignedEntity != null) {
-				msgs = ((InternalEObject) newAssignedEntity).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.LEGAL_AUTHENTICATOR__ASSIGNED_ENTITY, null, msgs);
-			}
+			if (assignedEntity != null)
+				msgs = ((InternalEObject)assignedEntity).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.LEGAL_AUTHENTICATOR__ASSIGNED_ENTITY, null, msgs);
+			if (newAssignedEntity != null)
+				msgs = ((InternalEObject)newAssignedEntity).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.LEGAL_AUTHENTICATOR__ASSIGNED_ENTITY, null, msgs);
 			msgs = basicSetAssignedEntity(newAssignedEntity, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__ASSIGNED_ENTITY, newAssignedEntity,
-				newAssignedEntity));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__ASSIGNED_ENTITY, newAssignedEntity, newAssignedEntity));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NullFlavor getNullFlavor() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public NullFlavor getNullFlavor() {
 		return nullFlavor;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setNullFlavor(NullFlavor newNullFlavor) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setNullFlavor(NullFlavor newNullFlavor) {
 		NullFlavor oldNullFlavor = nullFlavor;
-		nullFlavor = newNullFlavor == null
-				? NULL_FLAVOR_EDEFAULT
-				: newNullFlavor;
+		nullFlavor = newNullFlavor == null ? NULL_FLAVOR_EDEFAULT : newNullFlavor;
 		boolean oldNullFlavorESet = nullFlavorESet;
 		nullFlavorESet = true;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__NULL_FLAVOR, oldNullFlavor, nullFlavor,
-				!oldNullFlavorESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__NULL_FLAVOR, oldNullFlavor, nullFlavor, !oldNullFlavorESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void unsetNullFlavor() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void unsetNullFlavor() {
 		NullFlavor oldNullFlavor = nullFlavor;
 		boolean oldNullFlavorESet = nullFlavorESet;
 		nullFlavor = NULL_FLAVOR_EDEFAULT;
 		nullFlavorESet = false;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.UNSET, CDAPackage.LEGAL_AUTHENTICATOR__NULL_FLAVOR, oldNullFlavor,
-				NULL_FLAVOR_EDEFAULT, oldNullFlavorESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, CDAPackage.LEGAL_AUTHENTICATOR__NULL_FLAVOR, oldNullFlavor, NULL_FLAVOR_EDEFAULT, oldNullFlavorESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean isSetNullFlavor() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public boolean isSetNullFlavor() {
 		return nullFlavorESet;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ParticipationType getTypeCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public ParticipationType getTypeCode() {
 		return typeCode;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setTypeCode(ParticipationType newTypeCode) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setTypeCode(ParticipationType newTypeCode) {
 		ParticipationType oldTypeCode = typeCode;
-		typeCode = newTypeCode == null
-				? TYPE_CODE_EDEFAULT
-				: newTypeCode;
+		typeCode = newTypeCode == null ? TYPE_CODE_EDEFAULT : newTypeCode;
 		boolean oldTypeCodeESet = typeCodeESet;
 		typeCodeESet = true;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__TYPE_CODE, oldTypeCode, typeCode,
-				!oldTypeCodeESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__TYPE_CODE, oldTypeCode, typeCode, !oldTypeCodeESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void unsetTypeCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void unsetTypeCode() {
 		ParticipationType oldTypeCode = typeCode;
 		boolean oldTypeCodeESet = typeCodeESet;
 		typeCode = TYPE_CODE_EDEFAULT;
 		typeCodeESet = false;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.UNSET, CDAPackage.LEGAL_AUTHENTICATOR__TYPE_CODE, oldTypeCode, TYPE_CODE_EDEFAULT,
-				oldTypeCodeESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, CDAPackage.LEGAL_AUTHENTICATOR__TYPE_CODE, oldTypeCode, TYPE_CODE_EDEFAULT, oldTypeCodeESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean isSetTypeCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public boolean isSetTypeCode() {
 		return typeCodeESet;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ContextControl getContextControlCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public ContextControl getContextControlCode() {
 		return contextControlCode;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setContextControlCode(ContextControl newContextControlCode) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setContextControlCode(ContextControl newContextControlCode) {
 		ContextControl oldContextControlCode = contextControlCode;
-		contextControlCode = newContextControlCode == null
-				? CONTEXT_CONTROL_CODE_EDEFAULT
-				: newContextControlCode;
+		contextControlCode = newContextControlCode == null ? CONTEXT_CONTROL_CODE_EDEFAULT : newContextControlCode;
 		boolean oldContextControlCodeESet = contextControlCodeESet;
 		contextControlCodeESet = true;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__CONTEXT_CONTROL_CODE, oldContextControlCode,
-				contextControlCode, !oldContextControlCodeESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__CONTEXT_CONTROL_CODE, oldContextControlCode, contextControlCode, !oldContextControlCodeESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void unsetContextControlCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void unsetContextControlCode() {
 		ContextControl oldContextControlCode = contextControlCode;
 		boolean oldContextControlCodeESet = contextControlCodeESet;
 		contextControlCode = CONTEXT_CONTROL_CODE_EDEFAULT;
 		contextControlCodeESet = false;
-		if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.UNSET, CDAPackage.LEGAL_AUTHENTICATOR__CONTEXT_CONTROL_CODE, oldContextControlCode,
-				CONTEXT_CONTROL_CODE_EDEFAULT, oldContextControlCodeESet));
-		}
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, CDAPackage.LEGAL_AUTHENTICATOR__CONTEXT_CONTROL_CODE, oldContextControlCode, CONTEXT_CONTROL_CODE_EDEFAULT, oldContextControlCodeESet));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean isSetContextControlCode() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public boolean isSetContextControlCode() {
 		return contextControlCodeESet;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ED getSDTCSignatureText() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public ED getSDTCSignatureText() {
 		return sDTCSignatureText;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetSDTCSignatureText(ED newSDTCSignatureText, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetSDTCSignatureText(ED newSDTCSignatureText, NotificationChain msgs) {
 		ED oldSDTCSignatureText = sDTCSignatureText;
 		sDTCSignatureText = newSDTCSignatureText;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__SDTC_SIGNATURE_TEXT, oldSDTCSignatureText,
-				newSDTCSignatureText);
-			if (msgs == null) {
-				msgs = notification;
-			} else {
-				msgs.add(notification);
-			}
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__SDTC_SIGNATURE_TEXT, oldSDTCSignatureText, newSDTCSignatureText);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setSDTCSignatureText(ED newSDTCSignatureText) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setSDTCSignatureText(ED newSDTCSignatureText) {
 		if (newSDTCSignatureText != sDTCSignatureText) {
 			NotificationChain msgs = null;
-			if (sDTCSignatureText != null) {
-				msgs = ((InternalEObject) sDTCSignatureText).eInverseRemove(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.LEGAL_AUTHENTICATOR__SDTC_SIGNATURE_TEXT, null, msgs);
-			}
-			if (newSDTCSignatureText != null) {
-				msgs = ((InternalEObject) newSDTCSignatureText).eInverseAdd(this, EOPPOSITE_FEATURE_BASE -
-						CDAPackage.LEGAL_AUTHENTICATOR__SDTC_SIGNATURE_TEXT, null, msgs);
-			}
+			if (sDTCSignatureText != null)
+				msgs = ((InternalEObject)sDTCSignatureText).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CDAPackage.LEGAL_AUTHENTICATOR__SDTC_SIGNATURE_TEXT, null, msgs);
+			if (newSDTCSignatureText != null)
+				msgs = ((InternalEObject)newSDTCSignatureText).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CDAPackage.LEGAL_AUTHENTICATOR__SDTC_SIGNATURE_TEXT, null, msgs);
 			msgs = basicSetSDTCSignatureText(newSDTCSignatureText, msgs);
-			if (msgs != null) {
-				msgs.dispatch();
-			}
-		} else if (eNotificationRequired()) {
-			eNotify(new ENotificationImpl(
-				this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__SDTC_SIGNATURE_TEXT, newSDTCSignatureText,
-				newSDTCSignatureText));
+			if (msgs != null) msgs.dispatch();
 		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CDAPackage.LEGAL_AUTHENTICATOR__SDTC_SIGNATURE_TEXT, newSDTCSignatureText, newSDTCSignatureText));
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public boolean validateTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LegalAuthenticatorOperations.validateTypeCode(this, diagnostics, context);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateContextControlCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public boolean validateContextControlCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LegalAuthenticatorOperations.validateContextControlCode(this, diagnostics, context);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CDAPackage.LEGAL_AUTHENTICATOR__REALM_CODE:
-				return ((InternalEList<?>) getRealmCodes()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getRealmCodes()).basicRemove(otherEnd, msgs);
 			case CDAPackage.LEGAL_AUTHENTICATOR__TYPE_ID:
 				return basicSetTypeId(null, msgs);
 			case CDAPackage.LEGAL_AUTHENTICATOR__TEMPLATE_ID:
-				return ((InternalEList<?>) getTemplateIds()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getTemplateIds()).basicRemove(otherEnd, msgs);
 			case CDAPackage.LEGAL_AUTHENTICATOR__TIME:
 				return basicSetTime(null, msgs);
 			case CDAPackage.LEGAL_AUTHENTICATOR__SIGNATURE_CODE:
@@ -751,13 +628,12 @@ public class LegalAuthenticatorImpl extends ParticipationImpl implements LegalAu
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case CDAPackage.LEGAL_AUTHENTICATOR__REALM_CODE:
 				return getRealmCodes();
@@ -783,76 +659,74 @@ public class LegalAuthenticatorImpl extends ParticipationImpl implements LegalAu
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public void eSet(int featureID, Object newValue) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @SuppressWarnings("unchecked")
+    @Override
+    public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CDAPackage.LEGAL_AUTHENTICATOR__REALM_CODE:
 				getRealmCodes().clear();
-				getRealmCodes().addAll((Collection<? extends CS>) newValue);
+				getRealmCodes().addAll((Collection<? extends CS>)newValue);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__TYPE_ID:
-				setTypeId((InfrastructureRootTypeId) newValue);
+				setTypeId((InfrastructureRootTypeId)newValue);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__TEMPLATE_ID:
 				getTemplateIds().clear();
-				getTemplateIds().addAll((Collection<? extends II>) newValue);
+				getTemplateIds().addAll((Collection<? extends II>)newValue);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__TIME:
-				setTime((TS) newValue);
+				setTime((TS)newValue);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__SIGNATURE_CODE:
-				setSignatureCode((CS) newValue);
+				setSignatureCode((CS)newValue);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__ASSIGNED_ENTITY:
-				setAssignedEntity((AssignedEntity) newValue);
+				setAssignedEntity((AssignedEntity)newValue);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__NULL_FLAVOR:
-				setNullFlavor((NullFlavor) newValue);
+				setNullFlavor((NullFlavor)newValue);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__TYPE_CODE:
-				setTypeCode((ParticipationType) newValue);
+				setTypeCode((ParticipationType)newValue);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__CONTEXT_CONTROL_CODE:
-				setContextControlCode((ContextControl) newValue);
+				setContextControlCode((ContextControl)newValue);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__SDTC_SIGNATURE_TEXT:
-				setSDTCSignatureText((ED) newValue);
+				setSDTCSignatureText((ED)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eUnset(int featureID) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public void eUnset(int featureID) {
 		switch (featureID) {
 			case CDAPackage.LEGAL_AUTHENTICATOR__REALM_CODE:
 				getRealmCodes().clear();
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__TYPE_ID:
-				setTypeId((InfrastructureRootTypeId) null);
+				setTypeId((InfrastructureRootTypeId)null);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__TEMPLATE_ID:
 				getTemplateIds().clear();
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__TIME:
-				setTime((TS) null);
+				setTime((TS)null);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__SIGNATURE_CODE:
-				setSignatureCode((CS) null);
+				setSignatureCode((CS)null);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__ASSIGNED_ENTITY:
-				setAssignedEntity((AssignedEntity) null);
+				setAssignedEntity((AssignedEntity)null);
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__NULL_FLAVOR:
 				unsetNullFlavor();
@@ -864,19 +738,18 @@ public class LegalAuthenticatorImpl extends ParticipationImpl implements LegalAu
 				unsetContextControlCode();
 				return;
 			case CDAPackage.LEGAL_AUTHENTICATOR__SDTC_SIGNATURE_TEXT:
-				setSDTCSignatureText((ED) null);
+				setSDTCSignatureText((ED)null);
 				return;
 		}
 		super.eUnset(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean eIsSet(int featureID) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CDAPackage.LEGAL_AUTHENTICATOR__REALM_CODE:
 				return realmCodes != null && !realmCodes.isEmpty();
@@ -902,36 +775,21 @@ public class LegalAuthenticatorImpl extends ParticipationImpl implements LegalAu
 		return super.eIsSet(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) {
-			return super.toString();
-		}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public String toString() {
+		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (nullFlavor: ");
-		if (nullFlavorESet) {
-			result.append(nullFlavor);
-		} else {
-			result.append("<unset>");
-		}
+		if (nullFlavorESet) result.append(nullFlavor); else result.append("<unset>");
 		result.append(", typeCode: ");
-		if (typeCodeESet) {
-			result.append(typeCode);
-		} else {
-			result.append("<unset>");
-		}
+		if (typeCodeESet) result.append(typeCode); else result.append("<unset>");
 		result.append(", contextControlCode: ");
-		if (contextControlCodeESet) {
-			result.append(contextControlCode);
-		} else {
-			result.append("<unset>");
-		}
+		if (contextControlCodeESet) result.append(contextControlCode); else result.append("<unset>");
 		result.append(')');
 		return result.toString();
 	}

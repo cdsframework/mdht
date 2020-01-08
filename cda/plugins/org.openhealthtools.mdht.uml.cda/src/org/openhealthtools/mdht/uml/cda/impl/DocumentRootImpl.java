@@ -1,4 +1,4 @@
-/*******************************************************************************
+/** *****************************************************************************
  * Copyright (c) 2009, 2011 IBM Corporation and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
- *******************************************************************************/
+ ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.impl;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -43,204 +43,179 @@ import org.openhealthtools.mdht.uml.cda.DocumentRoot;
  * @generated
  */
 public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
-	/**
+
+    /**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getMixed()
 	 * @generated
 	 * @ordered
 	 */
-	protected FeatureMap mixed;
+    protected FeatureMap mixed;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getXMLNSPrefixMap() <em>XMLNS Prefix Map</em>}' map.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getXMLNSPrefixMap()
 	 * @generated
 	 * @ordered
 	 */
-	protected EMap<String, String> xMLNSPrefixMap;
+    protected EMap<String, String> xMLNSPrefixMap;
 
-	/**
+    /**
 	 * The cached value of the '{@link #getXSISchemaLocation() <em>XSI Schema Location</em>}' map.
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
 	 * @see #getXSISchemaLocation()
 	 * @generated
 	 * @ordered
 	 */
-	protected EMap<String, String> xSISchemaLocation;
+    protected EMap<String, String> xSISchemaLocation;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected DocumentRootImpl() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    protected DocumentRootImpl() {
 		super();
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EClass eStaticClass() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    protected EClass eStaticClass() {
 		return CDAPackage.Literals.DOCUMENT_ROOT;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FeatureMap getMixed() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public FeatureMap getMixed() {
 		if (mixed == null) {
 			mixed = new BasicFeatureMap(this, CDAPackage.DOCUMENT_ROOT__MIXED);
 		}
 		return mixed;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMap<String, String> getXMLNSPrefixMap() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EMap<String, String> getXMLNSPrefixMap() {
 		if (xMLNSPrefixMap == null) {
-			xMLNSPrefixMap = new EcoreEMap<String, String>(
-				EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this,
-				CDAPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP);
+			xMLNSPrefixMap = new EcoreEMap<String,String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this, CDAPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP);
 		}
 		return xMLNSPrefixMap;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMap<String, String> getXSISchemaLocation() {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public EMap<String, String> getXSISchemaLocation() {
 		if (xSISchemaLocation == null) {
-			xSISchemaLocation = new EcoreEMap<String, String>(
-				EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this,
-				CDAPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION);
+			xSISchemaLocation = new EcoreEMap<String,String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY, EStringToStringMapEntryImpl.class, this, CDAPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION);
 		}
 		return xSISchemaLocation;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ClinicalDocument getClinicalDocument() {
-		return (ClinicalDocument) getMixed().get(CDAPackage.Literals.DOCUMENT_ROOT__CLINICAL_DOCUMENT, true);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public ClinicalDocument getClinicalDocument() {
+		return (ClinicalDocument)getMixed().get(CDAPackage.Literals.DOCUMENT_ROOT__CLINICAL_DOCUMENT, true);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetClinicalDocument(ClinicalDocument newClinicalDocument, NotificationChain msgs) {
-		return ((FeatureMap.Internal) getMixed()).basicAdd(
-			CDAPackage.Literals.DOCUMENT_ROOT__CLINICAL_DOCUMENT, newClinicalDocument, msgs);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public NotificationChain basicSetClinicalDocument(ClinicalDocument newClinicalDocument, NotificationChain msgs) {
+		return ((FeatureMap.Internal)getMixed()).basicAdd(CDAPackage.Literals.DOCUMENT_ROOT__CLINICAL_DOCUMENT, newClinicalDocument, msgs);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setClinicalDocument(ClinicalDocument newClinicalDocument) {
-		((FeatureMap.Internal) getMixed()).set(
-			CDAPackage.Literals.DOCUMENT_ROOT__CLINICAL_DOCUMENT, newClinicalDocument);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    public void setClinicalDocument(ClinicalDocument newClinicalDocument) {
+		((FeatureMap.Internal)getMixed()).set(CDAPackage.Literals.DOCUMENT_ROOT__CLINICAL_DOCUMENT, newClinicalDocument);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CDAPackage.DOCUMENT_ROOT__MIXED:
-				return ((InternalEList<?>) getMixed()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getMixed()).basicRemove(otherEnd, msgs);
 			case CDAPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP:
-				return ((InternalEList<?>) getXMLNSPrefixMap()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getXMLNSPrefixMap()).basicRemove(otherEnd, msgs);
 			case CDAPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION:
-				return ((InternalEList<?>) getXSISchemaLocation()).basicRemove(otherEnd, msgs);
+				return ((InternalEList<?>)getXSISchemaLocation()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case CDAPackage.DOCUMENT_ROOT__MIXED:
-				if (coreType) {
-					return getMixed();
-				}
-				return ((FeatureMap.Internal) getMixed()).getWrapper();
+				if (coreType) return getMixed();
+				return ((FeatureMap.Internal)getMixed()).getWrapper();
 			case CDAPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP:
-				if (coreType) {
-					return getXMLNSPrefixMap();
-				} else {
-					return getXMLNSPrefixMap().map();
-				}
+				if (coreType) return getXMLNSPrefixMap();
+				else return getXMLNSPrefixMap().map();
 			case CDAPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION:
-				if (coreType) {
-					return getXSISchemaLocation();
-				} else {
-					return getXSISchemaLocation().map();
-				}
+				if (coreType) return getXSISchemaLocation();
+				else return getXSISchemaLocation().map();
 			case CDAPackage.DOCUMENT_ROOT__CLINICAL_DOCUMENT:
 				return getClinicalDocument();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eSet(int featureID, Object newValue) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CDAPackage.DOCUMENT_ROOT__MIXED:
-				((FeatureMap.Internal) getMixed()).set(newValue);
+				((FeatureMap.Internal)getMixed()).set(newValue);
 				return;
 			case CDAPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP:
-				((EStructuralFeature.Setting) getXMLNSPrefixMap()).set(newValue);
+				((EStructuralFeature.Setting)getXMLNSPrefixMap()).set(newValue);
 				return;
 			case CDAPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION:
-				((EStructuralFeature.Setting) getXSISchemaLocation()).set(newValue);
+				((EStructuralFeature.Setting)getXSISchemaLocation()).set(newValue);
 				return;
 			case CDAPackage.DOCUMENT_ROOT__CLINICAL_DOCUMENT:
-				setClinicalDocument((ClinicalDocument) newValue);
+				setClinicalDocument((ClinicalDocument)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eUnset(int featureID) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public void eUnset(int featureID) {
 		switch (featureID) {
 			case CDAPackage.DOCUMENT_ROOT__MIXED:
 				getMixed().clear();
@@ -252,19 +227,18 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
 				getXSISchemaLocation().clear();
 				return;
 			case CDAPackage.DOCUMENT_ROOT__CLINICAL_DOCUMENT:
-				setClinicalDocument((ClinicalDocument) null);
+				setClinicalDocument((ClinicalDocument)null);
 				return;
 		}
 		super.eUnset(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean eIsSet(int featureID) {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CDAPackage.DOCUMENT_ROOT__MIXED:
 				return mixed != null && !mixed.isEmpty();
@@ -278,16 +252,13 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
 		return super.eIsSet(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) {
-			return super.toString();
-		}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+     */
+    @Override
+    public String toString() {
+		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (mixed: ");
