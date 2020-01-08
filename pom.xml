@@ -43,7 +43,6 @@
 		<module>cda/plugins</module>
 		<module>cda/tests</module>
 		<module>cda/features</module>
-		<module>releng/sites</module>
 	</modules>
 	<profiles>
 		<profile>
