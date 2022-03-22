@@ -10,6 +10,8 @@
  ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.operations;
 
+import org.openhealthtools.mdht.uml.cda.util.LazyInitializer;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -59,16 +61,33 @@ public class AuthoringDeviceOperations extends EntityOperations {
 	 */
     protected static final String VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isClassCodeDefined() implies self.classCode=vocab::EntityClassDevice::DEV";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateClassCode(AuthoringDevice, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Class Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateClassCode(AuthoringDevice, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateClassCode(AuthoringDevice, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.AUTHORING_DEVICE);
+					try
+					{
+						return helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -80,26 +99,18 @@ public class AuthoringDeviceOperations extends EntityOperations {
 	 * @generated
 	 */
     public static boolean validateClassCode(AuthoringDevice authoringDevice, DiagnosticChain diagnostics,
-            Map<Object, Object> context) {
-		if (VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.AUTHORING_DEVICE);
-			try {
-				VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(authoringDevice)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.AUTHORING_DEVICE__CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(authoringDevice, context) }),
-						 new Object [] { authoringDevice }));
+            Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(authoringDevice))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.AUTHORING_DEVICE__CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateClassCode",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(authoringDevice, context) }),
+						new Object[] { authoringDevice }));
 			}
 			return false;
 		}
@@ -116,16 +127,33 @@ public class AuthoringDeviceOperations extends EntityOperations {
 	 */
     protected static final String VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isDeterminerCodeDefined() implies self.determinerCode=vocab::EntityDeterminer::INSTANCE";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateDeterminerCode(AuthoringDevice, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Determiner Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateDeterminerCode(AuthoringDevice, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateDeterminerCode(AuthoringDevice, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.AUTHORING_DEVICE);
+					try
+					{
+						return helper.createInvariant(VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -137,26 +165,18 @@ public class AuthoringDeviceOperations extends EntityOperations {
 	 * @generated
 	 */
     public static boolean validateDeterminerCode(AuthoringDevice authoringDevice, DiagnosticChain diagnostics,
-            Map<Object, Object> context) {
-		if (VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.AUTHORING_DEVICE);
-			try {
-				VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(authoringDevice)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.AUTHORING_DEVICE__DETERMINER_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateDeterminerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(authoringDevice, context) }),
-						 new Object [] { authoringDevice }));
+			Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(authoringDevice))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.AUTHORING_DEVICE__DETERMINER_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateDeterminerCode",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(authoringDevice, context) }),
+						new Object [] { authoringDevice }));
 			}
 			return false;
 		}

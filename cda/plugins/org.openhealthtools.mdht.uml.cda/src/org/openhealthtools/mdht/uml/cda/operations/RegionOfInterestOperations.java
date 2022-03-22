@@ -10,6 +10,8 @@
  ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.operations;
 
+import org.openhealthtools.mdht.uml.cda.util.LazyInitializer;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -58,16 +60,33 @@ public class RegionOfInterestOperations extends ClinicalStatementOperations {
 	 */
     protected static final String VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isClassCodeDefined() implies self.classCode=vocab::ActClass::ROIOVL";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateClassCode(RegionOfInterest, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Class Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateClassCode(RegionOfInterest, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateClassCode(RegionOfInterest, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.REGION_OF_INTEREST);
+					try
+					{
+						return helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -79,26 +98,18 @@ public class RegionOfInterestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
     public static boolean validateClassCode(RegionOfInterest regionOfInterest, DiagnosticChain diagnostics,
-            Map<Object, Object> context) {
-		if (VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.REGION_OF_INTEREST);
-			try {
-				VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(regionOfInterest)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.REGION_OF_INTEREST__CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(regionOfInterest, context) }),
-						 new Object [] { regionOfInterest }));
+            Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(regionOfInterest))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.REGION_OF_INTEREST__CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateClassCode",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(regionOfInterest, context) }),
+						new Object[] { regionOfInterest }));
 			}
 			return false;
 		}
@@ -115,16 +126,33 @@ public class RegionOfInterestOperations extends ClinicalStatementOperations {
 	 */
     protected static final String VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isMoodCodeDefined() implies self.moodCode=vocab::ActMood::EVN";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateMoodCode(RegionOfInterest, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mood Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateMoodCode(RegionOfInterest, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateMoodCode(RegionOfInterest, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.REGION_OF_INTEREST);
+					try
+					{
+						return helper.createInvariant(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -136,26 +164,18 @@ public class RegionOfInterestOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
     public static boolean validateMoodCode(RegionOfInterest regionOfInterest, DiagnosticChain diagnostics,
-            Map<Object, Object> context) {
-		if (VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.REGION_OF_INTEREST);
-			try {
-				VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(regionOfInterest)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.REGION_OF_INTEREST__MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(regionOfInterest, context) }),
-						 new Object [] { regionOfInterest }));
+			Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(regionOfInterest))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.REGION_OF_INTEREST__MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateMoodCode",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(regionOfInterest, context) }),
+						new Object [] { regionOfInterest }));
 			}
 			return false;
 		}

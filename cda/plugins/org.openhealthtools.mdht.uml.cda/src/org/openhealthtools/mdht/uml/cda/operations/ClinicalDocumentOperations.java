@@ -10,6 +10,8 @@
  ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.operations;
 
+import org.openhealthtools.mdht.uml.cda.util.LazyInitializer;
+
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -86,16 +88,33 @@ public class ClinicalDocumentOperations extends ActOperations {
 	 */
     protected static final String VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClinicalDocument::DOCCLIN";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateClassCode(ClinicalDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Class Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateClassCode(ClinicalDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateClassCode(ClinicalDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.CLINICAL_DOCUMENT);
+					try
+					{
+						return helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -107,26 +126,18 @@ public class ClinicalDocumentOperations extends ActOperations {
 	 * @generated
 	 */
     public static boolean validateClassCode(ClinicalDocument clinicalDocument, DiagnosticChain diagnostics,
-            Map<Object, Object> context) {
-		if (VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.CLINICAL_DOCUMENT);
-			try {
-				VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(clinicalDocument)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.CLINICAL_DOCUMENT__CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(clinicalDocument, context) }),
-						 new Object [] { clinicalDocument }));
+            Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(clinicalDocument))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.CLINICAL_DOCUMENT__CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateClassCode",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(clinicalDocument, context) }),
+						new Object[] { clinicalDocument }));
 			}
 			return false;
 		}
@@ -143,16 +154,33 @@ public class ClinicalDocumentOperations extends ActOperations {
 	 */
     protected static final String VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::ActMood::EVN";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateMoodCode(ClinicalDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mood Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateMoodCode(ClinicalDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateMoodCode(ClinicalDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.CLINICAL_DOCUMENT);
+					try
+					{
+						return helper.createInvariant(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -164,26 +192,18 @@ public class ClinicalDocumentOperations extends ActOperations {
 	 * @generated
 	 */
     public static boolean validateMoodCode(ClinicalDocument clinicalDocument, DiagnosticChain diagnostics,
-            Map<Object, Object> context) {
-		if (VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.CLINICAL_DOCUMENT);
-			try {
-				VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(clinicalDocument)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.CLINICAL_DOCUMENT__MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(clinicalDocument, context) }),
-						 new Object [] { clinicalDocument }));
+			Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(clinicalDocument))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.CLINICAL_DOCUMENT__MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateMoodCode",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(clinicalDocument, context) }),
+						new Object [] { clinicalDocument }));
 			}
 			return false;
 		}
@@ -233,79 +253,99 @@ public class ClinicalDocumentOperations extends ActOperations {
 	 */
     protected static final String GET_PATIENTS__EOCL_EXP = "self.recordTarget.patientRole.patient";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getPatients(ClinicalDocument) <em>Get Patients</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getPatients(ClinicalDocument)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getPatients(ClinicalDocument)
 	 */
-    protected static OCLExpression<EClassifier> GET_PATIENTS__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_PATIENTS__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT,
+							CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(21));
+					try
+					{
+						return helper.createQuery(GET_PATIENTS__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<Patient> getPatients(ClinicalDocument clinicalDocument) {
-		if (GET_PATIENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT, CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(21));
-			try {
-				GET_PATIENTS__EOCL_QRY = helper.createQuery(GET_PATIENTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PATIENTS__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<Patient> getPatients(ClinicalDocument clinicalDocument)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_PATIENTS__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<Patient> result = (Collection<Patient>) query.evaluate(clinicalDocument);
 		return new BasicEList.UnmodifiableEList<Patient>(result.size(), result.toArray());
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #getPatientRoles(ClinicalDocument) <em>Get Patient Roles</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getPatientRoles(ClinicalDocument)
 	 * @generated
 	 * @ordered
 	 */
     protected static final String GET_PATIENT_ROLES__EOCL_EXP = "self.recordTarget.patientRole";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getPatientRoles(ClinicalDocument) <em>Get Patient Roles</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getPatientRoles(ClinicalDocument)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getPatientRoles(ClinicalDocument)
 	 */
-    protected static OCLExpression<EClassifier> GET_PATIENT_ROLES__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_PATIENT_ROLES__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT,
+							CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(22));
+					try
+					{
+						return helper.createQuery(GET_PATIENT_ROLES__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<PatientRole> getPatientRoles(ClinicalDocument clinicalDocument) {
-		if (GET_PATIENT_ROLES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT, CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(22));
-			try {
-				GET_PATIENT_ROLES__EOCL_QRY = helper.createQuery(GET_PATIENT_ROLES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PATIENT_ROLES__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<PatientRole> getPatientRoles(ClinicalDocument clinicalDocument)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_PATIENT_ROLES__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<PatientRole> result = (Collection<PatientRole>) query.evaluate(clinicalDocument);
 		return new BasicEList.UnmodifiableEList<PatientRole>(result.size(), result.toArray());
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #getSections(ClinicalDocument) <em>Get Sections</em>}' operation.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -315,40 +355,50 @@ public class ClinicalDocumentOperations extends ActOperations {
 	 */
     protected static final String GET_SECTIONS__EOCL_EXP = "if self.component.structuredBody.oclIsUndefined() then Bag{} else self.component.structuredBody.component.section endif";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getSections(ClinicalDocument) <em>Get Sections</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getSections(ClinicalDocument)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getSections(ClinicalDocument)
 	 */
-    protected static OCLExpression<EClassifier> GET_SECTIONS__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_SECTIONS__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT,
+							CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(23));
+					try
+					{
+						return helper.createQuery(GET_SECTIONS__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<Section> getSections(ClinicalDocument clinicalDocument) {
-		if (GET_SECTIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT, CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(23));
-			try {
-				GET_SECTIONS__EOCL_QRY = helper.createQuery(GET_SECTIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SECTIONS__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<Section> getSections(ClinicalDocument clinicalDocument)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_SECTIONS__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<Section> result = (Collection<Section>) query.evaluate(clinicalDocument);
 		return new BasicEList.UnmodifiableEList<Section>(result.size(), result.toArray());
 	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated NOT
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated NOT
      */
     public static EList<Section> getAllSections(ClinicalDocument clinicalDocument) {
         List<Section> sections = CDAUtil.getAllSections(clinicalDocument);
@@ -363,35 +413,43 @@ public class ClinicalDocumentOperations extends ActOperations {
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_CODE__STRING_STRING_STRING__EOCL_EXP = "self.code.code = code and self.code.codeSystem = codeSystem and self.code.codeSystemName = codeSystemName";
+    protected static final String HAS_CODE__STRING_STRING_STRING__EOCL_EXP =
+			"self.code.code = code and self.code.codeSystem = codeSystem and self.code.codeSystemName = codeSystemName";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasCode(ClinicalDocument, java.lang.String, java.lang.String, java.lang.String) <em>Has Code</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasCode(ClinicalDocument, java.lang.String, java.lang.String, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasCode(ClinicalDocument, java.lang.String, java.lang.String, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_CODE__STRING_STRING_STRING__EOCL_QRY;
-
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasCode(ClinicalDocument clinicalDocument, String code, String codeSystem,
-            String codeSystemName) {
-		if (HAS_CODE__STRING_STRING_STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT, CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(25));
-			try {
-				HAS_CODE__STRING_STRING_STRING__EOCL_QRY = helper.createQuery(HAS_CODE__STRING_STRING_STRING__EOCL_EXP);
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_CODE__STRING_STRING_STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT,
+							CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(25));
+					try
+					{
+						return helper.createQuery(HAS_CODE__STRING_STRING_STRING__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_CODE__STRING_STRING_STRING__EOCL_QRY);
+};
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasCode(ClinicalDocument clinicalDocument, String code, String codeSystem, String codeSystemName)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_CODE__STRING_STRING_STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("code", code);
 		environment.add("codeSystem", codeSystem);
@@ -407,40 +465,51 @@ public class ClinicalDocumentOperations extends ActOperations {
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_SECTION_TEMPLATE__STRING__EOCL_EXP = "self.getSections()->exists(sect : cda::Section | sect.hasTemplateId(templateId))";
+    protected static final String HAS_SECTION_TEMPLATE__STRING__EOCL_EXP =
+			"self.getSections()->exists(sect : cda::Section | sect.hasTemplateId(templateId))";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasSectionTemplate(ClinicalDocument, java.lang.String) <em>Has Section Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasSectionTemplate(ClinicalDocument, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasSectionTemplate(ClinicalDocument, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_SECTION_TEMPLATE__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_SECTION_TEMPLATE__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT,
+							CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(26));
+					try
+					{
+						return helper.createQuery(HAS_SECTION_TEMPLATE__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasSectionTemplate(ClinicalDocument clinicalDocument, String templateId) {
-		if (HAS_SECTION_TEMPLATE__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT, CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(26));
-			try {
-				HAS_SECTION_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_SECTION_TEMPLATE__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_SECTION_TEMPLATE__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasSectionTemplate(ClinicalDocument clinicalDocument, String templateId)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_SECTION_TEMPLATE__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(clinicalDocument)).booleanValue();
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #hasTemplateId(ClinicalDocument, java.lang.String) <em>Has Template Id</em>}' operation.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -448,41 +517,52 @@ public class ClinicalDocumentOperations extends ActOperations {
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_TEMPLATE_ID__STRING__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = templateId)";
+	protected static final String HAS_TEMPLATE_ID__STRING__EOCL_EXP =
+			"self.templateId->exists(id : datatypes::II | id.root = templateId)";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasTemplateId(ClinicalDocument, java.lang.String) <em>Has Template Id</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasTemplateId(ClinicalDocument, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasTemplateId(ClinicalDocument, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_TEMPLATE_ID__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_TEMPLATE_ID__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT,
+							CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(27));
+					try
+					{
+						return helper.createQuery(HAS_TEMPLATE_ID__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasTemplateId(ClinicalDocument clinicalDocument, String templateId) {
-		if (HAS_TEMPLATE_ID__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.CLINICAL_DOCUMENT, CDAPackage.Literals.CLINICAL_DOCUMENT.getEAllOperations().get(27));
-			try {
-				HAS_TEMPLATE_ID__STRING__EOCL_QRY = helper.createQuery(HAS_TEMPLATE_ID__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_TEMPLATE_ID__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasTemplateId(ClinicalDocument clinicalDocument, String templateId)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_TEMPLATE_ID__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(clinicalDocument)).booleanValue();
 	}
 
-    /**
-     * <!-- begin-user-doc -->
+	/**
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc --> @generated NOT
      */
     public static void addPatientRole(ClinicalDocument clinicalDocument, PatientRole patientRole) {

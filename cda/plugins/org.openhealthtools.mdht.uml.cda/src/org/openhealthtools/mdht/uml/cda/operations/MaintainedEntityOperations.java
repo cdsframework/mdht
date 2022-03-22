@@ -10,6 +10,8 @@
  ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.operations;
 
+import org.openhealthtools.mdht.uml.cda.util.LazyInitializer;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -58,16 +60,33 @@ public class MaintainedEntityOperations extends RoleOperations {
 	 */
     protected static final String VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isClassCodeDefined() implies self.classCode=vocab::RoleClass::MNT";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateClassCode(MaintainedEntity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Class Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateClassCode(MaintainedEntity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateClassCode(MaintainedEntity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.MAINTAINED_ENTITY);
+					try
+					{
+						return helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -79,26 +98,18 @@ public class MaintainedEntityOperations extends RoleOperations {
 	 * @generated
 	 */
     public static boolean validateClassCode(MaintainedEntity maintainedEntity, DiagnosticChain diagnostics,
-            Map<Object, Object> context) {
-		if (VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.MAINTAINED_ENTITY);
-			try {
-				VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(maintainedEntity)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.MAINTAINED_ENTITY__CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maintainedEntity, context) }),
-						 new Object [] { maintainedEntity }));
+            Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(maintainedEntity))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.MAINTAINED_ENTITY__CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateClassCode",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maintainedEntity, context) }),
+						new Object[] { maintainedEntity }));
 			}
 			return false;
 		}

@@ -10,6 +10,8 @@
  ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.operations;
 
+import org.openhealthtools.mdht.uml.cda.util.LazyInitializer;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -60,16 +62,33 @@ public class InfrastructureRootTypeIdOperations extends IIOperations {
 	 */
     protected static final String VALIDATE_REDEFINED_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.root='2.16.840.1.113883.1.3'";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateRedefinedRoot(InfrastructureRootTypeId, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Redefined Root</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateRedefinedRoot(InfrastructureRootTypeId, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateRedefinedRoot(InfrastructureRootTypeId, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_REDEFINED_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_REDEFINED_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.INFRASTRUCTURE_ROOT_TYPE_ID);
+					try
+					{
+						return helper.createInvariant(VALIDATE_REDEFINED_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -81,26 +100,18 @@ public class InfrastructureRootTypeIdOperations extends IIOperations {
 	 * @generated
 	 */
     public static boolean validateRedefinedRoot(InfrastructureRootTypeId infrastructureRootTypeId,
-            DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_REDEFINED_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.INFRASTRUCTURE_ROOT_TYPE_ID);
-			try {
-				VALIDATE_REDEFINED_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REDEFINED_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REDEFINED_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(infrastructureRootTypeId)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.INFRASTRUCTURE_ROOT_TYPE_ID__REDEFINED_ROOT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateRedefinedRoot", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infrastructureRootTypeId, context) }),
-						 new Object [] { infrastructureRootTypeId }));
+            DiagnosticChain diagnostics, Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_REDEFINED_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(infrastructureRootTypeId))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.INFRASTRUCTURE_ROOT_TYPE_ID__REDEFINED_ROOT,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateRedefinedRoot",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infrastructureRootTypeId,
+												context) }), new Object[] { infrastructureRootTypeId }));
 			}
 			return false;
 		}
@@ -117,16 +128,33 @@ public class InfrastructureRootTypeIdOperations extends IIOperations {
 	 */
     protected static final String VALIDATE_REDEFINED_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.extension.oclIsUndefined()";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateRedefinedExtension(InfrastructureRootTypeId, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Redefined Extension</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateRedefinedExtension(InfrastructureRootTypeId, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateRedefinedExtension(InfrastructureRootTypeId, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_REDEFINED_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_REDEFINED_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.INFRASTRUCTURE_ROOT_TYPE_ID);
+					try
+					{
+						return helper.createInvariant(VALIDATE_REDEFINED_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -138,26 +166,19 @@ public class InfrastructureRootTypeIdOperations extends IIOperations {
 	 * @generated
 	 */
     public static boolean validateRedefinedExtension(InfrastructureRootTypeId infrastructureRootTypeId,
-            DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_REDEFINED_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.INFRASTRUCTURE_ROOT_TYPE_ID);
-			try {
-				VALIDATE_REDEFINED_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REDEFINED_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REDEFINED_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(infrastructureRootTypeId)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.INFRASTRUCTURE_ROOT_TYPE_ID__REDEFINED_EXTENSION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateRedefinedExtension", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infrastructureRootTypeId, context) }),
-						 new Object [] { infrastructureRootTypeId }));
+            DiagnosticChain diagnostics, Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_REDEFINED_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get())
+				.check(infrastructureRootTypeId))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.INFRASTRUCTURE_ROOT_TYPE_ID__REDEFINED_EXTENSION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateRedefinedExtension",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infrastructureRootTypeId,
+												context) }), new Object[] { infrastructureRootTypeId }));
 			}
 			return false;
 		}
@@ -174,16 +195,33 @@ public class InfrastructureRootTypeIdOperations extends IIOperations {
 	 */
     protected static final String VALIDATE_II__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.isNullFlavorDefined() or self.isDefined('redefinedRoot') and not(self.isNullFlavorDefined() and self.isDefined('redefinedRoot')))";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateII(InfrastructureRootTypeId, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate II</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateII(InfrastructureRootTypeId, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateII(InfrastructureRootTypeId, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_II__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_II__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.INFRASTRUCTURE_ROOT_TYPE_ID);
+					try
+					{
+						return helper.createInvariant(VALIDATE_II__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -195,25 +233,18 @@ public class InfrastructureRootTypeIdOperations extends IIOperations {
 	 * @generated
 	 */
     public static boolean validateII(InfrastructureRootTypeId infrastructureRootTypeId, DiagnosticChain diagnostics,
-            Map<Object, Object> context) {
-		if (VALIDATE_II__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.INFRASTRUCTURE_ROOT_TYPE_ID);
-			try {
-				VALIDATE_II__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_II__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_II__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(infrastructureRootTypeId)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.INFRASTRUCTURE_ROOT_TYPE_ID__II,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateII", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infrastructureRootTypeId, context) }),
+			Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_II__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(infrastructureRootTypeId))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.INFRASTRUCTURE_ROOT_TYPE_ID__II,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateII",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(infrastructureRootTypeId,
+												context) }),
 						 new Object [] { infrastructureRootTypeId }));
 			}
 			return false;

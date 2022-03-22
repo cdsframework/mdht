@@ -10,6 +10,8 @@
  ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.operations;
 
+import org.openhealthtools.mdht.uml.cda.util.LazyInitializer;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -59,16 +61,33 @@ public class AssignedAuthorOperations extends RoleOperations {
 	 */
     protected static final String VALIDATE_ASSIGNED_AUTHOR_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedPerson.oclIsUndefined() or self.assignedAuthoringDevice.oclIsUndefined()";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateAssignedAuthorChoice(AssignedAuthor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assigned Author Choice</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateAssignedAuthorChoice(AssignedAuthor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateAssignedAuthorChoice(AssignedAuthor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_ASSIGNED_AUTHOR_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_ASSIGNED_AUTHOR_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.ASSIGNED_AUTHOR);
+					try
+					{
+						return helper.createInvariant(VALIDATE_ASSIGNED_AUTHOR_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -80,26 +99,18 @@ public class AssignedAuthorOperations extends RoleOperations {
 	 * @generated
 	 */
     public static boolean validateAssignedAuthorChoice(AssignedAuthor assignedAuthor, DiagnosticChain diagnostics,
-            Map<Object, Object> context) {
-		if (VALIDATE_ASSIGNED_AUTHOR_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.ASSIGNED_AUTHOR);
-			try {
-				VALIDATE_ASSIGNED_AUTHOR_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSIGNED_AUTHOR_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assignedAuthor)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_CHOICE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateAssignedAuthorChoice", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assignedAuthor, context) }),
-						 new Object [] { assignedAuthor }));
+            Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSIGNED_AUTHOR_CHOICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assignedAuthor))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.ASSIGNED_AUTHOR__ASSIGNED_AUTHOR_CHOICE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateAssignedAuthorChoice",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assignedAuthor, context) }),
+						new Object[] { assignedAuthor }));
 			}
 			return false;
 		}
@@ -116,16 +127,33 @@ public class AssignedAuthorOperations extends RoleOperations {
 	 */
     protected static final String VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isClassCodeDefined() implies self.classCode=vocab::RoleClassAssignedEntity::ASSIGNED";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateClassCode(AssignedAuthor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Class Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateClassCode(AssignedAuthor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateClassCode(AssignedAuthor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.ASSIGNED_AUTHOR);
+					try
+					{
+						return helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -136,27 +164,18 @@ public class AssignedAuthorOperations extends RoleOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-    public static boolean validateClassCode(AssignedAuthor assignedAuthor, DiagnosticChain diagnostics,
-            Map<Object, Object> context) {
-		if (VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.ASSIGNED_AUTHOR);
-			try {
-				VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assignedAuthor)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.ASSIGNED_AUTHOR__CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assignedAuthor, context) }),
-						 new Object [] { assignedAuthor }));
+    public static boolean validateClassCode(AssignedAuthor assignedAuthor, DiagnosticChain diagnostics, Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assignedAuthor))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE,
+						CDAValidator.ASSIGNED_AUTHOR__CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+								new Object[] { "validateClassCode",
+										org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assignedAuthor, context) }),
+						new Object [] { assignedAuthor }));
 			}
 			return false;
 		}
