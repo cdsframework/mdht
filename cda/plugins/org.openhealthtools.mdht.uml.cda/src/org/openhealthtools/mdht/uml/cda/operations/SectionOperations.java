@@ -11,6 +11,8 @@
  ****************************************************************************** */
 package org.openhealthtools.mdht.uml.cda.operations;
 
+import org.openhealthtools.mdht.uml.cda.util.LazyInitializer;
+
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -128,16 +130,33 @@ public class SectionOperations extends ActOperations {
 	 */
     protected static final String VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isClassCodeDefined() implies self.classCode=vocab::ActClass::DOCSECT";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateClassCode(Section, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Class Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateClassCode(Section, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateClassCode(Section, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.SECTION);
+					try
+					{
+						return helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -148,26 +167,18 @@ public class SectionOperations extends ActOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-    public static boolean validateClassCode(Section section, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.SECTION);
-			try {
-				VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(section)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.SECTION__CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(section, context) }),
-						 new Object [] { section }));
+    public static boolean validateClassCode(Section section, DiagnosticChain diagnostics, Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(section))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(
+						new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE, CDAValidator.SECTION__CLASS_CODE,
+								org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+										new Object[] { "validateClassCode",
+												org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(section, context) }),
+								new Object[] { section }));
 			}
 			return false;
 		}
@@ -184,16 +195,33 @@ public class SectionOperations extends ActOperations {
 	 */
     protected static final String VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.isMoodCodeDefined() implies self.moodCode=vocab::ActMood::EVN";
 
-    /**
+	/**
 	 * The cached OCL invariant for the '{@link #validateMoodCode(Section, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mood Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #validateMoodCode(Section, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #validateMoodCode(Section, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 */
-    protected static Constraint VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+	protected static final LazyInitializer<Constraint> VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+			new LazyInitializer<Constraint>()
+			{
+				@Override
+				protected Constraint initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setContext(CDAPackage.Literals.SECTION);
+					try
+					{
+						return helper.createInvariant(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+};
     /**
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -204,26 +232,17 @@ public class SectionOperations extends ActOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-    public static boolean validateMoodCode(Section section, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(CDAPackage.Literals.SECTION);
-			try {
-				VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(section)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDAValidator.DIAGNOSTIC_SOURCE,
-						 CDAValidator.SECTION__MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(section, context) }),
-						 new Object [] { section }));
+    public static boolean validateMoodCode(Section section, DiagnosticChain diagnostics, Map<Object, Object> context)
+	{
+		if (!EOCL_ENV.createQuery(VALIDATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(section))
+		{
+			if (diagnostics != null)
+			{
+				diagnostics.add(
+						new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE, CDAValidator.SECTION__MOOD_CODE,
+								org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
+										new Object[] { "validateMoodCode",
+												org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(section, context) }), new Object [] { section }));
 			}
 			return false;
 		}
@@ -382,40 +401,50 @@ public class SectionOperations extends ActOperations {
 	 */
     protected static final String GET_ACTS__EOCL_EXP = "self.entry.act->select(act : cda::Act | not act.oclIsUndefined())";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getActs(Section) <em>Get Acts</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getActs(Section)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getActs(Section)
 	 */
-    protected static OCLExpression<EClassifier> GET_ACTS__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_ACTS__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(29));
+					try
+					{
+						return helper.createQuery(GET_ACTS__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<Act> getActs(Section section) {
-		if (GET_ACTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(29));
-			try {
-				GET_ACTS__EOCL_QRY = helper.createQuery(GET_ACTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ACTS__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<Act> getActs(Section section)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_ACTS__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<Act> result = (Collection<Act>) query.evaluate(section);
 		return new BasicEList.UnmodifiableEList<Act>(result.size(), result.toArray());
 	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
      *
      * @generated NOT
      */
@@ -433,38 +462,48 @@ public class SectionOperations extends ActOperations {
 	 */
     protected static final String GET_ENCOUNTERS__EOCL_EXP = "self.entry.encounter->select(enc : cda::Encounter | not enc.oclIsUndefined())";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getEncounters(Section) <em>Get Encounters</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getEncounters(Section)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getEncounters(Section)
 	 */
-    protected static OCLExpression<EClassifier> GET_ENCOUNTERS__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_ENCOUNTERS__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(31));
+					try
+					{
+						return helper.createQuery(GET_ENCOUNTERS__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<Encounter> getEncounters(Section section) {
-		if (GET_ENCOUNTERS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(31));
-			try {
-				GET_ENCOUNTERS__EOCL_QRY = helper.createQuery(GET_ENCOUNTERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ENCOUNTERS__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<Encounter> getEncounters(Section section)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_ENCOUNTERS__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<Encounter> result = (Collection<Encounter>) query.evaluate(section);
 		return new BasicEList.UnmodifiableEList<Encounter>(result.size(), result.toArray());
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #getObservations(Section) <em>Get Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -472,40 +511,51 @@ public class SectionOperations extends ActOperations {
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String GET_OBSERVATIONS__EOCL_EXP = "self.entry.observation->select(obs : cda::Observation | not obs.oclIsUndefined())";
+    protected static final String GET_OBSERVATIONS__EOCL_EXP =
+			"self.entry.observation->select(obs : cda::Observation | not obs.oclIsUndefined())";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getObservations(Section) <em>Get Observations</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getObservations(Section)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getObservations(Section)
 	 */
-    protected static OCLExpression<EClassifier> GET_OBSERVATIONS__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_OBSERVATIONS__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(32));
+					try
+					{
+						return helper.createQuery(GET_OBSERVATIONS__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<Observation> getObservations(Section section) {
-		if (GET_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(32));
-			try {
-				GET_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_OBSERVATIONS__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<Observation> getObservations(Section section)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_OBSERVATIONS__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<Observation> result = (Collection<Observation>) query.evaluate(section);
 		return new BasicEList.UnmodifiableEList<Observation>(result.size(), result.toArray());
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #getObservationMedia(Section) <em>Get Observation Media</em>}' operation.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -513,40 +563,51 @@ public class SectionOperations extends ActOperations {
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String GET_OBSERVATION_MEDIA__EOCL_EXP = "self.entry.observationMedia->select(media : cda::ObservationMedia | not media.oclIsUndefined())";
+    protected static final String GET_OBSERVATION_MEDIA__EOCL_EXP =
+			"self.entry.observationMedia->select(media : cda::ObservationMedia | not media.oclIsUndefined())";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getObservationMedia(Section) <em>Get Observation Media</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getObservationMedia(Section)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getObservationMedia(Section)
 	 */
-    protected static OCLExpression<EClassifier> GET_OBSERVATION_MEDIA__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_OBSERVATION_MEDIA__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(33));
+					try
+					{
+						return helper.createQuery(GET_OBSERVATION_MEDIA__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<ObservationMedia> getObservationMedia(Section section) {
-		if (GET_OBSERVATION_MEDIA__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(33));
-			try {
-				GET_OBSERVATION_MEDIA__EOCL_QRY = helper.createQuery(GET_OBSERVATION_MEDIA__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_OBSERVATION_MEDIA__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<ObservationMedia> getObservationMedia(Section section)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_OBSERVATION_MEDIA__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<ObservationMedia> result = (Collection<ObservationMedia>) query.evaluate(section);
 		return new BasicEList.UnmodifiableEList<ObservationMedia>(result.size(), result.toArray());
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #getOrganizers(Section) <em>Get Organizers</em>}' operation.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -554,40 +615,51 @@ public class SectionOperations extends ActOperations {
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String GET_ORGANIZERS__EOCL_EXP = "self.entry.organizer->select(org : cda::Organizer | not org.oclIsUndefined())";
+	protected static final String GET_ORGANIZERS__EOCL_EXP =
+			"self.entry.organizer->select(org : cda::Organizer | not org.oclIsUndefined())";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getOrganizers(Section) <em>Get Organizers</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getOrganizers(Section)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getOrganizers(Section)
 	 */
-    protected static OCLExpression<EClassifier> GET_ORGANIZERS__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_ORGANIZERS__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(34));
+					try
+					{
+						return helper.createQuery(GET_ORGANIZERS__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<Organizer> getOrganizers(Section section) {
-		if (GET_ORGANIZERS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(34));
-			try {
-				GET_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_ORGANIZERS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ORGANIZERS__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<Organizer> getOrganizers(Section section)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_ORGANIZERS__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<Organizer> result = (Collection<Organizer>) query.evaluate(section);
 		return new BasicEList.UnmodifiableEList<Organizer>(result.size(), result.toArray());
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #getProcedures(Section) <em>Get Procedures</em>}' operation.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -595,40 +667,51 @@ public class SectionOperations extends ActOperations {
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String GET_PROCEDURES__EOCL_EXP = "self.entry.procedure->select(proc : cda::Procedure | not proc.oclIsUndefined())";
+	protected static final String GET_PROCEDURES__EOCL_EXP =
+			"self.entry.procedure->select(proc : cda::Procedure | not proc.oclIsUndefined())";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getProcedures(Section) <em>Get Procedures</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getProcedures(Section)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getProcedures(Section)
 	 */
-    protected static OCLExpression<EClassifier> GET_PROCEDURES__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_PROCEDURES__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(35));
+					try
+					{
+						return helper.createQuery(GET_PROCEDURES__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<Procedure> getProcedures(Section section) {
-		if (GET_PROCEDURES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(35));
-			try {
-				GET_PROCEDURES__EOCL_QRY = helper.createQuery(GET_PROCEDURES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURES__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<Procedure> getProcedures(Section section)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURES__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<Procedure> result = (Collection<Procedure>) query.evaluate(section);
 		return new BasicEList.UnmodifiableEList<Procedure>(result.size(), result.toArray());
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #getRegionsOfInterest(Section) <em>Get Regions Of Interest</em>}' operation.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -636,75 +719,96 @@ public class SectionOperations extends ActOperations {
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String GET_REGIONS_OF_INTEREST__EOCL_EXP = "self.entry.regionOfInterest->select(reg : cda::RegionOfInterest | not reg.oclIsUndefined())";
+	protected static final String GET_REGIONS_OF_INTEREST__EOCL_EXP =
+			"self.entry.regionOfInterest->select(reg : cda::RegionOfInterest | not reg.oclIsUndefined())";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getRegionsOfInterest(Section) <em>Get Regions Of Interest</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getRegionsOfInterest(Section)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getRegionsOfInterest(Section)
 	 */
-    protected static OCLExpression<EClassifier> GET_REGIONS_OF_INTEREST__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_REGIONS_OF_INTEREST__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(36));
+					try
+					{
+						return helper.createQuery(GET_REGIONS_OF_INTEREST__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<RegionOfInterest> getRegionsOfInterest(Section section) {
-		if (GET_REGIONS_OF_INTEREST__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(36));
-			try {
-				GET_REGIONS_OF_INTEREST__EOCL_QRY = helper.createQuery(GET_REGIONS_OF_INTEREST__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_REGIONS_OF_INTEREST__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<RegionOfInterest> getRegionsOfInterest(Section section)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_REGIONS_OF_INTEREST__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<RegionOfInterest> result = (Collection<RegionOfInterest>) query.evaluate(section);
 		return new BasicEList.UnmodifiableEList<RegionOfInterest>(result.size(), result.toArray());
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #getSections(Section) <em>Get Sections</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getSections(Section)
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String GET_SECTIONS__EOCL_EXP = "self.component.section";
+	protected static final String GET_SECTIONS__EOCL_EXP = "self.component.section";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getSections(Section) <em>Get Sections</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getSections(Section)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getSections(Section)
 	 */
-    protected static OCLExpression<EClassifier> GET_SECTIONS__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_SECTIONS__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(37));
+					try
+					{
+						return helper.createQuery(GET_SECTIONS__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<Section> getSections(Section section) {
-		if (GET_SECTIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(37));
-			try {
-				GET_SECTIONS__EOCL_QRY = helper.createQuery(GET_SECTIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SECTIONS__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<Section> getSections(Section section)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_SECTIONS__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<Section> result = (Collection<Section>) query.evaluate(section);
 		return new BasicEList.UnmodifiableEList<Section>(result.size(), result.toArray());
@@ -729,34 +833,45 @@ public class SectionOperations extends ActOperations {
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String GET_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP = "self.entry.substanceAdministration->select(sub : cda::SubstanceAdministration | not sub.oclIsUndefined())";
+	protected static final String GET_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP =
+			"self.entry.substanceAdministration->select(sub : cda::SubstanceAdministration | not sub.oclIsUndefined())";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getSubstanceAdministrations(Section) <em>Get Substance Administrations</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getSubstanceAdministrations(Section)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getSubstanceAdministrations(Section)
 	 */
-    protected static OCLExpression<EClassifier> GET_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(39));
+					try
+					{
+						return helper.createQuery(GET_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<SubstanceAdministration> getSubstanceAdministrations(Section section) {
-		if (GET_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(39));
-			try {
-				GET_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY = helper.createQuery(GET_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<SubstanceAdministration> getSubstanceAdministrations(Section section)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<SubstanceAdministration> result = (Collection<SubstanceAdministration>) query.evaluate(section);
 		return new BasicEList.UnmodifiableEList<SubstanceAdministration>(result.size(), result.toArray());
@@ -765,39 +880,50 @@ public class SectionOperations extends ActOperations {
     /**
 	 * The cached OCL expression body for the '{@link #getSupplies(Section) <em>Get Supplies</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #getSupplies(Section)
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String GET_SUPPLIES__EOCL_EXP = "self.entry.supply->select(sup : cda::Supply | not sup.oclIsUndefined())";
+	protected static final String GET_SUPPLIES__EOCL_EXP =
+			"self.entry.supply->select(sup : cda::Supply | not sup.oclIsUndefined())";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #getSupplies(Section) <em>Get Supplies</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #getSupplies(Section)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #getSupplies(Section)
 	 */
-    protected static OCLExpression<EClassifier> GET_SUPPLIES__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> GET_SUPPLIES__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(40));
+					try
+					{
+						return helper.createQuery(GET_SUPPLIES__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static EList<Supply> getSupplies(Section section) {
-		if (GET_SUPPLIES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(40));
-			try {
-				GET_SUPPLIES__EOCL_QRY = helper.createQuery(GET_SUPPLIES__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLIES__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static EList<Supply> getSupplies(Section section)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLIES__EOCL_QRY.get());
 		@SuppressWarnings("unchecked")
 		Collection<Supply> result = (Collection<Supply>) query.evaluate(section);
 		return new BasicEList.UnmodifiableEList<Supply>(result.size(), result.toArray());
@@ -806,45 +932,56 @@ public class SectionOperations extends ActOperations {
     /**
 	 * The cached OCL expression body for the '{@link #hasActTemplate(Section, java.lang.String) <em>Has Act Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #hasActTemplate(Section, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_ACT_TEMPLATE__STRING__EOCL_EXP = "self.getActs()->exists(act : cda::Act | act.hasTemplateId(templateId))";
+	protected static final String HAS_ACT_TEMPLATE__STRING__EOCL_EXP =
+			"self.getActs()->exists(act : cda::Act | act.hasTemplateId(templateId))";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasActTemplate(Section, java.lang.String) <em>Has Act Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasActTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasActTemplate(Section, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_ACT_TEMPLATE__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_ACT_TEMPLATE__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(41));
+					try
+					{
+						return helper.createQuery(HAS_ACT_TEMPLATE__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasActTemplate(Section section, String templateId) {
-		if (HAS_ACT_TEMPLATE__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(41));
-			try {
-				HAS_ACT_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_ACT_TEMPLATE__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_ACT_TEMPLATE__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasActTemplate(Section section, String templateId)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_ACT_TEMPLATE__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(section)).booleanValue();
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #hasCode(Section, java.lang.String, java.lang.String, java.lang.String) <em>Has Code</em>}' operation.
 	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -852,34 +989,45 @@ public class SectionOperations extends ActOperations {
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_CODE__STRING_STRING_STRING__EOCL_EXP = "self.code.code = code and self.code.codeSystem = codeSystem and self.code.codeSystemName = codeSystemName";
+	protected static final String HAS_CODE__STRING_STRING_STRING__EOCL_EXP =
+			"self.code.code = code and self.code.codeSystem = codeSystem and self.code.codeSystemName = codeSystemName";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasCode(Section, java.lang.String, java.lang.String, java.lang.String) <em>Has Code</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasCode(Section, java.lang.String, java.lang.String, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasCode(Section, java.lang.String, java.lang.String, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_CODE__STRING_STRING_STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_CODE__STRING_STRING_STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(42));
+					try
+					{
+						return helper.createQuery(HAS_CODE__STRING_STRING_STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasCode(Section section, String code, String codeSystem, String codeSystemName) {
-		if (HAS_CODE__STRING_STRING_STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(42));
-			try {
-				HAS_CODE__STRING_STRING_STRING__EOCL_QRY = helper.createQuery(HAS_CODE__STRING_STRING_STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_CODE__STRING_STRING_STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasCode(Section section, String code, String codeSystem, String codeSystemName)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_CODE__STRING_STRING_STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("code", code);
 		environment.add("codeSystem", codeSystem);
@@ -890,39 +1038,50 @@ public class SectionOperations extends ActOperations {
     /**
 	 * The cached OCL expression body for the '{@link #hasEncounterTemplate(Section, java.lang.String) <em>Has Encounter Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #hasEncounterTemplate(Section, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_EXP = "self.getEncounters()->exists(enc : cda::Encounter | enc.hasTemplateId(templateId))";
+	protected static final String HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_EXP =
+			"self.getEncounters()->exists(enc : cda::Encounter | enc.hasTemplateId(templateId))";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasEncounterTemplate(Section, java.lang.String) <em>Has Encounter Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasEncounterTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasEncounterTemplate(Section, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(43));
+					try
+					{
+						return helper.createQuery(HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasEncounterTemplate(Section section, String templateId) {
-		if (HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(43));
-			try {
-				HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasEncounterTemplate(Section section, String templateId)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_ENCOUNTER_TEMPLATE__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(section)).booleanValue();
@@ -931,39 +1090,50 @@ public class SectionOperations extends ActOperations {
     /**
 	 * The cached OCL expression body for the '{@link #hasObservationMediaTemplate(Section, java.lang.String) <em>Has Observation Media Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #hasObservationMediaTemplate(Section, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_EXP = "self.getObservationMedia()->exists(media : cda::ObservationMedia | media.hasTemplateId(templateId))";
+	protected static final String HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_EXP =
+			"self.getObservationMedia()->exists(media : cda::ObservationMedia | media.hasTemplateId(templateId))";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasObservationMediaTemplate(Section, java.lang.String) <em>Has Observation Media Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasObservationMediaTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasObservationMediaTemplate(Section, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(44));
+					try
+					{
+						return helper.createQuery(HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasObservationMediaTemplate(Section section, String templateId) {
-		if (HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(44));
-			try {
-				HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasObservationMediaTemplate(Section section, String templateId)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_OBSERVATION_MEDIA_TEMPLATE__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(section)).booleanValue();
@@ -972,39 +1142,50 @@ public class SectionOperations extends ActOperations {
     /**
 	 * The cached OCL expression body for the '{@link #hasObservationTemplate(Section, java.lang.String) <em>Has Observation Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #hasObservationTemplate(Section, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_OBSERVATION_TEMPLATE__STRING__EOCL_EXP = "self.getObservations()->exists(obs : cda::Observation | obs.hasTemplateId(templateId))";
+	protected static final String HAS_OBSERVATION_TEMPLATE__STRING__EOCL_EXP =
+			"self.getObservations()->exists(obs : cda::Observation | obs.hasTemplateId(templateId))";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasObservationTemplate(Section, java.lang.String) <em>Has Observation Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasObservationTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasObservationTemplate(Section, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_OBSERVATION_TEMPLATE__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_OBSERVATION_TEMPLATE__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(45));
+					try
+					{
+						return helper.createQuery(HAS_OBSERVATION_TEMPLATE__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasObservationTemplate(Section section, String templateId) {
-		if (HAS_OBSERVATION_TEMPLATE__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(45));
-			try {
-				HAS_OBSERVATION_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_OBSERVATION_TEMPLATE__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_OBSERVATION_TEMPLATE__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasObservationTemplate(Section section, String templateId)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_OBSERVATION_TEMPLATE__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(section)).booleanValue();
@@ -1013,39 +1194,50 @@ public class SectionOperations extends ActOperations {
     /**
 	 * The cached OCL expression body for the '{@link #hasOrganizerTemplate(Section, java.lang.String) <em>Has Organizer Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #hasOrganizerTemplate(Section, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_ORGANIZER_TEMPLATE__STRING__EOCL_EXP = "self.getOrganizers()->exists(org : cda::Organizer | org.hasTemplateId(templateId))";
+	protected static final String HAS_ORGANIZER_TEMPLATE__STRING__EOCL_EXP =
+			"self.getOrganizers()->exists(org : cda::Organizer | org.hasTemplateId(templateId))";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasOrganizerTemplate(Section, java.lang.String) <em>Has Organizer Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasOrganizerTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasOrganizerTemplate(Section, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_ORGANIZER_TEMPLATE__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_ORGANIZER_TEMPLATE__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(46));
+					try
+					{
+						return helper.createQuery(HAS_ORGANIZER_TEMPLATE__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasOrganizerTemplate(Section section, String templateId) {
-		if (HAS_ORGANIZER_TEMPLATE__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(46));
-			try {
-				HAS_ORGANIZER_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_ORGANIZER_TEMPLATE__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_ORGANIZER_TEMPLATE__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasOrganizerTemplate(Section section, String templateId)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_ORGANIZER_TEMPLATE__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(section)).booleanValue();
@@ -1054,39 +1246,50 @@ public class SectionOperations extends ActOperations {
     /**
 	 * The cached OCL expression body for the '{@link #hasProcedureTemplate(Section, java.lang.String) <em>Has Procedure Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #hasProcedureTemplate(Section, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_PROCEDURE_TEMPLATE__STRING__EOCL_EXP = "self.getProcedures()->exists(proc : cda::Procedure | proc.hasTemplateId(templateId))";
+	protected static final String HAS_PROCEDURE_TEMPLATE__STRING__EOCL_EXP =
+			"self.getProcedures()->exists(proc : cda::Procedure | proc.hasTemplateId(templateId))";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasProcedureTemplate(Section, java.lang.String) <em>Has Procedure Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasProcedureTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasProcedureTemplate(Section, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_PROCEDURE_TEMPLATE__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_PROCEDURE_TEMPLATE__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(47));
+					try
+					{
+						return helper.createQuery(HAS_PROCEDURE_TEMPLATE__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasProcedureTemplate(Section section, String templateId) {
-		if (HAS_PROCEDURE_TEMPLATE__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(47));
-			try {
-				HAS_PROCEDURE_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_PROCEDURE_TEMPLATE__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_PROCEDURE_TEMPLATE__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasProcedureTemplate(Section section, String templateId)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_PROCEDURE_TEMPLATE__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(section)).booleanValue();
@@ -1095,39 +1298,50 @@ public class SectionOperations extends ActOperations {
     /**
 	 * The cached OCL expression body for the '{@link #hasRegionOfInterestTemplate(Section, java.lang.String) <em>Has Region Of Interest Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #hasRegionOfInterestTemplate(Section, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_EXP = "self.getRegionsOfInterest()->exists(reg : cda::RegionOfInterest | reg.hasTemplateId(templateId))";
+	protected static final String HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_EXP =
+			"self.getRegionsOfInterest()->exists(reg : cda::RegionOfInterest | reg.hasTemplateId(templateId))";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasRegionOfInterestTemplate(Section, java.lang.String) <em>Has Region Of Interest Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasRegionOfInterestTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasRegionOfInterestTemplate(Section, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(48));
+					try
+					{
+						return helper.createQuery(HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasRegionOfInterestTemplate(Section section, String templateId) {
-		if (HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(48));
-			try {
-				HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasRegionOfInterestTemplate(Section section, String templateId)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_REGION_OF_INTEREST_TEMPLATE__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(section)).booleanValue();
@@ -1136,162 +1350,206 @@ public class SectionOperations extends ActOperations {
     /**
 	 * The cached OCL expression body for the '{@link #hasSubstanceAdministrationTemplate(Section, java.lang.String) <em>Has Substance Administration Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #hasSubstanceAdministrationTemplate(Section, java.lang.String)
 	 * @generated
 	 * @ordered
 	 */
-    protected static final String HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_EXP = "self.getSubstanceAdministrations()->exists(sub : cda::SubstanceAdministration | sub.hasTemplateId(templateId))";
+	protected static final String HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_EXP =
+			"self.getSubstanceAdministrations()->exists(sub : cda::SubstanceAdministration | sub.hasTemplateId(templateId))";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasSubstanceAdministrationTemplate(Section, java.lang.String) <em>Has Substance Administration Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasSubstanceAdministrationTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasSubstanceAdministrationTemplate(Section, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(49));
+					try
+					{
+						return helper.createQuery(HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasSubstanceAdministrationTemplate(Section section, String templateId) {
-		if (HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(49));
-			try {
-				HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasSubstanceAdministrationTemplate(Section section, String templateId)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_SUBSTANCE_ADMINISTRATION_TEMPLATE__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(section)).booleanValue();
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #hasSectionTemplate(Section, java.lang.String) <em>Has Section Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasSectionTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasSectionTemplate(Section, java.lang.String)
 	 */
-    protected static final String HAS_SECTION_TEMPLATE__STRING__EOCL_EXP = "self.getSections()->exists(sect : cda::Section | sect.hasTemplateId(templateId))";
+	protected static final String HAS_SECTION_TEMPLATE__STRING__EOCL_EXP =
+			"self.getSections()->exists(sect : cda::Section | sect.hasTemplateId(templateId))";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasSectionTemplate(Section, java.lang.String) <em>Has Section Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasSectionTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasSectionTemplate(Section, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_SECTION_TEMPLATE__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_SECTION_TEMPLATE__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(50));
+					try
+					{
+						return helper.createQuery(HAS_SECTION_TEMPLATE__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasSectionTemplate(Section section, String templateId) {
-		if (HAS_SECTION_TEMPLATE__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(50));
-			try {
-				HAS_SECTION_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_SECTION_TEMPLATE__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_SECTION_TEMPLATE__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasSectionTemplate(Section section, String templateId)
+	{
+		OCL.Query query = EOCL_ENV.createQuery(HAS_SECTION_TEMPLATE__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(section)).booleanValue();
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #hasSupplyTemplate(Section, java.lang.String) <em>Has Supply Template</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasSupplyTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasSupplyTemplate(Section, java.lang.String)
 	 */
-    protected static final String HAS_SUPPLY_TEMPLATE__STRING__EOCL_EXP = "self.getSupplies()->exists(sup : cda::Supply | sup.hasTemplateId(templateId))";
+	protected static final String HAS_SUPPLY_TEMPLATE__STRING__EOCL_EXP =
+			"self.getSupplies()->exists(sup : cda::Supply | sup.hasTemplateId(templateId))";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasSupplyTemplate(Section, java.lang.String) <em>Has Supply Template</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasSupplyTemplate(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasSupplyTemplate(Section, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_SUPPLY_TEMPLATE__STRING__EOCL_QRY;
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_SUPPLY_TEMPLATE__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(51));
+					try
+					{
+						return helper.createQuery(HAS_SUPPLY_TEMPLATE__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+						throw new UnsupportedOperationException(pe.getLocalizedMessage());
+					}
+				}
+			};
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc --> @generated
-     */
-    public static boolean hasSupplyTemplate(Section section, String templateId) {
-		if (HAS_SUPPLY_TEMPLATE__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(51));
-			try {
-				HAS_SUPPLY_TEMPLATE__STRING__EOCL_QRY = helper.createQuery(HAS_SUPPLY_TEMPLATE__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_SUPPLY_TEMPLATE__STRING__EOCL_QRY);
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc --> @generated
+	 */
+	public static boolean hasSupplyTemplate(Section section, String templateId) {
+		OCL.Query query = EOCL_ENV.createQuery(HAS_SUPPLY_TEMPLATE__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(section)).booleanValue();
 	}
 
-    /**
+	/**
 	 * The cached OCL expression body for the '{@link #hasTemplateId(Section, java.lang.String) <em>Has Template Id</em>}' operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasTemplateId(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasTemplateId(Section, java.lang.String)
 	 */
-    protected static final String HAS_TEMPLATE_ID__STRING__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = templateId)";
+	protected static final String HAS_TEMPLATE_ID__STRING__EOCL_EXP =
+			"self.templateId->exists(id : datatypes::II | id.root = templateId)";
 
-    /**
+	/**
 	 * The cached OCL query for the '{@link #hasTemplateId(Section, java.lang.String) <em>Has Template Id</em>}' query operation.
 	 * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-	 * @see #hasTemplateId(Section, java.lang.String)
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 * @ordered
+	 * @see #hasTemplateId(Section, java.lang.String)
 	 */
-    protected static OCLExpression<EClassifier> HAS_TEMPLATE_ID__STRING__EOCL_QRY;
-
+	protected static final LazyInitializer<OCLExpression<EClassifier>> HAS_TEMPLATE_ID__STRING__EOCL_QRY =
+			new LazyInitializer<OCLExpression<EClassifier>>()
+			{
+				@Override
+				protected OCLExpression<EClassifier> initialize()
+				{
+					OCL.Helper helper = EOCL_ENV.createOCLHelper();
+					helper.setOperationContext(CDAPackage.Literals.SECTION,
+							CDAPackage.Literals.SECTION.getEAllOperations().get(52));
+					try
+					{
+						return helper.createQuery(HAS_TEMPLATE_ID__STRING__EOCL_EXP);
+					}
+					catch (ParserException pe)
+					{
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+};
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc --> @generated
      */
     public static boolean hasTemplateId(Section section, String templateId) {
-		if (HAS_TEMPLATE_ID__STRING__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(CDAPackage.Literals.SECTION, CDAPackage.Literals.SECTION.getEAllOperations().get(52));
-			try {
-				HAS_TEMPLATE_ID__STRING__EOCL_QRY = helper.createQuery(HAS_TEMPLATE_ID__STRING__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(HAS_TEMPLATE_ID__STRING__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(HAS_TEMPLATE_ID__STRING__EOCL_QRY.get());
 		EvaluationEnvironment<?, ?, ?, ?, ?> environment = query.getEvaluationEnvironment();
 		environment.add("templateId", templateId);
 		return ((Boolean) query.evaluate(section)).booleanValue();

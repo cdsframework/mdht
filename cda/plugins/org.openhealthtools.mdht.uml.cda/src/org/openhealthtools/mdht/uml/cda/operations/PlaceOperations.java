@@ -12,6 +12,8 @@
  */
 package org.openhealthtools.mdht.uml.cda.operations;
 
+import org.openhealthtools.mdht.uml.cda.util.LazyInitializer;
+
 import java.util.Collection;
 import java.util.Map;
 
@@ -78,12 +80,29 @@ public class PlaceOperations extends EntityOperations
    * The cached OCL invariant for the '{@link #validateClassCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Class Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateClassCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   *
    * @generated
    * @ordered
+   * @see #validateClassCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    */
-  protected static Constraint VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+  protected static final LazyInitializer<Constraint> VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+          new LazyInitializer<Constraint>()
+          {
+            @Override
+            protected Constraint initialize()
+            {
+              OCL.Helper helper = EOCL_ENV.createOCLHelper();
+              helper.setContext(CDAPackage.Literals.PLACE);
+              try
+              {
+                return helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+              }
+              catch (ParserException pe)
+              {
+                throw new UnsupportedOperationException(pe.getLocalizedMessage());
+              }
+            }
+          };
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -96,31 +115,12 @@ public class PlaceOperations extends EntityOperations
    */
   public static boolean validateClassCode(Place place, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(CDAPackage.Literals.PLACE);
-      try
-      {
-        VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
-            helper.createInvariant(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(place))
+    if (!EOCL_ENV.createQuery(VALIDATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(place))
     {
       if (diagnostics != null)
       {
-        diagnostics.add
-            (new BasicDiagnostic
-                (Diagnostic.ERROR,
-                    CDAValidator.DIAGNOSTIC_SOURCE,
-                    CDAValidator.PLACE__CLASS_CODE,
-                    org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
-                        new Object[] { "validateClassCode",
+        diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE, CDAValidator.PLACE__CLASS_CODE,
+                org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateClassCode",
                             org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(place, context) }),
                     new Object[] { place }));
       }
@@ -144,12 +144,29 @@ public class PlaceOperations extends EntityOperations
    * The cached OCL invariant for the '{@link #validateDeterminerCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Determiner Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateDeterminerCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   *
    * @generated
    * @ordered
+   * @see #validateDeterminerCode(Place, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    */
-  protected static Constraint VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
+  protected static final LazyInitializer<Constraint> VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
+          new LazyInitializer<Constraint>()
+          {
+            @Override
+            protected Constraint initialize()
+            {
+              OCL.Helper helper = EOCL_ENV.createOCLHelper();
+              helper.setContext(CDAPackage.Literals.PLACE);
+              try
+              {
+                return helper.createInvariant(VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+              }
+              catch (ParserException pe)
+              {
+                throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+};
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -162,31 +179,12 @@ public class PlaceOperations extends EntityOperations
    */
   public static boolean validateDeterminerCode(Place place, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(CDAPackage.Literals.PLACE);
-      try
-      {
-        VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV =
-            helper.createInvariant(VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(place))
+    if (!EOCL_ENV.createQuery(VALIDATE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(place))
     {
       if (diagnostics != null)
       {
-        diagnostics.add
-            (new BasicDiagnostic
-                (Diagnostic.ERROR,
-                    CDAValidator.DIAGNOSTIC_SOURCE,
-                    CDAValidator.PLACE__DETERMINER_CODE,
-                    org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic",
-                        new Object[] { "validateDeterminerCode",
+        diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, CDAValidator.DIAGNOSTIC_SOURCE, CDAValidator.PLACE__DETERMINER_CODE,
+                org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "validateDeterminerCode",
                             org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(place, context) }),
                     new Object[] { place }));
       }
